@@ -14850,3 +14850,289 @@ Please use /Niagara/DynamicInputs/Angles/AngleConversion.AngleConversion instead
 [2023.05.10-18.21.38:514][864]LogNiagara: Compiling System NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Dash_Fire.NS_Dash_Fire took 34.971134 sec (time since issued), 20.677914 sec (combined shader worker time).
 [2023.05.10-18.21.38:965][864]LogSavePackage: Moving output files for package: /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Dash_Fire
 [2023.05.10-18.21.38:965][864]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/NS_Dash_FireE073E2504167F220F57DC184328D8BA4.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Dash_Fire.uasset'
+[2023.05.10-18.21.43:302][864]LogNiagara: Compiling System NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Curse_Blink.NS_Curse_Blink took 40.192554 sec (time since issued), 44.842094 sec (combined shader worker time).
+[2023.05.10-18.21.43:795][864]LogSavePackage: Moving output files for package: /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Curse_Blink
+[2023.05.10-18.21.43:795][864]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/NS_Curse_BlinkAAB52E14413F86E6C3F7CABA6840F4E2.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Curse_Blink.uasset'
+[2023.05.10-18.21.46:463][864]LogDerivedDataCache: Display: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Cache put found non-deterministic value with new hash 7431d32a2b4c5cf7d12d2d9ccf44124b789943af and existing hash ced45295ae4a14b7945a5bcd52f1a13c4b3337aa for LegacyNiagaraScriptDerivedData/3c367ad14de49064685872803254dcb1ea24da44 from '/Game/BlinkAndDashVFX/VFX_Niagara/NS_Blink_Psionic.NS_Blink_Psionic:Refraction_3.UpdateScript_6'
+[2023.05.10-18.21.47:716][864]LogNiagara: Compiling System NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Blink_Psionic.NS_Blink_Psionic took 44.996956 sec (time since issued), 33.516865 sec (combined shader worker time).
+[2023.05.10-18.21.48:207][864]LogSavePackage: Moving output files for package: /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Blink_Psionic
+[2023.05.10-18.21.48:207][864]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/NS_Blink_PsionicCA12C4C448A42ABB8F3E7CA8306BEA0F.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Blink_Psionic.uasset'
+[2023.05.10-18.21.50:445][864]LogDerivedDataCache: Display: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Cache put found non-deterministic value with new hash 1127348b38388573cd4df1ca390b67da76841ddd and existing hash ced45295ae4a14b7945a5bcd52f1a13c4b3337aa for LegacyNiagaraScriptDerivedData/3c367ad14de49064685872803254dcb1ea24da44 from '/Game/BlinkAndDashVFX/VFX_Niagara/NS_Blink_Fire.NS_Blink_Fire:Refraction_5.UpdateScript_6'
+[2023.05.10-18.21.50:850][864]LogDerivedDataCache: Display: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Cache put found non-deterministic value with new hash cfda22c692c1fcc5aae5c5f7bb5d752dc5547d35 and existing hash acc6913e8bd6376b4dc030dcc1dc15d05669306d for LegacyNiagaraScriptDerivedData/651e26a67906b38c4bcb2fbbc3631b60bb618327 from '/Game/BlinkAndDashVFX/VFX_Niagara/NS_Blink_Fire.NS_Blink_Fire:Flare_B_8.UpdateScript_6'
+[2023.05.10-18.21.52:370][864]LogNiagara: Compiling System NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Blink_Fire.NS_Blink_Fire took 50.169167 sec (time since issued), 24.740995 sec (combined shader worker time).
+[2023.05.10-18.21.52:965][864]LogSavePackage: Moving output files for package: /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Blink_Fire
+[2023.05.10-18.21.52:965][864]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/NS_Blink_Fire166136094A10E29C209D008FAD9ED2A7.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Blink_Fire.uasset'
+[2023.05.10-18.21.55:701][864]LogDerivedDataCache: Display: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Cache put found non-deterministic value with new hash 4b622c90fd8dfd83e25fcccb02c19a4f6239e2dc and existing hash ced45295ae4a14b7945a5bcd52f1a13c4b3337aa for LegacyNiagaraScriptDerivedData/3c367ad14de49064685872803254dcb1ea24da44 from '/Game/BlinkAndDashVFX/VFX_Niagara/NS_Blink_DarkMagic.NS_Blink_DarkMagic:Refraction_23.UpdateScript_6'
+[2023.05.10-18.21.57:546][864]LogNiagara: Compiling System NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Blink_DarkMagic.NS_Blink_DarkMagic took 56.039345 sec (time since issued), 29.365612 sec (combined shader worker time).
+[2023.05.10-18.21.58:121][864]LogSavePackage: Moving output files for package: /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Blink_DarkMagic
+[2023.05.10-18.21.58:122][864]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/NS_Blink_DarkMagicBDABF57A443A781C41C5898D7C0EBCBF.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Blink_DarkMagic.uasset'
+[2023.05.10-18.22.09:687][864]LogUObjectHash: Compacting FUObjectHashTables data took   6.02ms
+[2023.05.10-18.22.09:911][864]LogUObjectHash: Compacting FUObjectHashTables data took   4.09ms
+[2023.05.10-18.22.10:119][864]LogUObjectHash: Compacting FUObjectHashTables data took   1.51ms
+[2023.05.10-18.22.11:612][864]AssetCheck: New page: Asset Save: multiple assets
+[2023.05.10-18.22.11:612][864]LogContentValidation: Display: Validating Blueprint /Game/ImportedAssets/VFX/BlinkAndDashVFX/BluePrints/DashFX_MacrosLibrary.DashFX_MacrosLibrary
+[2023.05.10-18.22.11:612][864]LogContentValidation: Display: Validating NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Dash_Fire.NS_Dash_Fire
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating StaticMesh /Game/ImportedAssets/VFX/BlinkAndDashVFX/Meshes/SM_VFX_DoubleQuad.SM_VFX_DoubleQuad
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Vampire/MI_VFX_Trail.MI_VFX_Trail
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating StaticMesh /Game/ImportedAssets/VFX/BlinkAndDashVFX/Meshes/SM_VFX_Curve_1.SM_VFX_Curve_1
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Fire/MI_VFX_Curve_2.MI_VFX_Curve_2
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Gradient/T_VFX_Gradient_4.T_VFX_Gradient_4
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Fire/MI_VFX_Curve_1.MI_VFX_Curve_1
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Trail/T_VFX_Trail_1.T_VFX_Trail_1
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Gradient/T_VFX_Gradient_1.T_VFX_Gradient_1
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Fire/M_VFX_Fire.M_VFX_Fire
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Smoke/T_VFX_Smoke_7.T_VFX_Smoke_7
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Curse_Blink.NS_Curse_Blink
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating StaticMesh /Game/ImportedAssets/VFX/BlinkAndDashVFX/Meshes/SM_VFX_Curve_6.SM_VFX_Curve_6
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_Curse/MI_VFX_Trail.MI_VFX_Trail
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Mask/T_VFX_Mask_2.T_VFX_Mask_2
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_Curse/MI_VFX_Sphere_Aura.MI_VFX_Sphere_Aura
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_Curse/MI_VFX_Flare.MI_VFX_Flare
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Flare/T_VFX_Flare_4.T_VFX_Flare_4
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_Curse/MI_VFX_Smoke.MI_VFX_Smoke
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Smoke/T_VFX_Smoke_5.T_VFX_Smoke_5
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Blink_Psionic.NS_Blink_Psionic
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating StaticMesh /Game/ImportedAssets/VFX/BlinkAndDashVFX/Meshes/SM_VFX_Curve_5.SM_VFX_Curve_5
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Shared/MI_VFX_Spark_2.MI_VFX_Spark_2
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Other/T_VFX_Spark_2.T_VFX_Spark_2
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Shared/MI_VFX_Glow_3_Add.MI_VFX_Glow_3_Add
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Shared/MI_VFX_Flare_1.MI_VFX_Flare_1
+[2023.05.10-18.22.11:613][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Flare/T_VFX_Flare_1.T_VFX_Flare_1
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_Psionic/MI_VFX_Trail.MI_VFX_Trail
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_6.T_VFX_Noise_6
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Mask/T_VFX_Mask_4.T_VFX_Mask_4
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Glow/T_VFX_Glow_1.T_VFX_Glow_1
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Blink_Fire.NS_Blink_Fire
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating StaticMesh /Game/ImportedAssets/VFX/BlinkAndDashVFX/Meshes/SM_VFX_Sphere.SM_VFX_Sphere
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating StaticMesh /Game/ImportedAssets/VFX/BlinkAndDashVFX/Meshes/SM_VFX_Cone_1.SM_VFX_Cone_1
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_Fire/MI_VFX_Fire_Sphere_Aura.MI_VFX_Fire_Sphere_Aura
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Master/M_VFX_Sphere_Aura.M_VFX_Sphere_Aura
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_18.T_VFX_Noise_18
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Gradient/T_VFX_Gradient_5.T_VFX_Gradient_5
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_Fire/MI_Radial_Refraction.MI_Radial_Refraction
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Other/T_VFX_Radial_2_Normal.T_VFX_Radial_2_Normal
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Master/M_VFX_Embers.M_VFX_Embers
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_Fire/M_VFX_Smoke.M_VFX_Smoke
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Smoke/T_VFX_Smoke_1.T_VFX_Smoke_1
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_Fire/M_VFX_Radial_Wave.M_VFX_Radial_Wave
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_2.T_VFX_Noise_2
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Flare/T_VFX_Flare_3.T_VFX_Flare_3
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_Fire/M_VFX_Fire_Aura.M_VFX_Fire_Aura
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Other/T_VFX_Fire_Mask_2.T_VFX_Fire_Mask_2
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Other/T_VFX_Fire_Mask_1.T_VFX_Fire_Mask_1
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_3.T_VFX_Noise_3
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_10.T_VFX_Noise_10
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Mask/T_VFX_Mask_5.T_VFX_Mask_5
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Blink_DarkMagic.NS_Blink_DarkMagic
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Shared/MI_VFX_Glow_2_Tr.MI_VFX_Glow_2_Tr
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Glow/T_VFX_Glow_2.T_VFX_Glow_2
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Shared/MI_VFX_Flare_2.MI_VFX_Flare_2
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Flare/T_VFX_Flare_2.T_VFX_Flare_2
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_DarkMagic/MI_VFX_Smoke_2_Refraction_Add.MI_VFX_Smoke_2_Refraction_Add
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Master/M_VFX_Smoke_2_Refraction.M_VFX_Smoke_2_Refraction
+[2023.05.10-18.22.11:614][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Smoke/T_VFX_Smoke_8.T_VFX_Smoke_8
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Master/M_Radial_Refraction.M_Radial_Refraction
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Other/T_VFX_Radial_Normal.T_VFX_Radial_Normal
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_DarkMagic/M_VFX_Smoke_2.M_VFX_Smoke_2
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_DarkMagic/M_VFX_Smoke_1.M_VFX_Smoke_1
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Smoke/T_VFX_Smoke_6.T_VFX_Smoke_6
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_DarkMagic/M_Ash.M_Ash
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_5.T_VFX_Noise_5
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Blueprint /Game/ImportedAssets/VFX/BlinkAndDashVFX/BluePrints/BlinkAndDashFX_UsageExample.BlinkAndDashFX_UsageExample
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Dash_Ghost.NS_Dash_Ghost
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating StaticMesh /Game/ImportedAssets/VFX/BlinkAndDashVFX/Meshes/SM_VFX_Curve_2.SM_VFX_Curve_2
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Shared/MI_VFX_Spark_1.MI_VFX_Spark_1
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Other/T_VFX_Spark_1.T_VFX_Spark_1
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Shared/MI_VFX_Smoke_Refraction_Add.MI_VFX_Smoke_Refraction_Add
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Master/M_VFX_Smoke_1_Refraction.M_VFX_Smoke_1_Refraction
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Ghost/MI_VFX_Trail.MI_VFX_Trail
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Master/M_VFX_Trail.M_VFX_Trail
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_7.T_VFX_Noise_7
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_15.T_VFX_Noise_15
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_14.T_VFX_Noise_14
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_13.T_VFX_Noise_13
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_1.T_VFX_Noise_1
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Mask/T_VFX_Mask_3.T_VFX_Mask_3
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Mask/T_VFX_Mask_1.T_VFX_Mask_1
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Gradient/T_VFX_Gradient_2.T_VFX_Gradient_2
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Ghost/MI_VFX_Flare.MI_VFX_Flare
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Flare/T_VFX_Flare_5.T_VFX_Flare_5
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Master/M_VFX_Particle.M_VFX_Particle
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Glow/T_VFX_Glow_3.T_VFX_Glow_3
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Ghost/M_VFX_Smoke_4.M_VFX_Smoke_4
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_4.T_VFX_Noise_4
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_17.T_VFX_Noise_17
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Ghost/M_VFX_Smoke_1.M_VFX_Smoke_1
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Smoke/T_VFX_Smoke_4.T_VFX_Smoke_4
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Blueprint /Game/ImportedAssets/VFX/BlinkAndDashVFX/BluePrints/BP_Niagara_Replay.BP_Niagara_Replay
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Mana/MI_VFX_Curve.MI_VFX_Curve
+[2023.05.10-18.22.11:615][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_12.T_VFX_Noise_12
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Mana/MI_VFX_Curve_2.MI_VFX_Curve_2
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Mana/MI_VFX_ShockWave.MI_VFX_ShockWave
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Shared/MI_VFX_Spark_3.MI_VFX_Spark_3
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating StaticMesh /Game/ImportedAssets/VFX/BlinkAndDashVFX/Meshes/SM_VFX_Cone_2.SM_VFX_Cone_2
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Dash_Mana.NS_Dash_Mana
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_16.T_VFX_Noise_16
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Trail/T_VFX_Trail_2.T_VFX_Trail_2
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Paladin/MI_VFX_Trail_1.MI_VFX_Trail_1
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Trail/T_VFX_Trail_3.T_VFX_Trail_3
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Paladin/MI_VFX_Trail_2.MI_VFX_Trail_2
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Flare/T_VFX_Flare_6.T_VFX_Flare_6
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Shared/MI_VFX_Flare.MI_VFX_Flare
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Shared/MI_VFX_Glow_1_Add.MI_VFX_Glow_1_Add
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Shared/MI_VFX_Smoke_2_Add.MI_VFX_Smoke_2_Add
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating StaticMesh /Game/ImportedAssets/VFX/BlinkAndDashVFX/Meshes/SM_VFX_Curve_3.SM_VFX_Curve_3
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Dash_Paladin.NS_Dash_Paladin
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Other/T_VFX_Bat.T_VFX_Bat
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Vampire/M_VFX_Bat.M_VFX_Bat
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Smoke/T_VFX_Smoke_2.T_VFX_Smoke_2
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Vampire/M_VFX_Smoke_1.M_VFX_Smoke_1
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Smoke/T_VFX_Smoke_3.T_VFX_Smoke_3
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Vampire/M_VFX_Smoke_2.M_VFX_Smoke_2
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Dash_Vampire.NS_Dash_Vampire
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_11.T_VFX_Noise_11
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Wind/M_VFX_WindAura.M_VFX_WindAura
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Other/T_VFX_Leaf.T_VFX_Leaf
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Wind/MI_VFX_Sparks_Leaves.MI_VFX_Sparks_Leaves
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_19.T_VFX_Noise_19
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Wind/MI_VFX_Wind_Streaks.MI_VFX_Wind_Streaks
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_8.T_VFX_Noise_8
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Wind/MI_VFX_WindCurve.MI_VFX_WindCurve
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Shared/M_VFX_Smoke_1_NoRefr.M_VFX_Smoke_1_NoRefr
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating StaticMesh /Game/ImportedAssets/VFX/BlinkAndDashVFX/Meshes/SM_VFX_Planes_1.SM_VFX_Planes_1
+[2023.05.10-18.22.11:616][864]LogContentValidation: Display: Validating NiagaraSystem /Game/ImportedAssets/VFX/BlinkAndDashVFX/VFX_Niagara/NS_Dash_Wind.NS_Dash_Wind
+[2023.05.10-18.22.11:617][864]LogContentValidation: Display: Validating World /Game/ImportedAssets/VFX/BlinkAndDashVFX/Maps/Overview.Overview
+[2023.05.10-18.22.11:617][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Blink_Curse/M_VFX_Smoke.M_VFX_Smoke
+[2023.05.10-18.22.11:617][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Mana/MI_VFX_Trail_2.MI_VFX_Trail_2
+[2023.05.10-18.22.11:617][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Dash_Mana/MI_VFX_Trail_1.MI_VFX_Trail_1
+[2023.05.10-18.22.11:617][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Other/T_Grid.T_Grid
+[2023.05.10-18.22.11:617][864]LogContentValidation: Display: Validating Material /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/DEMO/M_Surface.M_Surface
+[2023.05.10-18.22.11:617][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/DEMO/MI_Floor.MI_Floor
+[2023.05.10-18.22.11:617][864]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/ImportedAssets/VFX/BlinkAndDashVFX/Materials/Shared/MI_VFX_Glow_1_Tr.MI_VFX_Glow_1_Tr
+[2023.05.10-18.22.11:617][864]LogContentValidation: Display: Validating StaticMesh /Game/ImportedAssets/VFX/BlinkAndDashVFX/Meshes/SM_Template_Floor.SM_Template_Floor
+[2023.05.10-18.22.11:617][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Gradient/T_VFX_Gradient_3.T_VFX_Gradient_3
+[2023.05.10-18.22.11:617][864]LogContentValidation: Display: Validating Texture2D /Game/ImportedAssets/VFX/BlinkAndDashVFX/Textures/Noise/T_VFX_Noise_9.T_VFX_Noise_9
+[2023.05.10-18.22.15:234][966]LogDerivedDataCache: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyNIAGARASM/0d/a2/98f70454054226958be2097a88d5c2ce6b81.udd from 'NS_Dash_Vampire/Sparks_Along/ParticleGPUComputeScript'.
+[2023.05.10-18.22.15:234][966]LogDerivedDataCache: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyNIAGARASM/b7/e6/8562935f33365009078e81636a9fb9ae0a3d.udd from 'NS_Blink_Fire/Sparks_2/ParticleGPUComputeScript'.
+[2023.05.10-18.22.15:419][973]LogDerivedDataCache: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyNIAGARASM/45/a7/dde78d48edd5810249034667804dce70246c.udd from 'NS_Dash_Paladin/Sparks_Ending/ParticleGPUComputeScript'.
+[2023.05.10-18.22.15:419][973]LogDerivedDataCache: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyNIAGARASM/ac/52/3b16b935f143507ab9c7548af6e5ae140a41.udd from 'NS_Dash_Vampire/Sparks_Ending/ParticleGPUComputeScript'.
+[2023.05.10-18.22.15:712][987]LogDerivedDataCache: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyNIAGARASM/f4/52/8cf9f3fa9989aee64eef674eb0046acb19cb.udd from 'NS_Dash_Mana/Sparks/ParticleGPUComputeScript'.
+[2023.05.10-18.22.15:712][987]LogDerivedDataCache: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyNIAGARASM/21/2b/74239549c70fb9baf4cfeb13d5caa4eb5e3a.udd from 'NS_Dash_Wind/Sparks/ParticleGPUComputeScript'.
+[2023.05.10-18.22.16:143][  6]LogDerivedDataCache: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyNIAGARASM/6c/c8/795909e75c43eef445cbd64a5ab5b6e6624c.udd from 'NS_Dash_Mana/Stars/ParticleGPUComputeScript'.
+[2023.05.10-18.22.16:835][ 39]LogDerivedDataCache: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyNIAGARASM/c2/5a/104ea5e6478c57be3a57efe4e0448ca38dda.udd from 'NS_Curse_Blink/Sparks/ParticleGPUComputeScript'.
+[2023.05.10-18.22.16:974][ 45]LogDerivedDataCache: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyNIAGARASM/6c/34/28ceb7d182126de65d3eace4958021946f99.udd from 'NS_Dash_Ghost/Sparks/ParticleGPUComputeScript'.
+[2023.05.10-18.22.17:195][ 54]LogDerivedDataCache: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyNIAGARASM/dd/e8/78195d9aae551590854bf592494db3b4dba7.udd from 'NS_Dash_Fire/Sparks_Along/ParticleGPUComputeScript'.
+[2023.05.10-18.22.17:304][ 58]LogDerivedDataCache: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyNIAGARASM/88/5e/f7e6c525500cb3b634d71b5ea57deb423609.udd from 'NS_Blink_Psionic/Sparks/ParticleGPUComputeScript'.
+[2023.05.10-18.22.17:515][ 66]LogDerivedDataCache: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyNIAGARASM/ba/ab/462e06776ea9274e923e62cfe92c3be4f5e7.udd from 'NS_Blink_DarkMagic/Sparks_Out/ParticleGPUComputeScript'.
+[2023.05.10-18.22.17:723][ 75]LogDerivedDataCache: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyNIAGARASM/5b/67/c0b533bc74c543b9676d10a6d2622be3c327.udd from 'NS_Blink_DarkMagic/Sparks_Center/ParticleGPUComputeScript'.
+[2023.05.10-18.23.26:579][987]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2023.05.10-18.23.26:627][987]LogContentBrowser: Creating deferred item: NewFolder
+[2023.05.10-18.23.26:653][988]LogContentBrowser: Renaming the item being created (Deferred Item: NewFolder).
+[2023.05.10-18.23.29:522][107]LogContentBrowser: Attempting asset rename: NewFolder -> DataFiles
+[2023.05.10-18.23.29:524][107]LogContentBrowser: End creating deferred item NewFolder
+[2023.05.10-18.23.41:470][580]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2023.05.10-18.23.41:532][580]LogContentBrowser: Creating deferred item: NewFolder
+[2023.05.10-18.23.41:564][581]LogContentBrowser: Renaming the item being created (Deferred Item: NewFolder).
+[2023.05.10-18.23.44:458][708]LogContentBrowser: Attempting asset rename: NewFolder -> Structures
+[2023.05.10-18.23.44:459][708]LogContentBrowser: End creating deferred item NewFolder
+[2023.05.10-18.23.50:120][898]LogContentBrowser: Deferred new asset file creation: NewUserDefinedStruct
+[2023.05.10-18.23.50:168][898]LogContentBrowser: Creating deferred item: NewUserDefinedStruct
+[2023.05.10-18.23.50:237][900]LogContentBrowser: Renaming the item being created (Deferred Item: NewUserDefinedStruct).
+[2023.05.10-18.23.54:869][109]LogContentBrowser: Attempting asset rename: NewUserDefinedStruct -> AudioStruct
+[2023.05.10-18.23.55:923][109]LogContentBrowser: End creating deferred item NewUserDefinedStruct
+[2023.05.10-18.23.56:682][142]LogAssetEditorSubsystem: Opening Asset editor for UserDefinedStruct /Game/Blueprints/Structures/AudioStruct.AudioStruct
+[2023.05.10-18.23.59:577][237]LogSlate: Took 0.017466 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2023.05.10-18.24.02:998][355]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2023.05.10-18.24.03:379][355]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.380 s
+[2023.05.10-18.24.03:379][355]LogOutputDevice: Error: === Handled ensure: ===
+[2023.05.10-18.24.03:379][355]LogOutputDevice: Error: 
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: Ensure condition failed: !FPackageName::IsShortPackageName(Path) [File:D:\build\++UE5\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\SoftObjectPath.cpp] [Line: 88]
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: Cannot create SoftObjectPath with short package name 'False'! You must pass in fully qualified package names
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: Stack: 
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc1c842083 UnrealEditor-CoreUObject.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc1c75129c UnrealEditor-CoreUObject.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc1c763b54 UnrealEditor-CoreUObject.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc1c75f6ce UnrealEditor-CoreUObject.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc1c75f56f UnrealEditor-CoreUObject.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc1c3d8b5b UnrealEditor-CoreUObject.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc181da459 UnrealEditor-UnrealEd.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc181d9c53 UnrealEditor-UnrealEd.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc187aad76 UnrealEditor-UnrealEd.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffbde43b400 UnrealEditor-KismetCompiler.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffbde40dc39 UnrealEditor-KismetCompiler.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffbde418693 UnrealEditor-KismetCompiler.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffbde4192c1 UnrealEditor-KismetCompiler.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc18298379 UnrealEditor-UnrealEd.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc18293a61 UnrealEditor-UnrealEd.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffbe005519c UnrealEditor-Kismet.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffbe0025d45 UnrealEditor-Kismet.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffbde550add UnrealEditor-KismetWidgets.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffbde5522e6 UnrealEditor-KismetWidgets.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffbde52a63e UnrealEditor-KismetWidgets.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffbde557446 UnrealEditor-KismetWidgets.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffbde5574ee UnrealEditor-KismetWidgets.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffbde54aced UnrealEditor-KismetWidgets.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc1bbf5580 UnrealEditor-Slate.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc1bc6ebd6 UnrealEditor-Slate.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc1bc58b10 UnrealEditor-Slate.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc1bc4d169 UnrealEditor-Slate.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc7069a992 UnrealEditor-ApplicationCore.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc70689247 UnrealEditor-ApplicationCore.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc7069ce51 UnrealEditor-ApplicationCore.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc706849a7 UnrealEditor-ApplicationCore.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc9fe4e858 USER32.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc9fe4e299 USER32.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc7069e148 UnrealEditor-ApplicationCore.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ff6bf117114 UnrealEditor.exe!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ff6bf130d9c UnrealEditor.exe!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ff6bf130e8a UnrealEditor.exe!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ff6bf133c4d UnrealEditor.exe!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ff6bf145564 UnrealEditor.exe!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ff6bf148736 UnrealEditor.exe!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffc9e8b7604 KERNEL32.DLL!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: [Callstack] 0x00007ffca07c26a1 ntdll.dll!UnknownFunction []
+[2023.05.10-18.24.03:380][355]LogOutputDevice: Error: 
+[2023.05.10-18.24.03:390][355]LogStats:                SubmitErrorReport -  0.000 s
+[2023.05.10-18.24.11:414][355]LogAudioMixer: Warning: AudioMixerPlatformInterface Timeout [7621ms] waiting for h/w. InstanceID=1
+[2023.05.10-18.24.11:414][355]LogStats:                    SendNewReport -  8.025 s
+[2023.05.10-18.24.11:414][355]LogStats:             FDebug::EnsureFailed -  8.417 s
+[2023.05.10-18.24.11:471][356]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=38344
+[2023.05.10-18.24.11:480][356]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{80a1390c-828b-4591-8bd5-a830d407e50e}, Name=ASUS VG249 (NVIDIA High Definition Audio)), Reason=AudioMixerPlatformInterface. Timeout waiting for h/w., InstanceID=1, DurationMS=15.94
+[2023.05.10-18.24.11:480][356]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2023.05.10-18.24.11:514][357]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2023.05.10-18.24.15:854][526]LogSavePackage: Moving output files for package: /Game/Blueprints/Structures/AudioStruct
+[2023.05.10-18.24.15:854][526]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/AudioStruct598042D84B246639B58C3DBEE7952958.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Structures/AudioStruct.uasset'
+[2023.05.10-18.24.15:896][526]AssetCheck: New page: Asset Save: AudioStruct
+[2023.05.10-18.24.15:896][526]LogContentValidation: Display: Validating UserDefinedStruct /Game/Blueprints/Structures/AudioStruct.AudioStruct
+[2023.05.10-18.24.19:135][652]LogShaderCompilers: Display: ================================================
+[2023.05.10-18.24.19:135][652]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2023.05.10-18.24.19:135][652]LogShaderCompilers: Display: Total job queries 5859, among them cache hits 3 (0.05%)
+[2023.05.10-18.24.19:135][652]LogShaderCompilers: Display: Tracking 5087 distinct input hashes that result in 1924 distinct outputs (37.82%)
+[2023.05.10-18.24.19:135][652]LogShaderCompilers: Display: RAM used: 6.62 MB (0.01 GB) of 1638.40 MB (1.60 GB) budget. Usage: 0.40%
+[2023.05.10-18.24.19:135][652]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2023.05.10-18.24.19:135][652]LogShaderCompilers: Display: Shaders Compiled: 5572
+[2023.05.10-18.24.19:135][652]LogShaderCompilers: Display: Jobs assigned 5207, completed 5087 (97.70%)
+[2023.05.10-18.24.19:135][652]LogShaderCompilers: Display: Average time worker was idle: 19.95 s
+[2023.05.10-18.24.19:135][652]LogShaderCompilers: Display: Time job spent in pending queue: average 70.74 s, longest 215.62 s
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display: Job execution time: average 6.82 s, max 14.35 s
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display: Job life time (pending + execution): average 74.40 s, max 215.62
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 317.98 s
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display: Jobs were issued in 796 batches (only local compilation was used), average 6.54 jobs/batch
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display: Average processing rate: 16.00 jobs/sec
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display: Effective parallelization: 10.98 (times faster than compiling all shaders on one thread). Compare with number of workers: 12
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display:             TShadowDepthVSVertexShadowDepth_VirtualShadowMap (compiled    5 times, average 1.20 sec, max 1.53 sec, min 1.06 sec)
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display:          TBasePassVSTDistanceFieldShadowsAndLightMapPolicyHQ (compiled    4 times, average 1.12 sec, max 1.19 sec, min 1.08 sec)
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display:  TBasePassPSTDistanceFieldShadowsAndLightMapPolicyHQSkylight (compiled    4 times, average 1.09 sec, max 1.24 sec, min 0.86 sec)
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display:             TBasePassVSFSelfShadowedVolumetricLightmapPolicy (compiled   10 times, average 1.09 sec, max 1.50 sec, min 0.66 sec)
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display:                   TBasePassVSFSelfShadowedTranslucencyPolicy (compiled   10 times, average 1.08 sec, max 1.52 sec, min 0.76 sec)
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display:                                             FDebugViewModePS - 9.77% of total time (compiled  340 times, average 1.00 sec, max 1.69 sec, min 0.41 sec)
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 9.11% of total time (compiled  339 times, average 0.94 sec, max 2.60 sec, min 0.29 sec)
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display:                                             FDebugViewModeVS - 7.76% of total time (compiled  343 times, average 0.79 sec, max 2.66 sec, min 0.27 sec)
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 7.51% of total time (compiled  344 times, average 0.76 sec, max 1.65 sec, min 0.28 sec)
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display:                                                 FLumenCardVS - 7.46% of total time (compiled  331 times, average 0.79 sec, max 1.68 sec, min 0.30 sec)
+[2023.05.10-18.24.19:136][652]LogShaderCompilers: Display: ================================================
