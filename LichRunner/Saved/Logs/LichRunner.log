@@ -6632,3 +6632,1189 @@ Make sure 'BP_RunCharacter_C' has been compiled for  Get _runCharacter
 [2023.05.10-13.55.22:946][965]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/GameModes/BP_RunGameMode.BP_RunGameMode
 [2023.05.10-13.55.23:073][978]BlueprintLog: New page: Compile BP_RunGameMode
 [2023.05.10-13.55.23:203][978]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
+[2023.05.10-13.58.54:184][812]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2023.05.10-13.58.54:196][812]LogContentBrowser: Creating deferred item: NewFolder
+[2023.05.10-13.58.54:209][813]LogContentBrowser: Renaming the item being created (Deferred Item: NewFolder).
+[2023.05.10-13.58.56:690][ 71]LogContentBrowser: Attempting asset rename: NewFolder -> Characters
+[2023.05.10-13.58.56:690][ 71]LogContentBrowser: End creating deferred item NewFolder
+[2023.05.10-13.59.01:736][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterRider.ABP_RunCharacterRider:AnimGraph.AnimGraphNode_Root_0' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterRider.PackageMetaData'
+[2023.05.10-13.59.01:736][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterRider.SKEL_ABP_RunCharacterRider_C' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterRider.PackageMetaData'
+[2023.05.10-13.59.01:736][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterRider.ABP_RunCharacterRider_C' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterRider.PackageMetaData'
+[2023.05.10-13.59.01:736][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterRider.ABP_RunCharacterRider:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterRider.PackageMetaData'
+[2023.05.10-13.59.01:736][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterRider.ABP_RunCharacterRider_C:AnimGraph' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterRider.PackageMetaData'
+[2023.05.10-13.59.01:736][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterRider.ABP_RunCharacterRider_C:BlueprintUpdateAnimation' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterRider.PackageMetaData'
+[2023.05.10-13.59.01:736][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterRider.SKEL_ABP_RunCharacterRider_C:AnimGraph' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterRider.PackageMetaData'
+[2023.05.10-13.59.01:736][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterRider.SKEL_ABP_RunCharacterRider_C:DeathAnim' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterRider.PackageMetaData'
+[2023.05.10-13.59.01:736][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterRider.SKEL_ABP_RunCharacterRider_C:BlueprintUpdateAnimation' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterRider.PackageMetaData'
+[2023.05.10-13.59.01:736][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterRider.ABP_RunCharacterRider:AnimGraph.AnimGraphNode_StateMachine_0.Locomotion.AnimStateEntryNode_0' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterRider.PackageMetaData'
+[2023.05.10-13.59.01:738][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterHorse.ABP_RunCharacterHorse:AnimGraph.AnimGraphNode_Root_0' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterHorse.PackageMetaData'
+[2023.05.10-13.59.01:738][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterHorse.SKEL_ABP_RunCharacterHorse_C' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterHorse.PackageMetaData'
+[2023.05.10-13.59.01:738][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterHorse.ABP_RunCharacterHorse_C' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterHorse.PackageMetaData'
+[2023.05.10-13.59.01:738][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterHorse.ABP_RunCharacterHorse:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterHorse.PackageMetaData'
+[2023.05.10-13.59.01:738][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterHorse.ABP_RunCharacterHorse:AnimGraph.AnimGraphNode_StateMachine_0.Locomotion.AnimStateEntryNode_0' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterHorse.PackageMetaData'
+[2023.05.10-13.59.01:738][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterHorse.ABP_RunCharacterHorse_C:AnimGraph' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterHorse.PackageMetaData'
+[2023.05.10-13.59.01:738][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterHorse.ABP_RunCharacterHorse_C:BlueprintUpdateAnimation' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterHorse.PackageMetaData'
+[2023.05.10-13.59.01:738][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterHorse.SKEL_ABP_RunCharacterHorse_C:AnimGraph' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterHorse.PackageMetaData'
+[2023.05.10-13.59.01:738][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterHorse.SKEL_ABP_RunCharacterHorse_C:DeathAnim' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterHorse.PackageMetaData'
+[2023.05.10-13.59.01:738][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/ABP_RunCharacterHorse.SKEL_ABP_RunCharacterHorse_C:BlueprintUpdateAnimation' ref from Metadata '/Game/Blueprints/Actors/ABP_RunCharacterHorse.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.SKEL_BP_RunCharacter_C' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter_C' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter:GetCharacterAnimRider.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter:GetCharacterAnimRider.K2Node_FunctionResult_0' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter:DeathAnim.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter:SetActiveVisual.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter:EventPlayerDeath.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter_C:SetActiveVisual' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter_C:ReceiveTick' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.SKEL_BP_RunCharacter_C:SetActiveVisual' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.SKEL_BP_RunCharacter_C:UserConstructionScript' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.SKEL_BP_RunCharacter_C:Death' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.SKEL_BP_RunCharacter_C:MoveForward' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:740][505]LogMetaData: Removing '/Game/Blueprints/Actors/Characters/BP_RunCharacter.SKEL_BP_RunCharacter_C:ReceiveTick' ref from Metadata '/Game/Blueprints/Actors/BP_RunCharacter.PackageMetaData'
+[2023.05.10-13.59.01:793][505]LogSavePackage: Moving output files for package: /Game/Blueprints/Controllers/BP_RunPlayerController
+[2023.05.10-13.59.01:793][505]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_RunPlayerControllerBA8BBA49403CFEEFABE138B941143732.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Controllers/BP_RunPlayerController.uasset'
+[2023.05.10-13.59.01:804][505]LogSavePackage: Moving output files for package: /Game/Blueprints/GameModes/BP_RunGameMode
+[2023.05.10-13.59.01:805][505]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_RunGameModeEB45982140E3E1CFC12FE89E2D3A879A.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/GameModes/BP_RunGameMode.uasset'
+[2023.05.10-13.59.01:813][505]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-13.59.01:823][505]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-13.59.01:823][505]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTile1ADE3EF847F458CCF8DA3681B401F155.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-13.59.01:824][505]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_Obstacle" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_Obstacle.uasset" SILENT=true
+[2023.05.10-13.59.01:827][505]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_Obstacle
+[2023.05.10-13.59.01:827][505]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ObstacleBADDC6F642FD286D49213C9FC99F2191.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_Obstacle.uasset'
+[2023.05.10-13.59.01:837][505]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_RockObstacle
+[2023.05.10-13.59.01:837][505]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_RockObstacleA6F661D242645926F8AD46B00794CCC3.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_RockObstacle.uasset'
+[2023.05.10-13.59.01:863][505]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Characters/ABP_RunCharacterRider
+[2023.05.10-13.59.01:863][505]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/ABP_RunCharacterRiderE79E131C4247781E99E4BB992AA33A50.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Characters/ABP_RunCharacterRider.uasset'
+[2023.05.10-13.59.01:889][505]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Characters/ABP_RunCharacterHorse
+[2023.05.10-13.59.01:889][505]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/ABP_RunCharacterHorse073C66CB42E2D473CC6B6E9650284F56.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Characters/ABP_RunCharacterHorse.uasset'
+[2023.05.10-13.59.01:922][505]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Characters/BP_RunCharacter
+[2023.05.10-13.59.01:922][505]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_RunCharacter58411BDF465745EFCFA45990053A64D2.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Characters/BP_RunCharacter.uasset'
+[2023.05.10-13.59.02:237][505]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2023.05.10-13.59.02:324][505]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2023.05.10-13.59.02:403][505]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2023.05.10-13.59.02:521][505]AssetCheck: New page: Asset Save: multiple assets
+[2023.05.10-13.59.02:521][505]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter
+[2023.05.10-13.59.02:521][505]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Controllers/BP_RunPlayerController.BP_RunPlayerController
+[2023.05.10-13.59.02:521][505]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/GameModes/BP_RunGameMode.BP_RunGameMode
+[2023.05.10-13.59.02:521][505]LogContentValidation: Display: Validating AnimBlueprint /Game/Blueprints/Actors/Characters/ABP_RunCharacterRider.ABP_RunCharacterRider
+[2023.05.10-13.59.02:521][505]LogContentValidation: Display: Validating AnimBlueprint /Game/Blueprints/Actors/Characters/ABP_RunCharacterHorse.ABP_RunCharacterHorse
+[2023.05.10-13.59.02:521][505]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_RockObstacle.BP_RockObstacle
+[2023.05.10-13.59.02:521][505]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_Obstacle.BP_Obstacle
+[2023.05.10-13.59.02:521][505]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-13.59.05:062][703]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2023.05.10-13.59.05:073][703]LogContentBrowser: Creating deferred item: NewFolder
+[2023.05.10-13.59.05:087][704]LogContentBrowser: Renaming the item being created (Deferred Item: NewFolder).
+[2023.05.10-13.59.07:362][939]LogContentBrowser: Attempting asset rename: NewFolder -> Obstacles
+[2023.05.10-13.59.07:362][939]LogContentBrowser: End creating deferred item NewFolder
+[2023.05.10-13.59.10:981][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_Obstacle.BP_Obstacle:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/Actors/BP_Obstacle.PackageMetaData'
+[2023.05.10-13.59.10:981][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_Obstacle.SKEL_BP_Obstacle_C' ref from Metadata '/Game/Blueprints/Actors/BP_Obstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_Obstacle.BP_Obstacle_C' ref from Metadata '/Game/Blueprints/Actors/BP_Obstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_Obstacle.SKEL_BP_Obstacle_C:UserConstructionScript' ref from Metadata '/Game/Blueprints/Actors/BP_Obstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_Obstacle.SKEL_BP_Obstacle_C:BndEvt__BP_Obstacle_ObstacleCollider_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature' ref from Metadata '/Game/Blueprints/Actors/BP_Obstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_Obstacle.BP_Obstacle:OnHit.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/Actors/BP_Obstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle.BP_RockObstacle:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle.SKEL_BP_RockObstacle_C' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle.BP_RockObstacle_C' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle.BP_RockObstacle:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle.BP_RockObstacle:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle.BP_RockObstacle:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle.BP_RockObstacle:OnHit.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle.SKEL_BP_RockObstacle_C:ReceiveBeginPlay' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle.SKEL_BP_RockObstacle_C:ReceiveActorBeginOverlap' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle.SKEL_BP_RockObstacle_C:ReceiveTick' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle.PackageMetaData'
+[2023.05.10-13.59.10:982][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle.SKEL_BP_RockObstacle_C:UserConstructionScript' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle.PackageMetaData'
+[2023.05.10-13.59.10:983][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle_02.BP_RockObstacle_02:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle_02.PackageMetaData'
+[2023.05.10-13.59.10:983][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle_02.SKEL_BP_RockObstacle_02_C' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle_02.PackageMetaData'
+[2023.05.10-13.59.10:983][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle_02.BP_RockObstacle_02_C' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle_02.PackageMetaData'
+[2023.05.10-13.59.10:983][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle_02.BP_RockObstacle_02:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle_02.PackageMetaData'
+[2023.05.10-13.59.10:983][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle_02.BP_RockObstacle_02:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle_02.PackageMetaData'
+[2023.05.10-13.59.10:983][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle_02.BP_RockObstacle_02:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle_02.PackageMetaData'
+[2023.05.10-13.59.10:983][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle_02.SKEL_BP_RockObstacle_02_C:ReceiveBeginPlay' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle_02.PackageMetaData'
+[2023.05.10-13.59.10:983][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle_02.SKEL_BP_RockObstacle_02_C:ReceiveActorBeginOverlap' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle_02.PackageMetaData'
+[2023.05.10-13.59.10:983][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle_02.SKEL_BP_RockObstacle_02_C:ReceiveTick' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle_02.PackageMetaData'
+[2023.05.10-13.59.10:983][255]LogMetaData: Removing '/Game/Blueprints/Actors/Obstacles/BP_RockObstacle_02.SKEL_BP_RockObstacle_02_C:UserConstructionScript' ref from Metadata '/Game/Blueprints/Actors/BP_RockObstacle_02.PackageMetaData'
+[2023.05.10-13.59.11:041][255]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-13.59.11:051][255]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-13.59.11:051][255]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTileAF16F53244449BF7A7937BA4ACC9F126.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-13.59.11:055][255]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Obstacles/BP_Obstacle
+[2023.05.10-13.59.11:055][255]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_Obstacle35EED6314AE399C95A533F8E1D94ACC8.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Obstacles/BP_Obstacle.uasset'
+[2023.05.10-13.59.11:059][255]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Obstacles/BP_RockObstacle
+[2023.05.10-13.59.11:059][255]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_RockObstacle41890D0140E2FF96DC5E65AD0D06F34A.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Obstacles/BP_RockObstacle.uasset'
+[2023.05.10-13.59.11:068][255]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Obstacles/BP_RockObstacle_02
+[2023.05.10-13.59.11:068][255]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_RockObstacle_02389FF2D344A68289DB1ED2B53B91F214.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Obstacles/BP_RockObstacle_02.uasset'
+[2023.05.10-13.59.11:233][255]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2023.05.10-13.59.11:320][255]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
+[2023.05.10-13.59.11:406][255]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2023.05.10-13.59.11:443][255]AssetCheck: New page: Asset Save: multiple assets
+[2023.05.10-13.59.11:443][255]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Obstacles/BP_RockObstacle.BP_RockObstacle
+[2023.05.10-13.59.11:443][255]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Obstacles/BP_Obstacle.BP_Obstacle
+[2023.05.10-13.59.11:443][255]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-13.59.11:443][255]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Obstacles/BP_RockObstacle_02.BP_RockObstacle_02
+[2023.05.10-13.59.13:301][379]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2023.05.10-13.59.13:312][379]LogContentBrowser: Creating deferred item: NewFolder
+[2023.05.10-13.59.13:325][380]LogContentBrowser: Renaming the item being created (Deferred Item: NewFolder).
+[2023.05.10-13.59.14:959][549]LogContentBrowser: Attempting asset rename: NewFolder -> Pickups
+[2023.05.10-13.59.14:959][549]LogContentBrowser: End creating deferred item NewFolder
+[2023.05.10-13.59.18:165][808]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2023.05.10-13.59.18:849][808]LogSlate: Window 'Pick Parent Class' being destroyed
+[2023.05.10-13.59.18:861][808]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2023.05.10-13.59.18:871][808]LogContentBrowser: Creating deferred item: NewBlueprint
+[2023.05.10-13.59.18:898][810]LogContentBrowser: Renaming the item being created (Deferred Item: NewBlueprint).
+[2023.05.10-13.59.19:965][911]LogContentBrowser: Attempting asset rename: NewBlueprint -> NewBlueprint
+[2023.05.10-13.59.19:969][911]LogContentBrowser: End creating deferred item NewBlueprint
+[2023.05.10-13.59.21:353][ 32]LogSlateStyle: Warning: Unable to find Slate Widget Style 'Window.Buttons.Close'. Using FButtonStyle defaults instead.
+[2023.05.10-13.59.21:353][ 32]LogSlateStyle: Warning: Unable to find Slate Widget Style 'Window.Buttons.Close'. Using FButtonStyle defaults instead.
+[2023.05.10-13.59.26:406][536]LogContentBrowser: Attempting asset rename: NewBlueprint -> BP_ItemPickup
+[2023.05.10-13.59.26:422][536]LogMetaData: Removing '/Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/Actors/Pickups/NewBlueprint.PackageMetaData'
+[2023.05.10-13.59.26:422][536]LogMetaData: Removing '/Game/Blueprints/Actors/Pickups/BP_ItemPickup.SKEL_BP_ItemPickup_C:UserConstructionScript' ref from Metadata '/Game/Blueprints/Actors/Pickups/NewBlueprint.PackageMetaData'
+[2023.05.10-13.59.26:422][536]LogMetaData: Removing '/Game/Blueprints/Actors/Pickups/BP_ItemPickup.SKEL_BP_ItemPickup_C' ref from Metadata '/Game/Blueprints/Actors/Pickups/NewBlueprint.PackageMetaData'
+[2023.05.10-13.59.26:422][536]LogMetaData: Removing '/Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup_C' ref from Metadata '/Game/Blueprints/Actors/Pickups/NewBlueprint.PackageMetaData'
+[2023.05.10-13.59.26:422][536]LogMetaData: Removing '/Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Blueprints/Actors/Pickups/NewBlueprint.PackageMetaData'
+[2023.05.10-13.59.26:423][536]LogMetaData: Removing '/Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Blueprints/Actors/Pickups/NewBlueprint.PackageMetaData'
+[2023.05.10-13.59.26:423][536]LogMetaData: Removing '/Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Blueprints/Actors/Pickups/NewBlueprint.PackageMetaData'
+[2023.05.10-13.59.26:487][536]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup
+[2023.05.10-13.59.26:487][536]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickupEBCF6E4544904773BAB5AEA0492DA51A.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup.uasset'
+[2023.05.10-13.59.26:601][536]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2023.05.10-13.59.26:684][536]LogUObjectHash: Compacting FUObjectHashTables data took   1.57ms
+[2023.05.10-13.59.26:768][536]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
+[2023.05.10-13.59.26:781][536]AssetCheck: New page: Asset Save: BP_ItemPickup
+[2023.05.10-13.59.26:781][536]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup
+[2023.05.10-13.59.27:757][628]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup
+[2023.05.10-13.59.27:758][628]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-13.59.28:152][628]LogViewport: Scene viewport resized to 1341x675, mode Windowed.
+[2023.05.10-14.00.03:895][780]LogUObjectHash: Compacting FUObjectHashTables data took   1.79ms
+[2023.05.10-14.00.03:899][780]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/RunMap' took 0.101
+[2023.05.10-14.00.03:900][780]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Actors/Pickups/BP_ItemPickup] ([2] browsable assets)...
+[2023.05.10-14.00.03:900][780]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Actors/Pickups/BP_ItemPickup]
+[2023.05.10-14.00.03:901][780]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Blueprints/Actors/Pickups/BP_ItemPickup_Auto2
+[2023.05.10-14.00.03:901][780]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup_Auto2E204862B44423A2580AF908ED200CB11.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/Autosaves/Game/Blueprints/Actors/Pickups/BP_ItemPickup_Auto2.uasset'
+[2023.05.10-14.00.03:902][780]LogFileHelpers: Auto-saving content packages took 0.003
+[2023.05.10-14.00.47:150][480]AssetReimport: New page: Outstanding source content changes 6:00:47 PM
+[2023.05.10-14.00.47:175][480]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise01.png)
+[2023.05.10-14.00.48:362][481]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise02.png)
+[2023.05.10-14.00.48:386][481]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise04.png)
+[2023.05.10-14.00.48:407][481]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise06.png)
+[2023.05.10-14.00.48:443][481]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise07.png)
+[2023.05.10-14.00.48:458][481]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise08.png)
+[2023.05.10-14.00.48:471][481]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise09.png)
+[2023.05.10-14.00.48:494][481]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise11.png)
+[2023.05.10-14.00.48:507][481]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise12.png)
+[2023.05.10-14.00.48:555][481]LogEditorFactories: Performing atomic reimport of [D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Beam01.png]
+[2023.05.10-14.00.48:556][481]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Beam01.png)
+[2023.05.10-14.00.48:717][481]LogEditorFactories: -- imported successfully
+[2023.05.10-14.00.48:735][482]LogTexture: Display: Building textures: /Game/sA_PickupSet_1/Materials/Textures/T_Beam_01.T_Beam_01 (TFO_AutoDXT, 2048X2048 X1X1) (Required Memory Estimate: 80.000 MB), EncodeSpeed: Fast
+[2023.05.10-14.00.48:745][482]LogEditorFactories: Performing atomic reimport of [D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise00.png]
+[2023.05.10-14.00.48:746][482]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise00.png)
+[2023.05.10-14.00.48:807][482]LogEditorFactories: -- imported successfully
+[2023.05.10-14.00.48:810][482]LogEditorFactories: Performing atomic reimport of [D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise000.png]
+[2023.05.10-14.00.48:812][482]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise000.png)
+[2023.05.10-14.00.48:871][482]LogEditorFactories: -- imported successfully
+[2023.05.10-14.00.48:874][482]LogEditorFactories: Performing atomic reimport of [D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise10.png]
+[2023.05.10-14.00.48:876][482]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise10.png)
+[2023.05.10-14.00.49:073][482]LogEditorFactories: -- imported successfully
+[2023.05.10-14.00.49:232][483]LogSavePackage: Moving output files for package: /Game/sA_PickupSet_1/Materials/Textures/Noise01
+[2023.05.10-14.00.49:232][483]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/Noise01F760C2884AC5FD5D935DA980E6AF7990.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise01.uasset'
+[2023.05.10-14.00.49:287][483]LogSavePackage: Moving output files for package: /Game/sA_PickupSet_1/Materials/Textures/Noise02
+[2023.05.10-14.00.49:287][483]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/Noise02737141334775D5FC81106C973E9FD05A.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise02.uasset'
+[2023.05.10-14.00.49:304][483]LogSavePackage: Moving output files for package: /Game/sA_PickupSet_1/Materials/Textures/Noise04
+[2023.05.10-14.00.49:304][483]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/Noise04A729EFB6455ABD8E79130CA54733C9CC.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise04.uasset'
+[2023.05.10-14.00.49:381][483]LogSavePackage: Moving output files for package: /Game/sA_PickupSet_1/Materials/Textures/Noise06
+[2023.05.10-14.00.49:381][483]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/Noise066A06D98943666633DC9DE8B1ED8E8104.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise06.uasset'
+[2023.05.10-14.00.49:398][483]LogSavePackage: Moving output files for package: /Game/sA_PickupSet_1/Materials/Textures/Noise07
+[2023.05.10-14.00.49:398][483]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/Noise076E4D17A549D93E72F9EF45A3BECFB53F.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise07.uasset'
+[2023.05.10-14.00.49:419][483]LogSavePackage: Moving output files for package: /Game/sA_PickupSet_1/Materials/Textures/Noise08
+[2023.05.10-14.00.49:419][483]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/Noise08D35572F24109CB8675848F90BD674AB2.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise08.uasset'
+[2023.05.10-14.00.49:445][483]LogSavePackage: Moving output files for package: /Game/sA_PickupSet_1/Materials/Textures/Noise09
+[2023.05.10-14.00.49:445][483]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/Noise09832440734A0318BB77E6848357EE45E3.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise09.uasset'
+[2023.05.10-14.00.49:462][483]LogSavePackage: Moving output files for package: /Game/sA_PickupSet_1/Materials/Textures/Noise11
+[2023.05.10-14.00.49:462][483]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/Noise11B17A340746635032FA340EA0F881E3D5.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise11.uasset'
+[2023.05.10-14.00.49:468][483]LogSavePackage: Moving output files for package: /Game/sA_PickupSet_1/Materials/Textures/Noise12
+[2023.05.10-14.00.49:468][483]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/Noise12742BD6914728407E37293A96F1949BA3.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise12.uasset'
+[2023.05.10-14.00.49:602][483]LogSavePackage: Moving output files for package: /Game/sA_PickupSet_1/Materials/Textures/T_Beam_01
+[2023.05.10-14.00.49:602][483]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/T_Beam_011D00BEA2491DC4EBFB068E9972A5D864.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/T_Beam_01.uasset'
+[2023.05.10-14.00.49:647][483]LogSavePackage: Moving output files for package: /Game/sA_PickupSet_1/Materials/Textures/T_NoiseCloud_1
+[2023.05.10-14.00.49:647][483]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/T_NoiseCloud_1E1CFF6A4405C4208A50744A4DA6BE05A.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/T_NoiseCloud_1.uasset'
+[2023.05.10-14.00.49:699][483]LogSavePackage: Moving output files for package: /Game/sA_PickupSet_1/Materials/Textures/T_NoiseCloud_2
+[2023.05.10-14.00.49:699][483]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/T_NoiseCloud_2AA71A2734721D8607C06228CD6B3A0DD.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/T_NoiseCloud_2.uasset'
+[2023.05.10-14.00.49:929][483]LogSavePackage: Moving output files for package: /Game/sA_PickupSet_1/Materials/Textures/T_NoiseFurry
+[2023.05.10-14.00.49:929][483]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/T_NoiseFurryFED0699440B2427D3B5937B59B6454E2.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/T_NoiseFurry.uasset'
+[2023.05.10-14.00.49:980][484]AssetCheck: New page: Asset Save: multiple assets
+[2023.05.10-14.00.49:980][484]LogContentValidation: Display: Validating Texture2D /Game/sA_PickupSet_1/Materials/Textures/T_NoiseFurry.T_NoiseFurry
+[2023.05.10-14.00.49:980][484]LogContentValidation: Display: Validating Texture2D /Game/sA_PickupSet_1/Materials/Textures/T_NoiseCloud_2.T_NoiseCloud_2
+[2023.05.10-14.00.49:981][484]LogContentValidation: Display: Validating Texture2D /Game/sA_PickupSet_1/Materials/Textures/T_NoiseCloud_1.T_NoiseCloud_1
+[2023.05.10-14.00.49:981][484]LogContentValidation: Display: Validating Texture2D /Game/sA_PickupSet_1/Materials/Textures/T_Beam_01.T_Beam_01
+[2023.05.10-14.00.49:981][484]LogContentValidation: Display: Validating Texture2D /Game/sA_PickupSet_1/Materials/Textures/Noise12.Noise12
+[2023.05.10-14.00.49:981][484]LogContentValidation: Display: Validating Texture2D /Game/sA_PickupSet_1/Materials/Textures/Noise11.Noise11
+[2023.05.10-14.00.49:981][484]LogContentValidation: Display: Validating Texture2D /Game/sA_PickupSet_1/Materials/Textures/Noise09.Noise09
+[2023.05.10-14.00.49:981][484]LogContentValidation: Display: Validating Texture2D /Game/sA_PickupSet_1/Materials/Textures/Noise08.Noise08
+[2023.05.10-14.00.49:981][484]LogContentValidation: Display: Validating Texture2D /Game/sA_PickupSet_1/Materials/Textures/Noise07.Noise07
+[2023.05.10-14.00.49:981][484]LogContentValidation: Display: Validating Texture2D /Game/sA_PickupSet_1/Materials/Textures/Noise06.Noise06
+[2023.05.10-14.00.49:981][484]LogContentValidation: Display: Validating Texture2D /Game/sA_PickupSet_1/Materials/Textures/Noise04.Noise04
+[2023.05.10-14.00.49:981][484]LogContentValidation: Display: Validating Texture2D /Game/sA_PickupSet_1/Materials/Textures/Noise02.Noise02
+[2023.05.10-14.00.49:981][484]LogContentValidation: Display: Validating Texture2D /Game/sA_PickupSet_1/Materials/Textures/Noise01.Noise01
+[2023.05.10-14.00.53:022][493]AssetReimport: Importing new asset /Game/sA_PickupSet_1/Materials/Textures/Noise01.
+[2023.05.10-14.00.53:022][493]AssetReimport: Importing new asset /Game/sA_PickupSet_1/Materials/Textures/Noise02.
+[2023.05.10-14.00.53:022][493]AssetReimport: Importing new asset /Game/sA_PickupSet_1/Materials/Textures/Noise04.
+[2023.05.10-14.00.53:022][493]AssetReimport: Importing new asset /Game/sA_PickupSet_1/Materials/Textures/Noise06.
+[2023.05.10-14.00.53:022][493]AssetReimport: Importing new asset /Game/sA_PickupSet_1/Materials/Textures/Noise07.
+[2023.05.10-14.00.53:022][493]AssetReimport: Importing new asset /Game/sA_PickupSet_1/Materials/Textures/Noise08.
+[2023.05.10-14.00.53:022][493]AssetReimport: Importing new asset /Game/sA_PickupSet_1/Materials/Textures/Noise09.
+[2023.05.10-14.00.53:022][493]AssetReimport: Importing new asset /Game/sA_PickupSet_1/Materials/Textures/Noise11.
+[2023.05.10-14.00.53:022][493]AssetReimport: Importing new asset /Game/sA_PickupSet_1/Materials/Textures/Noise12.
+[2023.05.10-14.00.53:022][493]AssetReimport: Reimported asset T_Beam_01 from D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Beam01.png.
+[2023.05.10-14.00.53:022][493]AssetReimport: Reimported asset T_NoiseCloud_1 from D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise00.png.
+[2023.05.10-14.00.53:022][493]AssetReimport: Reimported asset T_NoiseCloud_2 from D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise000.png.
+[2023.05.10-14.00.53:023][493]AssetReimport: Reimported asset T_NoiseFurry from D:/Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/sA_PickupSet_1/Materials/Textures/Noise10.png.
+[2023.05.10-14.01.20:893][342]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/sA_PickupSet_1/Blueprints/BP_RAY_Spawner.BP_RAY_Spawner
+[2023.05.10-14.01.20:894][342]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.01.22:594][449]LogViewport: Scene viewport resized to 1341x675, mode Windowed.
+[2023.05.10-14.01.25:789][705]LogViewport: Scene viewport resized to 1324x675, mode Windowed.
+[2023.05.10-14.01.25:866][710]LogViewport: Scene viewport resized to 1119x675, mode Windowed.
+[2023.05.10-14.01.25:930][714]LogViewport: Scene viewport resized to 1018x675, mode Windowed.
+[2023.05.10-14.01.25:993][718]LogViewport: Scene viewport resized to 897x675, mode Windowed.
+[2023.05.10-14.01.26:040][720]LogViewport: Scene viewport resized to 873x675, mode Windowed.
+[2023.05.10-14.01.26:082][722]LogViewport: Scene viewport resized to 857x675, mode Windowed.
+[2023.05.10-14.01.26:122][724]LogViewport: Scene viewport resized to 814x675, mode Windowed.
+[2023.05.10-14.01.26:162][726]LogViewport: Scene viewport resized to 796x675, mode Windowed.
+[2023.05.10-14.01.26:242][732]LogViewport: Scene viewport resized to 792x675, mode Windowed.
+[2023.05.10-14.01.38:080][581]LogAssetEditorSubsystem: Opening Asset editor for NiagaraSystem /Game/sA_PickupSet_1/Fx/NiagaraSystems/NS_Pickup_1.NS_Pickup_1
+[2023.05.10-14.01.38:616][581]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.01.38:652][581]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.01.39:332][581]LogViewport: Scene viewport resized to 726x555, mode Windowed.
+[2023.05.10-14.01.39:702][586]LogShaderCompilers: Display: ================================================
+[2023.05.10-14.01.39:702][586]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: Total job queries 664, among them cache hits 0 (0.00%)
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: Tracking 618 distinct input hashes that result in 353 distinct outputs (57.12%)
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: RAM used: 0.87 MB (0.00 GB) of 1638.40 MB (1.60 GB) budget. Usage: 0.05%
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: Shaders Compiled: 657
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: Jobs assigned 620, completed 618 (99.68%)
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: Average time worker was idle: 1995.00 s
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: Time job spent in pending queue: average 13.67 s, longest 39.62 s
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: Job execution time: average 8.01 s, max 23.11 s
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: Job life time (pending + execution): average 21.72 s, max 40.34
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 60.42 s
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: Jobs were issued in 131 batches (only local compilation was used), average 4.73 jobs/batch
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: Average processing rate: 10.23 jobs/sec
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: Effective parallelization: 7.12 (times faster than compiling all shaders on one thread). Compare with number of workers: 12
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display:                         TBasePassPSTLightMapPolicyHQSkylight (compiled    2 times, average 1.18 sec, max 1.23 sec, min 1.14 sec)
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display:  TBasePassPSTDistanceFieldShadowsAndLightMapPolicyHQSkylight (compiled    2 times, average 1.15 sec, max 1.22 sec, min 1.08 sec)
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display:                          TLightMapDensityVSTLightMapPolicyLQ (compiled    1 times, average 1.14 sec, max 1.14 sec, min 1.14 sec)
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display:       TBasePassPSFCachedVolumeIndirectLightingPolicySkylight (compiled    9 times, average 1.12 sec, max 1.21 sec, min 1.03 sec)
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display:          TBasePassPSTDistanceFieldShadowsAndLightMapPolicyHQ (compiled    2 times, average 1.11 sec, max 1.18 sec, min 1.05 sec)
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display:                                             FDebugViewModePS - 8.01% of total time (compiled   37 times, average 0.93 sec, max 1.43 sec, min 0.54 sec)
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 7.92% of total time (compiled   37 times, average 0.92 sec, max 1.42 sec, min 0.53 sec)
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 7.06% of total time (compiled   37 times, average 0.82 sec, max 1.03 sec, min 0.67 sec)
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display:                         TBasePassPSFNoLightMapPolicySkylight - 6.57% of total time (compiled   34 times, average 0.83 sec, max 1.12 sec, min 0.61 sec)
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display:                                                 FLumenCardVS - 6.31% of total time (compiled   37 times, average 0.73 sec, max 1.15 sec, min 0.37 sec)
+[2023.05.10-14.01.39:703][586]LogShaderCompilers: Display: ================================================
+[2023.05.10-14.01.39:869][593]LogNiagara: Compiling System NiagaraSystem /Game/sA_PickupSet_1/Fx/NiagaraSystems/NS_Pickup_1.NS_Pickup_1 took 1.855000 sec (time since issued), 7.441916 sec (combined shader worker time).
+[2023.05.10-14.01.40:131][604]170332_NS_Pickup_1_MessageLog: System successfully compiled.
+[2023.05.10-14.01.53:768][717]LogViewport: Scene viewport resized to 904x675, mode Windowed.
+[2023.05.10-14.04.01:290][796]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup
+[2023.05.10-14.04.01:290][796]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup9E2ABB9442B287AA24A4B6A88FA3CA46.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup.uasset'
+[2023.05.10-14.04.01:309][796]AssetCheck: New page: Asset Save: BP_ItemPickup
+[2023.05.10-14.04.01:310][796]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup
+[2023.05.10-14.04.01:549][816]BlueprintLog: New page: Compile BP_ItemPickup
+[2023.05.10-14.04.01:680][816]LogUObjectHash: Compacting FUObjectHashTables data took   2.05ms
+[2023.05.10-14.04.39:431][222]LogWorld: UWorld::CleanupWorld for World_46, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.04.39:432][222]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.04.41:952][452]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2023.05.10-14.04.41:952][452]LogWorld: UWorld::CleanupWorld for World_41, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.04.41:952][452]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.04.44:344][674]LogWorld: UWorld::CleanupWorld for World_50, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.04.44:344][674]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.04.44:355][674]LogWorld: UWorld::CleanupWorld for World_51, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.04.44:355][674]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.04.44:516][674]LogUObjectHash: Compacting FUObjectHashTables data took   1.83ms
+[2023.05.10-14.04.45:551][773]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2023.05.10-14.04.45:551][773]LogWorld: UWorld::CleanupWorld for World_48, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.04.45:551][773]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.04.51:621][406]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Interfaces/BPI_Hit" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Interfaces/BPI_Hit.uasset" SILENT=true
+[2023.05.10-14.04.51:623][406]LogSavePackage: Moving output files for package: /Game/Blueprints/Interfaces/BPI_Hit
+[2023.05.10-14.04.51:623][406]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BPI_Hit69141FF54BE1FD24316642882F128714.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Interfaces/BPI_Hit.uasset'
+[2023.05.10-14.04.51:639][406]AssetCheck: New page: Asset Save: BPI_Hit
+[2023.05.10-14.04.51:639][406]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Interfaces/BPI_Hit.BPI_Hit
+[2023.05.10-14.04.51:838][426]BlueprintLog: New page: Compile BPI_Hit
+[2023.05.10-14.04.51:933][426]LogUObjectHash: Compacting FUObjectHashTables data took   1.86ms
+[2023.05.10-14.05.09:191][157]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup
+[2023.05.10-14.05.09:192][157]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup23028E69440BA6F6F9DAA2800925BFE3.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup.uasset'
+[2023.05.10-14.05.09:208][157]AssetCheck: New page: Asset Save: BP_ItemPickup
+[2023.05.10-14.05.09:208][157]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup
+[2023.05.10-14.05.09:367][173]BlueprintLog: New page: Compile BP_ItemPickup
+[2023.05.10-14.05.09:468][173]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2023.05.10-14.06.02:148][158]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Characters/BP_RunCharacter
+[2023.05.10-14.06.02:148][158]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_RunCharacter280DF40140EA711719C12FA9A7E7D98D.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Characters/BP_RunCharacter.uasset'
+[2023.05.10-14.06.02:165][158]AssetCheck: New page: Asset Save: BP_RunCharacter
+[2023.05.10-14.06.02:165][158]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter
+[2023.05.10-14.06.02:395][180]BlueprintLog: New page: Compile BP_RunCharacter
+[2023.05.10-14.06.02:539][180]LogUObjectHash: Compacting FUObjectHashTables data took   1.79ms
+[2023.05.10-14.06.02:575][180]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.DESTROYED_BP_RockObstacle_C_CHILDACTOR_847.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.06.59:754][118]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:\Users\yanis\Downloads\coin.wav)
+[2023.05.10-14.06.59:761][118]LogAudioDerivedData: Display: Building compressed audio format BINKA hash BINKA1000_StreamCache_Ver5027_MEM_65536MaxChnkSize_-10-1-1-1-1-1 wave coin...
+[2023.05.10-14.06.59:761][118]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Audio/coin.coin will be modified from 40 to 40.
+[2023.05.10-14.06.59:765][118]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 66500 while cooking SoundWave /Game/Audio/coin.coin.
+[2023.05.10-14.06.59:765][118]LogAudio: Display: Chunk size for SoundWave /Game/Audio/coin.coin: 262144
+[2023.05.10-14.06.59:769][118]LogSlate: Warning: Ignoring SetUserFocus because it's not an active modal Window (user 0 not set to SStandaloneAssetEditorToolkitHost [AssetEditorToolkit.cpp(195)].
+[2023.05.10-14.07.03:239][316]LogSlateStyle: Warning: Unable to find Slate Widget Style 'Window.Buttons.Close'. Using FButtonStyle defaults instead.
+[2023.05.10-14.07.03:239][316]LogSlateStyle: Warning: Unable to find Slate Widget Style 'Window.Buttons.Close'. Using FButtonStyle defaults instead.
+[2023.05.10-14.07.03:885][364]LogContentBrowser: Deferred new asset file creation: coin_Cue
+[2023.05.10-14.07.03:900][364]LogContentBrowser: Creating deferred item: coin_Cue
+[2023.05.10-14.07.03:912][365]LogContentBrowser: Renaming the item being created (Deferred Item: coin_Cue).
+[2023.05.10-14.07.04:645][440]LogContentBrowser: Attempting asset rename: coin_Cue -> coin_Cue
+[2023.05.10-14.07.04:648][440]LogContentBrowser: End creating deferred item coin_Cue
+[2023.05.10-14.09.20:328][206]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup
+[2023.05.10-14.09.20:328][206]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup49FC987540F4E8D5927FACADFB2FD977.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup.uasset'
+[2023.05.10-14.09.20:346][206]AssetCheck: New page: Asset Save: BP_ItemPickup
+[2023.05.10-14.09.20:346][206]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup
+[2023.05.10-14.09.21:122][285]BlueprintLog: New page: Compile BP_ItemPickup
+[2023.05.10-14.09.21:234][285]LogUObjectHash: Compacting FUObjectHashTables data took   2.51ms
+[2023.05.10-14.11.25:930][766]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup
+[2023.05.10-14.11.25:930][766]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup466322DD48CE499BE2DFBEB0AB50CE32.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup.uasset'
+[2023.05.10-14.11.25:947][766]AssetCheck: New page: Asset Save: BP_ItemPickup
+[2023.05.10-14.11.25:947][766]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup
+[2023.05.10-14.11.26:125][784]BlueprintLog: New page: Compile BP_ItemPickup
+[2023.05.10-14.11.26:227][784]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2023.05.10-14.11.27:605][900]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2023.05.10-14.11.27:659][900]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/coin" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Audio/coin.uasset" SILENT=true
+[2023.05.10-14.11.27:660][900]LogSavePackage: Moving output files for package: /Game/Audio/coin
+[2023.05.10-14.11.27:660][900]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/coin081D1F214C1ED0CCD61B379EADADF663.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Audio/coin.uasset'
+[2023.05.10-14.11.27:662][900]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/coin_Cue" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Audio/coin_Cue.uasset" SILENT=true
+[2023.05.10-14.11.27:662][900]LogSavePackage: Moving output files for package: /Game/Audio/coin_Cue
+[2023.05.10-14.11.27:662][900]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/coin_Cue9C4E22FF49CE78814B471F8B3E230290.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Audio/coin_Cue.uasset'
+[2023.05.10-14.11.27:677][900]AssetCheck: New page: Asset Save: multiple assets
+[2023.05.10-14.11.27:677][900]LogContentValidation: Display: Validating SoundCue /Game/Audio/coin_Cue.coin_Cue
+[2023.05.10-14.11.27:677][900]LogContentValidation: Display: Validating SoundWave /Game/Audio/coin.coin
+[2023.05.10-14.11.48:246][ 62]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup
+[2023.05.10-14.11.48:246][ 62]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup5F28F04B4279DC6F1BF2E8AF6F578DC4.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup.uasset'
+[2023.05.10-14.11.48:261][ 62]AssetCheck: New page: Asset Save: BP_ItemPickup
+[2023.05.10-14.11.48:261][ 62]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup
+[2023.05.10-14.11.49:091][150]BlueprintLog: New page: Compile BP_ItemPickup
+[2023.05.10-14.11.49:192][150]LogUObjectHash: Compacting FUObjectHashTables data took   1.59ms
+[2023.05.10-14.11.58:841][ 72]LogAssetEditorSubsystem: Opening Asset editor for SoundCue /Game/Audio/coin_Cue.coin_Cue
+[2023.05.10-14.12.02:880][474]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup
+[2023.05.10-14.12.02:880][474]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup7A0D585047646B69325DD3B5FC5F03F4.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup.uasset'
+[2023.05.10-14.12.02:896][474]AssetCheck: New page: Asset Save: BP_ItemPickup
+[2023.05.10-14.12.02:896][474]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup
+[2023.05.10-14.12.03:177][503]BlueprintLog: New page: Compile BP_ItemPickup
+[2023.05.10-14.12.03:277][503]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
+[2023.05.10-14.12.58:379][906]LogDerivedDataCache: C:/Users/yanis/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:13.450 and deleted 0 file(s) with total size 0 MiB.
+[2023.05.10-14.13.04:138][447]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2023.05.10-14.16.09:918][174]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.16.09:928][174]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.16.09:929][174]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTileEA26064F4B9471CCC0A0F1BBC1416A3E.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.16.09:948][174]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.16.09:948][174]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.16.10:233][197]BlueprintLog: New page: Compile BP_FloorTile
+[2023.05.10-14.16.10:357][197]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2023.05.10-14.17.02:169][531]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.17.02:178][531]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.17.02:179][531]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTileD51AF2E74A56E8F837FB1BA6B79D801B.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.17.02:197][531]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.17.02:197][531]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.17.17:303][590]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.17.17:313][590]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.17.17:313][590]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTile92601A0246E4BD5CF6B64BB3B6EEB9F7.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.17.17:330][590]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.17.17:330][590]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.19.37:688][341]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.19.37:699][341]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.19.37:700][341]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTileC14E344F4D6EBE2867799281B4AEA883.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.19.37:718][341]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.19.37:718][341]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.19.38:005][369]BlueprintLog: New page: Compile BP_FloorTile
+[2023.05.10-14.19.38:011][369]LogBlueprint: Warning: [AssetLog] D:\Projets GIT\LichRunner-EndlessRunnerUnreal\LichRunner\Content\Blueprints\Actors\BP_FloorTile.uasset: [Compiler] Can't parse default value '(BlueprintGeneratedClass'"/Game/Blueprints/Actors/Obstacles/BP_RockObstacle.BP_RockObstacle_C"',BlueprintGeneratedClass'"/Game/Blueprints/Actors/Obstacles/BP_RockObstacle_02.BP_RockObstacle_02_C"')' for  Pickups . Property: Pickups.
+[2023.05.10-14.19.38:118][369]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2023.05.10-14.19.43:751][928]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2023.05.10-14.19.45:604][101]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.19.45:615][101]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.19.45:616][101]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTileE1F8D71041EE98CAE672D995780E6AD1.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.19.45:632][101]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.19.45:632][101]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.19.45:822][119]BlueprintLog: New page: Compile BP_FloorTile
+[2023.05.10-14.19.45:934][119]LogUObjectHash: Compacting FUObjectHashTables data took   1.86ms
+[2023.05.10-14.19.47:453][248]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2023.05.10-14.19.58:275][141]LogSlateStyle: Warning: Unable to find Slate Widget Style 'Window.Buttons.Close'. Using FButtonStyle defaults instead.
+[2023.05.10-14.19.58:275][141]LogSlateStyle: Warning: Unable to find Slate Widget Style 'Window.Buttons.Close'. Using FButtonStyle defaults instead.
+[2023.05.10-14.19.59:305][217]LogContentBrowser: Deferred new asset file creation: BP_ItemPickup_Child
+[2023.05.10-14.19.59:341][217]LogContentBrowser: Creating deferred item: BP_ItemPickup_Child
+[2023.05.10-14.19.59:357][218]LogContentBrowser: Renaming the item being created (Deferred Item: BP_ItemPickup_Child).
+[2023.05.10-14.20.02:375][390]LogContentBrowser: Attempting asset rename: BP_ItemPickup_Child -> BP_ItemPickup_01
+[2023.05.10-14.20.02:380][390]LogContentBrowser: End creating deferred item BP_ItemPickup_Child
+[2023.05.10-14.20.11:368][114]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup
+[2023.05.10-14.20.11:369][114]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup160B6CD74D22EF4935B5BEA57D6714C1.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup.uasset'
+[2023.05.10-14.20.11:384][114]AssetCheck: New page: Asset Save: BP_ItemPickup
+[2023.05.10-14.20.11:384][114]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup
+[2023.05.10-14.20.11:579][129]BlueprintLog: New page: Compile BP_ItemPickup
+[2023.05.10-14.20.11:691][129]LogUObjectHash: Compacting FUObjectHashTables data took   1.79ms
+[2023.05.10-14.20.13:589][276]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup_01.BP_ItemPickup_01
+[2023.05.10-14.20.13:589][276]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.20.13:983][276]LogViewport: Scene viewport resized to 792x675, mode Windowed.
+[2023.05.10-14.20.17:915][581]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup_01
+[2023.05.10-14.20.17:916][581]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup_01041058BD4B77C2FFB60124A8E9D1EC6E.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup_01.uasset'
+[2023.05.10-14.20.17:931][581]AssetCheck: New page: Asset Save: BP_ItemPickup_01
+[2023.05.10-14.20.17:931][581]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup_01.BP_ItemPickup_01
+[2023.05.10-14.20.18:099][595]BlueprintLog: New page: Compile BP_ItemPickup_01
+[2023.05.10-14.20.18:209][595]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2023.05.10-14.20.28:990][483]LogContentBrowser: Deferred new asset file creation: BP_ItemPickup_Child
+[2023.05.10-14.20.29:027][483]LogContentBrowser: Creating deferred item: BP_ItemPickup_Child
+[2023.05.10-14.20.29:041][484]LogContentBrowser: Renaming the item being created (Deferred Item: BP_ItemPickup_Child).
+[2023.05.10-14.20.32:497][780]LogContentBrowser: Attempting asset rename: BP_ItemPickup_Child -> BP_ItemPickup_02
+[2023.05.10-14.20.32:502][780]LogContentBrowser: End creating deferred item BP_ItemPickup_Child
+[2023.05.10-14.20.37:824][198]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup_02.BP_ItemPickup_02
+[2023.05.10-14.20.37:825][198]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.20.38:195][198]LogViewport: Scene viewport resized to 792x675, mode Windowed.
+[2023.05.10-14.20.53:051][367]LogSlate: Window 'Color Picker' being destroyed
+[2023.05.10-14.20.55:250][542]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup_02
+[2023.05.10-14.20.55:250][542]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup_02D578A7154796F12E1C371F8805DD1208.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup_02.uasset'
+[2023.05.10-14.20.55:266][542]AssetCheck: New page: Asset Save: BP_ItemPickup_02
+[2023.05.10-14.20.55:266][542]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup_02.BP_ItemPickup_02
+[2023.05.10-14.20.55:576][567]BlueprintLog: New page: Compile BP_ItemPickup_02
+[2023.05.10-14.20.55:691][567]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2023.05.10-14.21.00:040][898]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2023.05.10-14.21.00:422][929]BlueprintLog: New page: Compile BP_RockObstacle
+[2023.05.10-14.21.00:537][929]LogUObjectHash: Compacting FUObjectHashTables data took   1.59ms
+[2023.05.10-14.21.00:557][929]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.DESTROYED_BP_RockObstacle_C_CHILDACTOR_907.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.21.00:560][929]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_RockObstacle_C_CHILDACTOR_283.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.21.00:579][929]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.DESTROYED_BP_RockObstacle_C_CHILDACTOR_909.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.21.00:581][929]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_RockObstacle_C_CHILDACTOR_285.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.21.01:843][ 15]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2023.05.10-14.21.08:240][595]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2023.05.10-14.21.11:722][910]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.21.11:733][910]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.21.11:734][910]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTileBCB9D1B148F627679D8D7BA46F501459.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.21.11:750][910]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.21.11:750][910]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.21.11:908][925]BlueprintLog: New page: Compile BP_FloorTile
+[2023.05.10-14.21.12:032][925]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2023.05.10-14.21.13:657][ 67]LogUObjectHash: Compacting FUObjectHashTables data took   1.63ms
+[2023.05.10-14.21.48:556][597]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.21.48:567][597]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.21.48:568][597]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTile8141BF09444EEF1305E198BCA0889C57.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.21.48:585][597]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.21.48:585][597]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.21.49:126][654]BlueprintLog: New page: Compile BP_FloorTile
+[2023.05.10-14.21.49:250][654]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2023.05.10-14.22.12:889][949]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.22.12:901][949]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.22.12:902][949]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTileAE5B55A54A3959AAE4A3BEB7452817C0.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.22.12:919][949]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.22.12:919][949]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.22.13:173][975]BlueprintLog: New page: Compile BP_FloorTile
+[2023.05.10-14.22.13:304][975]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
+[2023.05.10-14.22.31:611][342]LogUObjectHash: Compacting FUObjectHashTables data took   1.63ms
+[2023.05.10-14.22.34:201][612]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2023.05.10-14.22.34:214][612]BlueprintLog: New page: Pre-Play auto-recompile
+[2023.05.10-14.22.34:215][612]LogPlayLevel: [PlayLevel] Compiling BP_RunPlayerController before play...
+[2023.05.10-14.22.34:269][612]LogPlayLevel: [PlayLevel] Compiling BP_RunGameMode before play...
+[2023.05.10-14.22.34:341][612]LogPlayLevel: [PlayLevel] Compiling BP_Obstacle before play...
+[2023.05.10-14.22.34:341][612]LogPlayLevel: [PlayLevel]   Compiling BP_RockObstacle_02 as a dependent...
+[2023.05.10-14.22.34:341][612]LogPlayLevel: [PlayLevel]   Compiling BP_RockObstacle as a dependent...
+[2023.05.10-14.22.34:398][612]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_RockObstacle_C_CHILDACTOR_329.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.22.34:420][612]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_RockObstacle_C_CHILDACTOR_333.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.22.34:508][612]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2023.05.10-14.22.34:512][612]LogPlayLevel: PlayLevel: Blueprint regeneration took 298 ms (5 blueprints)
+[2023.05.10-14.22.34:512][612]PIE: New page: PIE session: RunMap (May 10, 2023, 6:22:34 PM)
+[2023.05.10-14.22.34:512][612]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.22.34:514][612]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001420s)
+[2023.05.10-14.22.34:514][612]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001475s)
+[2023.05.10-14.22.34:514][612]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-14.22.34:514][612]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.22.34:514][612]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-14.22.34:515][612]LogPlayLevel: PIE: World Init took: (0.000683s)
+[2023.05.10-14.22.34:599][612]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2023.05.10-14.22.34:603][612]LogAudio: Display: Creating Audio Device:                 Id: 53, Scope: Unique, Realtime: True
+[2023.05.10-14.22.34:603][612]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2023.05.10-14.22.34:603][612]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2023.05.10-14.22.34:603][612]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2023.05.10-14.22.34:603][612]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2023.05.10-14.22.34:603][612]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2023.05.10-14.22.34:603][612]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2023.05.10-14.22.34:603][612]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2023.05.10-14.22.34:603][612]LogAudio: Display: AudioDevice MaxSources: 32
+[2023.05.10-14.22.34:603][612]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2023.05.10-14.22.34:603][612]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2023.05.10-14.22.34:603][612]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2023.05.10-14.22.34:605][612]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2023.05.10-14.22.34:617][612]LogAudioMixer: Display: Using Audio Hardware Device ASUS VG249 (NVIDIA High Definition Audio)
+[2023.05.10-14.22.34:617][612]LogAudioMixer: Display: Initializing Sound Submixes...
+[2023.05.10-14.22.34:617][612]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2023.05.10-14.22.34:617][612]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2023.05.10-14.22.34:617][612]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=53
+[2023.05.10-14.22.34:617][612]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=53
+[2023.05.10-14.22.34:618][612]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=53
+[2023.05.10-14.22.34:618][612]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=53
+[2023.05.10-14.22.34:618][612]LogInit: FAudioDevice initialized.
+[2023.05.10-14.22.34:618][612]LogAudio: Display: Audio Device (ID: 53) registered with world 'RunMap'.
+[2023.05.10-14.22.34:625][612]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-14.22.34:626][612]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-16.22.34
+[2023.05.10-14.22.34:626][612]LogWorld: Bringing up level for play took: 0.000373
+[2023.05.10-14.22.34:627][612]LogOnline: OSS: Created online subsystem instance for: :Context_106
+[2023.05.10-14.22.34:676][612]PIE: Server logged in
+[2023.05.10-14.22.34:677][612]PIE: Play in editor total start time 0.463 seconds.
+[2023.05.10-14.22.34:696][613]LogCharacterMovement: Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.100000 > MaxSimulationTimeStep (0.050) for 'BP_RunCharacter_C_0', movement 'Walking'
+[2023.05.10-14.22.43:233][621]LogBlueprintUserMessages: [BP_RockObstacle_C_4] Hit
+[2023.05.10-14.22.43:233][621]LogBlueprintUserMessages: [BP_RockObstacle_C_4] Hit
+[2023.05.10-14.22.43:241][622]LogBlueprintUserMessages: [BP_RockObstacle_C_4] Hit
+[2023.05.10-14.22.43:241][622]LogBlueprintUserMessages: [BP_RockObstacle_C_4] Hit
+[2023.05.10-14.22.45:733][921]LogNet: Browse: /Game/Maps/RunMap
+[2023.05.10-14.22.45:733][921]LogLoad: LoadMap: /Game/Maps/RunMap
+[2023.05.10-14.22.45:733][921]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.22.45:734][921]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.22.45:736][921]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.22.45:858][921]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-14.22.45:863][921]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2023.05.10-14.22.45:868][921]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.22.45:870][921]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001254s)
+[2023.05.10-14.22.45:870][921]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001323s)
+[2023.05.10-14.22.45:870][921]LogAudio: Display: Audio Device (ID: 53) registered with world 'RunMap'.
+[2023.05.10-14.22.45:870][921]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-14.22.45:870][921]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.22.45:870][921]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-14.22.45:870][921]LogPlayLevel: PIE: World Init took: (0.000555s)
+[2023.05.10-14.22.45:870][921]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-14.22.45:870][921]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-16.22.45
+[2023.05.10-14.22.45:871][921]LogWorld: Bringing up level for play took: 0.000275
+[2023.05.10-14.22.45:884][921]LogLoad: Took 0.151121 seconds to LoadMap(/Game/Maps/UEDPIE_0_RunMap)
+[2023.05.10-14.23.06:089][341]LogNet: Browse: /Game/Maps/RunMap
+[2023.05.10-14.23.06:089][341]LogLoad: LoadMap: /Game/Maps/RunMap
+[2023.05.10-14.23.06:089][341]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.23.06:090][341]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.23.06:091][341]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.23.06:204][341]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-14.23.06:209][341]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2023.05.10-14.23.06:214][341]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.23.06:215][341]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001288s)
+[2023.05.10-14.23.06:215][341]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001360s)
+[2023.05.10-14.23.06:215][341]LogAudio: Display: Audio Device (ID: 53) registered with world 'RunMap'.
+[2023.05.10-14.23.06:215][341]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-14.23.06:215][341]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.23.06:216][341]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-14.23.06:216][341]LogPlayLevel: PIE: World Init took: (0.000554s)
+[2023.05.10-14.23.06:216][341]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-14.23.06:216][341]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-16.23.06
+[2023.05.10-14.23.06:216][341]LogWorld: Bringing up level for play took: 0.000280
+[2023.05.10-14.23.06:231][341]LogLoad: Took 0.140884 seconds to LoadMap(/Game/Maps/UEDPIE_0_RunMap)
+[2023.05.10-14.23.22:487][290]LogBlueprintUserMessages: [BP_RockObstacle_C_8] Hit
+[2023.05.10-14.23.22:487][290]LogBlueprintUserMessages: [BP_RockObstacle_C_8] Hit
+[2023.05.10-14.23.22:494][291]LogBlueprintUserMessages: [BP_RockObstacle_C_8] Hit
+[2023.05.10-14.23.22:494][291]LogBlueprintUserMessages: [BP_RockObstacle_C_8] Hit
+[2023.05.10-14.23.24:986][590]LogNet: Browse: /Game/Maps/RunMap
+[2023.05.10-14.23.24:986][590]LogLoad: LoadMap: /Game/Maps/RunMap
+[2023.05.10-14.23.24:986][590]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.23.24:987][590]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.23.24:989][590]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.23.25:114][590]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-14.23.25:118][590]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2023.05.10-14.23.25:123][590]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.23.25:125][590]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001294s)
+[2023.05.10-14.23.25:125][590]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001362s)
+[2023.05.10-14.23.25:125][590]LogAudio: Display: Audio Device (ID: 53) registered with world 'RunMap'.
+[2023.05.10-14.23.25:125][590]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-14.23.25:125][590]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.23.25:125][590]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-14.23.25:125][590]LogPlayLevel: PIE: World Init took: (0.000567s)
+[2023.05.10-14.23.25:125][590]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-14.23.25:125][590]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-16.23.25
+[2023.05.10-14.23.25:126][590]LogWorld: Bringing up level for play took: 0.000274
+[2023.05.10-14.23.25:139][590]LogLoad: Took 0.152613 seconds to LoadMap(/Game/Maps/UEDPIE_0_RunMap)
+[2023.05.10-14.23.26:882][794]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-14.23.26:882][794]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.23.26:883][794]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.23.26:884][794]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.23.26:893][794]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2023.05.10-14.23.26:908][794]LogNiagaraEditor: onPieEnd
+[2023.05.10-14.23.26:908][794]LogNiagaraEditor: onPieEnd
+[2023.05.10-14.23.26:908][794]LogNiagaraEditor: onPieEnd
+[2023.05.10-14.23.26:916][794]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.23.26:999][794]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-14.23.27:001][794]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=53
+[2023.05.10-14.23.27:002][794]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=53
+[2023.05.10-14.23.27:010][794]LogUObjectHash: Compacting FUObjectHashTables data took   2.67ms
+[2023.05.10-14.23.27:043][795]LogPlayLevel: Display: Destroying online subsystem :Context_106
+[2023.05.10-14.25.06:793][805]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.25.06:805][805]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.25.06:805][805]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTileA090BB44487F0E36BB572FB1B8162B93.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.25.06:822][805]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.25.06:822][805]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.25.07:107][833]BlueprintLog: New page: Compile BP_FloorTile
+[2023.05.10-14.25.07:240][833]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2023.05.10-14.25.12:408][313]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.25.12:420][313]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.25.12:421][313]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTile493ED20F459B4BE4ACDA4598B03E0180.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.25.12:437][313]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.25.12:438][313]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.25.12:688][338]BlueprintLog: New page: Compile BP_FloorTile
+[2023.05.10-14.25.12:823][338]LogUObjectHash: Compacting FUObjectHashTables data took   1.63ms
+[2023.05.10-14.25.14:517][483]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2023.05.10-14.25.17:690][796]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.25.17:702][796]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.25.17:702][796]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTileCCA580BC434E2318D7DB99A1C1BC7479.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.25.17:719][796]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.25.17:719][796]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.25.17:900][813]BlueprintLog: New page: Compile BP_FloorTile
+[2023.05.10-14.25.18:031][813]LogUObjectHash: Compacting FUObjectHashTables data took   1.63ms
+[2023.05.10-14.25.19:078][893]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2023.05.10-14.25.20:880][ 80]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2023.05.10-14.25.20:884][ 80]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2023.05.10-14.25.20:884][ 80]PIE: New page: PIE session: RunMap (May 10, 2023, 6:25:20 PM)
+[2023.05.10-14.25.20:914][ 80]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.25.20:915][ 80]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001593s)
+[2023.05.10-14.25.20:915][ 80]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001690s)
+[2023.05.10-14.25.20:915][ 80]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-14.25.20:915][ 80]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.25.20:916][ 80]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-14.25.20:916][ 80]LogPlayLevel: PIE: World Init took: (0.000630s)
+[2023.05.10-14.25.21:000][ 80]LogUObjectHash: Compacting FUObjectHashTables data took   1.55ms
+[2023.05.10-14.25.21:005][ 80]LogAudio: Display: Creating Audio Device:                 Id: 54, Scope: Unique, Realtime: True
+[2023.05.10-14.25.21:005][ 80]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2023.05.10-14.25.21:005][ 80]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2023.05.10-14.25.21:005][ 80]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2023.05.10-14.25.21:005][ 80]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2023.05.10-14.25.21:005][ 80]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2023.05.10-14.25.21:005][ 80]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2023.05.10-14.25.21:005][ 80]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2023.05.10-14.25.21:005][ 80]LogAudio: Display: AudioDevice MaxSources: 32
+[2023.05.10-14.25.21:005][ 80]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2023.05.10-14.25.21:005][ 80]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2023.05.10-14.25.21:005][ 80]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2023.05.10-14.25.21:007][ 80]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2023.05.10-14.25.21:018][ 80]LogAudioMixer: Display: Using Audio Hardware Device ASUS VG249 (NVIDIA High Definition Audio)
+[2023.05.10-14.25.21:018][ 80]LogAudioMixer: Display: Initializing Sound Submixes...
+[2023.05.10-14.25.21:018][ 80]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2023.05.10-14.25.21:018][ 80]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2023.05.10-14.25.21:018][ 80]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=54
+[2023.05.10-14.25.21:018][ 80]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=54
+[2023.05.10-14.25.21:019][ 80]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=54
+[2023.05.10-14.25.21:019][ 80]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=54
+[2023.05.10-14.25.21:019][ 80]LogInit: FAudioDevice initialized.
+[2023.05.10-14.25.21:019][ 80]LogAudio: Display: Audio Device (ID: 54) registered with world 'RunMap'.
+[2023.05.10-14.25.21:031][ 80]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-14.25.21:032][ 80]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-16.25.21
+[2023.05.10-14.25.21:032][ 80]LogWorld: Bringing up level for play took: 0.000366
+[2023.05.10-14.25.21:033][ 80]LogOnline: OSS: Created online subsystem instance for: :Context_107
+[2023.05.10-14.25.21:055][ 80]PIE: Server logged in
+[2023.05.10-14.25.21:056][ 80]PIE: Play in editor total start time 0.172 seconds.
+[2023.05.10-14.25.29:764][101]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-14.25.29:765][101]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.25.29:765][101]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.25.29:770][101]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.25.29:786][101]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2023.05.10-14.25.29:787][101]LogNiagaraEditor: onPieEnd
+[2023.05.10-14.25.29:787][101]LogNiagaraEditor: onPieEnd
+[2023.05.10-14.25.29:787][101]LogNiagaraEditor: onPieEnd
+[2023.05.10-14.25.29:796][101]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.25.29:884][101]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-14.25.29:885][101]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=54
+[2023.05.10-14.25.29:886][101]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=54
+[2023.05.10-14.25.29:894][101]LogUObjectHash: Compacting FUObjectHashTables data took   2.04ms
+[2023.05.10-14.25.30:286][102]LogPlayLevel: Display: Destroying online subsystem :Context_107
+[2023.05.10-14.31.13:861][652]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.31.13:874][652]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.31.13:874][652]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTile2EF72D2C4FC4E36E5FB466A6A8216F33.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.31.13:891][652]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.31.13:891][652]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.31.14:049][668]BlueprintLog: New page: Compile BP_FloorTile
+[2023.05.10-14.31.14:464][668]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2023.05.10-14.31.44:810][722]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.31.44:824][722]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.31.44:824][722]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTile6DFD71564B0816950F14708221070335.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.31.44:840][722]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.31.44:840][722]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.31.44:971][735]BlueprintLog: New page: Compile BP_FloorTile
+[2023.05.10-14.31.45:098][735]LogUObjectHash: Compacting FUObjectHashTables data took   1.88ms
+[2023.05.10-14.32.08:729][120]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.32.08:742][120]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.32.08:743][120]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTile82E8D66C437E8D1043FC1E8A2370FDE2.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.32.08:763][120]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.32.08:763][120]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.32.08:906][133]BlueprintLog: New page: Compile BP_FloorTile
+[2023.05.10-14.32.09:034][133]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2023.05.10-14.32.13:343][555]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.32.13:357][555]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.32.13:357][555]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTile4ED1ABC74BC45D72C8BD07B86147AE32.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.32.13:374][555]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.32.13:374][555]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.32.13:526][570]BlueprintLog: New page: Compile BP_FloorTile
+[2023.05.10-14.32.13:649][570]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2023.05.10-14.32.15:265][701]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
+[2023.05.10-14.32.36:103][ 23]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2023.05.10-14.32.36:110][ 23]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2023.05.10-14.32.36:110][ 23]PIE: New page: PIE session: RunMap (May 10, 2023, 6:32:36 PM)
+[2023.05.10-14.32.36:110][ 23]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.32.36:112][ 23]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002290s)
+[2023.05.10-14.32.36:113][ 23]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.002381s)
+[2023.05.10-14.32.36:113][ 23]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-14.32.36:113][ 23]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.32.36:113][ 23]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-14.32.36:114][ 23]LogPlayLevel: PIE: World Init took: (0.001144s)
+[2023.05.10-14.32.36:214][ 23]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2023.05.10-14.32.36:219][ 23]LogAudio: Display: Creating Audio Device:                 Id: 55, Scope: Unique, Realtime: True
+[2023.05.10-14.32.36:219][ 23]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2023.05.10-14.32.36:219][ 23]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2023.05.10-14.32.36:219][ 23]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2023.05.10-14.32.36:219][ 23]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2023.05.10-14.32.36:219][ 23]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2023.05.10-14.32.36:219][ 23]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2023.05.10-14.32.36:219][ 23]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2023.05.10-14.32.36:219][ 23]LogAudio: Display: AudioDevice MaxSources: 32
+[2023.05.10-14.32.36:220][ 23]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2023.05.10-14.32.36:220][ 23]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2023.05.10-14.32.36:220][ 23]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2023.05.10-14.32.36:221][ 23]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2023.05.10-14.32.36:233][ 23]LogAudioMixer: Display: Using Audio Hardware Device ASUS VG249 (NVIDIA High Definition Audio)
+[2023.05.10-14.32.36:233][ 23]LogAudioMixer: Display: Initializing Sound Submixes...
+[2023.05.10-14.32.36:233][ 23]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2023.05.10-14.32.36:233][ 23]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2023.05.10-14.32.36:234][ 23]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=55
+[2023.05.10-14.32.36:234][ 23]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=55
+[2023.05.10-14.32.36:235][ 23]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=55
+[2023.05.10-14.32.36:235][ 23]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=55
+[2023.05.10-14.32.36:235][ 23]LogInit: FAudioDevice initialized.
+[2023.05.10-14.32.36:235][ 23]LogAudio: Display: Audio Device (ID: 55) registered with world 'RunMap'.
+[2023.05.10-14.32.36:245][ 23]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-14.32.36:246][ 23]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-16.32.36
+[2023.05.10-14.32.36:246][ 23]LogWorld: Bringing up level for play took: 0.000522
+[2023.05.10-14.32.36:247][ 23]LogOnline: OSS: Created online subsystem instance for: :Context_108
+[2023.05.10-14.32.36:260][ 23]PIE: Server logged in
+[2023.05.10-14.32.36:261][ 23]PIE: Play in editor total start time 0.152 seconds.
+[2023.05.10-14.32.44:304][975]LogNet: Browse: /Game/Maps/RunMap
+[2023.05.10-14.32.44:304][975]LogLoad: LoadMap: /Game/Maps/RunMap
+[2023.05.10-14.32.44:304][975]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.32.44:305][975]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.32.44:306][975]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.32.44:419][975]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-14.32.44:423][975]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2023.05.10-14.32.44:428][975]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.32.44:429][975]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001266s)
+[2023.05.10-14.32.44:429][975]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001337s)
+[2023.05.10-14.32.44:429][975]LogAudio: Display: Audio Device (ID: 55) registered with world 'RunMap'.
+[2023.05.10-14.32.44:429][975]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-14.32.44:429][975]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.32.44:430][975]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-14.32.44:430][975]LogPlayLevel: PIE: World Init took: (0.000572s)
+[2023.05.10-14.32.44:430][975]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-14.32.44:430][975]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-16.32.44
+[2023.05.10-14.32.44:430][975]LogWorld: Bringing up level for play took: 0.000297
+[2023.05.10-14.32.44:441][975]LogLoad: Took 0.137506 seconds to LoadMap(/Game/Maps/UEDPIE_0_RunMap)
+[2023.05.10-14.33.16:407][809]LogBlueprintUserMessages: [BP_RockObstacle_C_9] Hit
+[2023.05.10-14.33.16:415][810]LogBlueprintUserMessages: [BP_RockObstacle_C_9] Hit
+[2023.05.10-14.33.16:432][812]LogBlueprintUserMessages: [BP_RockObstacle_C_9] Hit
+[2023.05.10-14.33.16:432][812]LogBlueprintUserMessages: [BP_RockObstacle_C_9] Hit
+[2023.05.10-14.33.16:440][813]LogBlueprintUserMessages: [BP_RockObstacle_C_9] Hit
+[2023.05.10-14.33.16:440][813]LogBlueprintUserMessages: [BP_RockObstacle_C_9] Hit
+[2023.05.10-14.33.16:456][815]LogBlueprintUserMessages: [BP_RockObstacle_C_9] Hit
+[2023.05.10-14.33.16:457][815]LogBlueprintUserMessages: [BP_RockObstacle_C_9] Hit
+[2023.05.10-14.33.16:465][816]LogBlueprintUserMessages: [BP_RockObstacle_C_9] Hit
+[2023.05.10-14.33.16:465][816]LogBlueprintUserMessages: [BP_RockObstacle_C_9] Hit
+[2023.05.10-14.33.18:906][109]LogNet: Browse: /Game/Maps/RunMap
+[2023.05.10-14.33.18:906][109]LogLoad: LoadMap: /Game/Maps/RunMap
+[2023.05.10-14.33.18:906][109]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.33.18:907][109]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.33.18:908][109]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.33.19:021][109]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-14.33.19:027][109]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2023.05.10-14.33.19:032][109]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.33.19:033][109]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001354s)
+[2023.05.10-14.33.19:033][109]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001426s)
+[2023.05.10-14.33.19:033][109]LogAudio: Display: Audio Device (ID: 55) registered with world 'RunMap'.
+[2023.05.10-14.33.19:034][109]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-14.33.19:034][109]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.33.19:034][109]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-14.33.19:034][109]LogPlayLevel: PIE: World Init took: (0.000609s)
+[2023.05.10-14.33.19:034][109]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-14.33.19:034][109]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-16.33.19
+[2023.05.10-14.33.19:035][109]LogWorld: Bringing up level for play took: 0.000317
+[2023.05.10-14.33.19:050][109]LogLoad: Took 0.143780 seconds to LoadMap(/Game/Maps/UEDPIE_0_RunMap)
+[2023.05.10-14.33.19:458][152]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-14.33.19:458][152]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.33.19:459][152]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.33.19:461][152]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.33.19:472][152]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2023.05.10-14.33.19:472][152]LogNiagaraEditor: onPieEnd
+[2023.05.10-14.33.19:472][152]LogNiagaraEditor: onPieEnd
+[2023.05.10-14.33.19:472][152]LogNiagaraEditor: onPieEnd
+[2023.05.10-14.33.19:480][152]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.33.19:562][152]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-14.33.19:562][152]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=55
+[2023.05.10-14.33.19:563][152]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=55
+[2023.05.10-14.33.19:570][152]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2023.05.10-14.33.19:602][153]LogPlayLevel: Display: Destroying online subsystem :Context_108
+[2023.05.10-14.35.08:606][186]BlueprintLog: New page: Compile BP_RunCharacter
+[2023.05.10-14.35.08:751][186]LogUObjectHash: Compacting FUObjectHashTables data took   2.54ms
+[2023.05.10-14.35.09:130][199]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Characters/BP_RunCharacter
+[2023.05.10-14.35.09:130][199]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_RunCharacter2FE7138F4E3604E4FDFCD9B1A3ACB66C.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Characters/BP_RunCharacter.uasset'
+[2023.05.10-14.35.09:148][199]AssetCheck: New page: Asset Save: BP_RunCharacter
+[2023.05.10-14.35.09:148][199]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter
+[2023.05.10-14.35.24:689][507]LogContentBrowser: Deferred new asset file creation: NewUserDefinedEnum
+[2023.05.10-14.35.24:700][507]LogContentBrowser: Creating deferred item: NewUserDefinedEnum
+[2023.05.10-14.35.24:716][508]LogContentBrowser: Renaming the item being created (Deferred Item: NewUserDefinedEnum).
+[2023.05.10-14.35.30:559][ 18]LogContentBrowser: Attempting asset rename: NewUserDefinedEnum -> TypePickupEnum
+[2023.05.10-14.35.30:560][ 18]LogContentBrowser: End creating deferred item NewUserDefinedEnum
+[2023.05.10-14.35.32:424][176]LogAssetEditorSubsystem: Opening Asset editor for UserDefinedEnum /Game/Blueprints/Actors/Pickups/TypePickupEnum.TypePickupEnum
+[2023.05.10-14.35.44:556][471]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/TypePickupEnum
+[2023.05.10-14.35.44:556][471]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/TypePickupEnum6D53092D4F5134BF62BE728F3F57A0CD.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/TypePickupEnum.uasset'
+[2023.05.10-14.35.44:572][471]AssetCheck: New page: Asset Save: TypePickupEnum
+[2023.05.10-14.35.44:572][471]LogContentValidation: Display: Validating UserDefinedEnum /Game/Blueprints/Actors/Pickups/TypePickupEnum.TypePickupEnum
+[2023.05.10-14.36.24:744][ 59]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup
+[2023.05.10-14.36.24:744][ 59]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickupB00AB6BA40C414919345F8B49C50DB01.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup.uasset'
+[2023.05.10-14.36.24:764][ 59]AssetCheck: New page: Asset Save: BP_ItemPickup
+[2023.05.10-14.36.24:764][ 59]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup
+[2023.05.10-14.36.25:022][ 81]BlueprintLog: New page: Compile BP_ItemPickup
+[2023.05.10-14.36.25:149][ 81]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2023.05.10-14.36.25:177][ 81]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.DESTROYED_BP_ItemPickup_02_C_CHILDACTOR_104.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.36.25:179][ 81]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.DESTROYED_BP_ItemPickup_02_C_CHILDACTOR_105.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.36.25:202][ 81]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.DESTROYED_BP_ItemPickup_02_C_CHILDACTOR_107.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.36.34:559][860]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup_02
+[2023.05.10-14.36.34:559][860]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup_0245045C3E417EA1976AD44691821574F4.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup_02.uasset'
+[2023.05.10-14.36.34:575][860]AssetCheck: New page: Asset Save: BP_ItemPickup_02
+[2023.05.10-14.36.34:575][860]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup_02.BP_ItemPickup_02
+[2023.05.10-14.36.35:093][903]BlueprintLog: New page: Compile BP_ItemPickup_02
+[2023.05.10-14.36.35:210][903]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2023.05.10-14.36.36:708][ 13]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2023.05.10-14.37.12:329][598]BlueprintLog: New page: Collapse to Function
+[2023.05.10-14.38.17:141][285]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Interfaces/BPI_Hit" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Interfaces/BPI_Hit.uasset" SILENT=true
+[2023.05.10-14.38.17:151][285]LogSavePackage: Moving output files for package: /Game/Blueprints/Interfaces/BPI_Hit
+[2023.05.10-14.38.17:151][285]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BPI_Hit40D72F8544DAE9F815A99DA0036A1D49.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Interfaces/BPI_Hit.uasset'
+[2023.05.10-14.38.17:167][285]AssetCheck: New page: Asset Save: BPI_Hit
+[2023.05.10-14.38.17:167][285]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Interfaces/BPI_Hit.BPI_Hit
+[2023.05.10-14.38.17:368][305]BlueprintLog: New page: Compile BPI_Hit
+[2023.05.10-14.38.17:515][305]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2023.05.10-14.38.53:614][757]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup
+[2023.05.10-14.38.53:614][757]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup259536DB480F237C055E2898D2AED81B.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup.uasset'
+[2023.05.10-14.38.53:630][757]AssetCheck: New page: Asset Save: BP_ItemPickup
+[2023.05.10-14.38.53:630][757]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup
+[2023.05.10-14.38.54:018][792]BlueprintLog: New page: Compile BP_ItemPickup
+[2023.05.10-14.38.54:146][792]LogUObjectHash: Compacting FUObjectHashTables data took   1.90ms
+[2023.05.10-14.38.54:175][792]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_ItemPickup_01_C_CHILDACTOR_115.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.38.54:183][792]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.DESTROYED_BP_ItemPickup_02_C_CHILDACTOR_109.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.39.09:115][364]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup
+[2023.05.10-14.39.09:115][364]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup085629154A704A8A538AFB99C28F9530.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup.uasset'
+[2023.05.10-14.39.09:130][364]AssetCheck: New page: Asset Save: BP_ItemPickup
+[2023.05.10-14.39.09:131][364]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup
+[2023.05.10-14.39.09:381][390]BlueprintLog: New page: Compile BP_ItemPickup
+[2023.05.10-14.39.09:504][390]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
+[2023.05.10-14.39.09:532][390]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_ItemPickup_01_C_CHILDACTOR_117.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.39.09:539][390]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.DESTROYED_BP_ItemPickup_02_C_CHILDACTOR_113.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.39.09:542][390]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_ItemPickup_02_C_CHILDACTOR_119.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.39.09:562][390]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.DESTROYED_BP_ItemPickup_01_C_CHILDACTOR_91.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.39.09:565][390]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_ItemPickup_01_C_CHILDACTOR_119.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.39.44:405][861]LogEditorTransaction: Undo Move Node
+[2023.05.10-14.39.44:592][861]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_28:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.05.10-14.39.44:594][861]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_33:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.05.10-14.39.44:862][863]LogEditorTransaction: Undo Add Node
+[2023.05.10-14.39.45:044][863]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_28:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.05.10-14.39.45:046][863]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_33:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.05.10-14.39.45:342][875]LogEditorTransaction: Undo Move Node
+[2023.05.10-14.39.45:512][875]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_28:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.05.10-14.39.45:514][875]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_33:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.05.10-14.39.46:422][953]LogEditorTransaction: Redo Move Node
+[2023.05.10-14.39.46:597][953]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_28:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.05.10-14.39.46:598][953]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_33:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.05.10-14.41.07:319][712]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Characters/BP_RunCharacter
+[2023.05.10-14.41.07:319][712]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_RunCharacter42439B064D3B690D90A8A99C9A14F48D.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Characters/BP_RunCharacter.uasset'
+[2023.05.10-14.41.07:340][712]AssetCheck: New page: Asset Save: BP_RunCharacter
+[2023.05.10-14.41.07:340][712]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter
+[2023.05.10-14.41.07:495][727]BlueprintLog: New page: Compile BP_RunCharacter
+[2023.05.10-14.41.07:665][727]LogUObjectHash: Compacting FUObjectHashTables data took   2.37ms
+[2023.05.10-14.41.56:276][227]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2023.05.10-14.41.56:281][227]BlueprintLog: New page: Pre-Play auto-recompile
+[2023.05.10-14.41.56:282][227]LogPlayLevel: [PlayLevel] Compiling PROTO_BP_AnimBlueprint_0 before play...
+[2023.05.10-14.41.56:380][227]LogUObjectHash: Compacting FUObjectHashTables data took   1.83ms
+[2023.05.10-14.41.56:386][227]LogPlayLevel: PlayLevel: Blueprint regeneration took 104 ms (1 blueprints)
+[2023.05.10-14.41.56:386][227]PIE: New page: PIE session: RunMap (May 10, 2023, 6:41:56 PM)
+[2023.05.10-14.41.56:423][227]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.41.56:425][227]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001738s)
+[2023.05.10-14.41.56:425][227]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001809s)
+[2023.05.10-14.41.56:425][227]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-14.41.56:425][227]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.41.56:425][227]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-14.41.56:425][227]LogPlayLevel: PIE: World Init took: (0.000615s)
+[2023.05.10-14.41.56:508][227]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2023.05.10-14.41.56:512][227]LogAudio: Display: Creating Audio Device:                 Id: 56, Scope: Unique, Realtime: True
+[2023.05.10-14.41.56:512][227]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2023.05.10-14.41.56:513][227]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2023.05.10-14.41.56:513][227]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2023.05.10-14.41.56:513][227]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2023.05.10-14.41.56:513][227]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2023.05.10-14.41.56:513][227]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2023.05.10-14.41.56:513][227]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2023.05.10-14.41.56:513][227]LogAudio: Display: AudioDevice MaxSources: 32
+[2023.05.10-14.41.56:513][227]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2023.05.10-14.41.56:513][227]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2023.05.10-14.41.56:513][227]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2023.05.10-14.41.56:515][227]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2023.05.10-14.41.56:526][227]LogAudioMixer: Display: Using Audio Hardware Device ASUS VG249 (NVIDIA High Definition Audio)
+[2023.05.10-14.41.56:526][227]LogAudioMixer: Display: Initializing Sound Submixes...
+[2023.05.10-14.41.56:526][227]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2023.05.10-14.41.56:526][227]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2023.05.10-14.41.56:527][227]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=56
+[2023.05.10-14.41.56:527][227]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=56
+[2023.05.10-14.41.56:528][227]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=56
+[2023.05.10-14.41.56:528][227]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=56
+[2023.05.10-14.41.56:528][227]LogInit: FAudioDevice initialized.
+[2023.05.10-14.41.56:528][227]LogAudio: Display: Audio Device (ID: 56) registered with world 'RunMap'.
+[2023.05.10-14.41.56:537][227]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-14.41.56:537][227]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-16.41.56
+[2023.05.10-14.41.56:537][227]LogWorld: Bringing up level for play took: 0.000407
+[2023.05.10-14.41.56:538][227]LogOnline: OSS: Created online subsystem instance for: :Context_109
+[2023.05.10-14.41.56:552][227]PIE: Server logged in
+[2023.05.10-14.41.56:552][227]PIE: Play in editor total start time 0.272 seconds.
+[2023.05.10-14.41.58:254][417]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-14.41.58:254][417]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.41.58:254][417]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.41.58:256][417]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.41.58:263][417]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2023.05.10-14.41.58:263][417]LogNiagaraEditor: onPieEnd
+[2023.05.10-14.41.58:270][417]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.41.58:352][417]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-14.41.58:352][417]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=56
+[2023.05.10-14.41.58:354][417]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=56
+[2023.05.10-14.41.58:361][417]LogUObjectHash: Compacting FUObjectHashTables data took   1.55ms
+[2023.05.10-14.41.58:393][418]LogPlayLevel: Display: Destroying online subsystem :Context_109
+[2023.05.10-14.42.16:240][ 96]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Characters/BP_RunCharacter
+[2023.05.10-14.42.16:240][ 96]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_RunCharacterDE31149A476122DFE7AC4DA47413F290.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Characters/BP_RunCharacter.uasset'
+[2023.05.10-14.42.16:266][ 96]AssetCheck: New page: Asset Save: BP_RunCharacter
+[2023.05.10-14.42.16:266][ 96]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter
+[2023.05.10-14.42.16:417][107]BlueprintLog: New page: Compile BP_RunCharacter
+[2023.05.10-14.42.16:580][107]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2023.05.10-14.42.16:610][107]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_RockObstacle_C_CHILDACTOR_379.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.42.16:662][107]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.DESTROYED_BP_RockObstacle_C_CHILDACTOR_973.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.42.17:730][193]LogUObjectHash: Compacting FUObjectHashTables data took   1.55ms
+[2023.05.10-14.42.19:578][383]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2023.05.10-14.42.19:583][383]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2023.05.10-14.42.19:583][383]PIE: New page: PIE session: RunMap (May 10, 2023, 6:42:19 PM)
+[2023.05.10-14.42.19:604][383]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.42.19:606][383]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001634s)
+[2023.05.10-14.42.19:606][383]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001738s)
+[2023.05.10-14.42.19:606][383]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-14.42.19:606][383]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.42.19:606][383]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-14.42.19:606][383]LogPlayLevel: PIE: World Init took: (0.000668s)
+[2023.05.10-14.42.19:692][383]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2023.05.10-14.42.19:695][383]LogAudio: Display: Creating Audio Device:                 Id: 57, Scope: Unique, Realtime: True
+[2023.05.10-14.42.19:695][383]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2023.05.10-14.42.19:695][383]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2023.05.10-14.42.19:695][383]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2023.05.10-14.42.19:696][383]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2023.05.10-14.42.19:696][383]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2023.05.10-14.42.19:696][383]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2023.05.10-14.42.19:696][383]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2023.05.10-14.42.19:696][383]LogAudio: Display: AudioDevice MaxSources: 32
+[2023.05.10-14.42.19:696][383]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2023.05.10-14.42.19:696][383]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2023.05.10-14.42.19:696][383]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2023.05.10-14.42.19:697][383]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2023.05.10-14.42.19:708][383]LogAudioMixer: Display: Using Audio Hardware Device ASUS VG249 (NVIDIA High Definition Audio)
+[2023.05.10-14.42.19:708][383]LogAudioMixer: Display: Initializing Sound Submixes...
+[2023.05.10-14.42.19:708][383]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2023.05.10-14.42.19:708][383]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2023.05.10-14.42.19:709][383]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=57
+[2023.05.10-14.42.19:709][383]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=57
+[2023.05.10-14.42.19:710][383]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=57
+[2023.05.10-14.42.19:710][383]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=57
+[2023.05.10-14.42.19:710][383]LogInit: FAudioDevice initialized.
+[2023.05.10-14.42.19:710][383]LogAudio: Display: Audio Device (ID: 57) registered with world 'RunMap'.
+[2023.05.10-14.42.19:720][383]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-14.42.19:721][383]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-16.42.19
+[2023.05.10-14.42.19:721][383]LogWorld: Bringing up level for play took: 0.000457
+[2023.05.10-14.42.19:722][383]LogOnline: OSS: Created online subsystem instance for: :Context_110
+[2023.05.10-14.42.19:734][383]PIE: Server logged in
+[2023.05.10-14.42.19:735][383]PIE: Play in editor total start time 0.153 seconds.
+[2023.05.10-14.42.22:093][657]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 0
+[2023.05.10-14.42.23:562][833]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 0
+[2023.05.10-14.42.24:696][969]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 0
+[2023.05.10-14.42.25:138][ 22]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 0
+[2023.05.10-14.42.25:984][118]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-14.42.25:984][118]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.42.25:984][118]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.42.25:986][118]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.42.25:995][118]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2023.05.10-14.42.25:995][118]LogNiagaraEditor: onPieEnd
+[2023.05.10-14.42.26:003][118]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.42.26:088][118]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-14.42.26:088][118]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=57
+[2023.05.10-14.42.26:090][118]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=57
+[2023.05.10-14.42.26:097][118]LogUObjectHash: Compacting FUObjectHashTables data took   2.16ms
+[2023.05.10-14.42.26:134][119]LogPlayLevel: Display: Destroying online subsystem :Context_110
+[2023.05.10-14.42.32:930][787]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_ItemPickup_01_C_CHILDACTOR_130.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.42.32:932][787]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_ItemPickup_01_C_CHILDACTOR_131.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.42.32:937][787]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_ItemPickup_01_C_CHILDACTOR_130.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.42.32:939][787]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_ItemPickup_01_C_CHILDACTOR_131.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.42.33:799][862]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup
+[2023.05.10-14.42.33:800][862]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup137BF0DE4722E9038DBDFF92ABC3873F.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup.uasset'
+[2023.05.10-14.42.33:817][862]AssetCheck: New page: Asset Save: BP_ItemPickup
+[2023.05.10-14.42.33:817][862]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup.BP_ItemPickup
+[2023.05.10-14.42.33:985][876]BlueprintLog: New page: Compile BP_ItemPickup
+[2023.05.10-14.42.34:110][876]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2023.05.10-14.42.34:140][876]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.DESTROYED_BP_ItemPickup_01_C_CHILDACTOR_95.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.42.34:143][876]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_ItemPickup_01_C_CHILDACTOR_133.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.42.34:167][876]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_ItemPickup_01_C_CHILDACTOR_135.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.42.34:174][876]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.DESTROYED_BP_ItemPickup_02_C_CHILDACTOR_121.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.42.34:176][876]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.DESTROYED_BP_ItemPickup_02_C_CHILDACTOR_120.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-14.42.36:193][ 84]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2023.05.10-14.42.36:198][ 84]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2023.05.10-14.42.36:198][ 84]PIE: New page: PIE session: RunMap (May 10, 2023, 6:42:36 PM)
+[2023.05.10-14.42.36:224][ 84]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.42.36:226][ 84]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001533s)
+[2023.05.10-14.42.36:226][ 84]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001633s)
+[2023.05.10-14.42.36:226][ 84]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-14.42.36:226][ 84]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.42.36:226][ 84]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-14.42.36:226][ 84]LogPlayLevel: PIE: World Init took: (0.000628s)
+[2023.05.10-14.42.36:310][ 84]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2023.05.10-14.42.36:316][ 84]LogAudio: Display: Creating Audio Device:                 Id: 58, Scope: Unique, Realtime: True
+[2023.05.10-14.42.36:316][ 84]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2023.05.10-14.42.36:316][ 84]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2023.05.10-14.42.36:316][ 84]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2023.05.10-14.42.36:316][ 84]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2023.05.10-14.42.36:316][ 84]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2023.05.10-14.42.36:316][ 84]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2023.05.10-14.42.36:316][ 84]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2023.05.10-14.42.36:316][ 84]LogAudio: Display: AudioDevice MaxSources: 32
+[2023.05.10-14.42.36:316][ 84]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2023.05.10-14.42.36:316][ 84]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2023.05.10-14.42.36:316][ 84]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2023.05.10-14.42.36:318][ 84]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2023.05.10-14.42.36:328][ 84]LogAudioMixer: Display: Using Audio Hardware Device ASUS VG249 (NVIDIA High Definition Audio)
+[2023.05.10-14.42.36:329][ 84]LogAudioMixer: Display: Initializing Sound Submixes...
+[2023.05.10-14.42.36:329][ 84]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2023.05.10-14.42.36:329][ 84]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2023.05.10-14.42.36:329][ 84]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=58
+[2023.05.10-14.42.36:329][ 84]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=58
+[2023.05.10-14.42.36:330][ 84]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=58
+[2023.05.10-14.42.36:330][ 84]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=58
+[2023.05.10-14.42.36:330][ 84]LogInit: FAudioDevice initialized.
+[2023.05.10-14.42.36:330][ 84]LogAudio: Display: Audio Device (ID: 58) registered with world 'RunMap'.
+[2023.05.10-14.42.36:343][ 84]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-14.42.36:344][ 84]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-16.42.36
+[2023.05.10-14.42.36:344][ 84]LogWorld: Bringing up level for play took: 0.000366
+[2023.05.10-14.42.36:345][ 84]LogOnline: OSS: Created online subsystem instance for: :Context_111
+[2023.05.10-14.42.36:358][ 84]PIE: Server logged in
+[2023.05.10-14.42.36:359][ 84]PIE: Play in editor total start time 0.161 seconds.
+[2023.05.10-14.42.39:245][423]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-14.42.40:531][577]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-14.42.41:807][730]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 2
+[2023.05.10-14.42.41:966][749]LogBlueprintUserMessages: [BP_RockObstacle_C_1] Hit
+[2023.05.10-14.42.41:966][749]LogBlueprintUserMessages: [BP_RockObstacle_C_1] Hit
+[2023.05.10-14.42.41:974][750]LogBlueprintUserMessages: [BP_RockObstacle_C_1] Hit
+[2023.05.10-14.42.41:974][750]LogBlueprintUserMessages: [BP_RockObstacle_C_1] Hit
+[2023.05.10-14.42.44:466][ 49]LogNet: Browse: /Game/Maps/RunMap
+[2023.05.10-14.42.44:466][ 49]LogLoad: LoadMap: /Game/Maps/RunMap
+[2023.05.10-14.42.44:466][ 49]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.42.44:466][ 49]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.42.44:468][ 49]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.42.44:585][ 49]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-14.42.44:590][ 49]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2023.05.10-14.42.44:595][ 49]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.42.44:597][ 49]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001293s)
+[2023.05.10-14.42.44:597][ 49]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001365s)
+[2023.05.10-14.42.44:597][ 49]LogAudio: Display: Audio Device (ID: 58) registered with world 'RunMap'.
+[2023.05.10-14.42.44:597][ 49]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-14.42.44:597][ 49]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.42.44:597][ 49]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-14.42.44:597][ 49]LogPlayLevel: PIE: World Init took: (0.000564s)
+[2023.05.10-14.42.44:597][ 49]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-14.42.44:598][ 49]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-16.42.44
+[2023.05.10-14.42.44:598][ 49]LogWorld: Bringing up level for play took: 0.000298
+[2023.05.10-14.42.44:612][ 49]LogLoad: Took 0.145871 seconds to LoadMap(/Game/Maps/UEDPIE_0_RunMap)
+[2023.05.10-14.42.46:309][242]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-14.42.47:727][412]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 2
+[2023.05.10-14.42.49:045][570]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 3
+[2023.05.10-14.42.51:738][893]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 4
+[2023.05.10-14.42.52:014][926]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-14.42.52:298][960]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 2
+[2023.05.10-14.42.55:064][287]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-14.42.55:064][287]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.42.55:064][287]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.42.55:066][287]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.42.55:077][287]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2023.05.10-14.42.55:077][287]LogNiagaraEditor: onPieEnd
+[2023.05.10-14.42.55:084][287]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.42.55:173][287]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-14.42.55:173][287]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=58
+[2023.05.10-14.42.55:174][287]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=58
+[2023.05.10-14.42.55:177][287]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-14.42.55:181][287]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2023.05.10-14.42.55:213][288]LogPlayLevel: Display: Destroying online subsystem :Context_111
+[2023.05.10-14.43.01:194][954]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
+[2023.05.10-14.43.01:262][954]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup_01
+[2023.05.10-14.43.01:262][954]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup_01202347024303E689307823BE670F0FE5.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup_01.uasset'
+[2023.05.10-14.43.01:265][954]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Pickups/BP_ItemPickup_02
+[2023.05.10-14.43.01:266][954]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_ItemPickup_02473D1F4A496D08B712A29782B3340D0B.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Pickups/BP_ItemPickup_02.uasset'
+[2023.05.10-14.43.01:281][954]AssetCheck: New page: Asset Save: multiple assets
+[2023.05.10-14.43.01:281][954]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup_02.BP_ItemPickup_02
+[2023.05.10-14.43.01:281][954]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Pickups/BP_ItemPickup_01.BP_ItemPickup_01
+[2023.05.10-14.43.45:769][266]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Actors/BP_FloorTile" FILE="../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset" SILENT=true
+[2023.05.10-14.43.45:782][266]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/BP_FloorTile
+[2023.05.10-14.43.45:783][266]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_FloorTile6A6929A94D3B9D5068E01A9D5857D42B.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/BP_FloorTile.uasset'
+[2023.05.10-14.43.45:801][266]AssetCheck: New page: Asset Save: BP_FloorTile
+[2023.05.10-14.43.45:801][266]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/BP_FloorTile.BP_FloorTile
+[2023.05.10-14.43.46:029][288]BlueprintLog: New page: Compile BP_FloorTile
+[2023.05.10-14.43.46:159][288]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2023.05.10-14.43.47:601][407]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2023.05.10-14.43.49:474][601]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2023.05.10-14.43.49:478][601]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2023.05.10-14.43.49:479][601]PIE: New page: PIE session: RunMap (May 10, 2023, 6:43:49 PM)
+[2023.05.10-14.43.49:504][601]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.43.49:506][601]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001430s)
+[2023.05.10-14.43.49:506][601]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001522s)
+[2023.05.10-14.43.49:506][601]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-14.43.49:506][601]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.43.49:506][601]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-14.43.49:506][601]LogPlayLevel: PIE: World Init took: (0.000616s)
+[2023.05.10-14.43.49:590][601]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
+[2023.05.10-14.43.49:594][601]LogAudio: Display: Creating Audio Device:                 Id: 59, Scope: Unique, Realtime: True
+[2023.05.10-14.43.49:594][601]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2023.05.10-14.43.49:594][601]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2023.05.10-14.43.49:594][601]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2023.05.10-14.43.49:594][601]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2023.05.10-14.43.49:594][601]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2023.05.10-14.43.49:594][601]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2023.05.10-14.43.49:594][601]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2023.05.10-14.43.49:594][601]LogAudio: Display: AudioDevice MaxSources: 32
+[2023.05.10-14.43.49:594][601]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2023.05.10-14.43.49:594][601]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2023.05.10-14.43.49:594][601]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2023.05.10-14.43.49:596][601]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2023.05.10-14.43.49:607][601]LogAudioMixer: Display: Using Audio Hardware Device ASUS VG249 (NVIDIA High Definition Audio)
+[2023.05.10-14.43.49:607][601]LogAudioMixer: Display: Initializing Sound Submixes...
+[2023.05.10-14.43.49:607][601]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2023.05.10-14.43.49:607][601]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2023.05.10-14.43.49:608][601]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=59
+[2023.05.10-14.43.49:608][601]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=59
+[2023.05.10-14.43.49:609][601]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=59
+[2023.05.10-14.43.49:609][601]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=59
+[2023.05.10-14.43.49:609][601]LogInit: FAudioDevice initialized.
+[2023.05.10-14.43.49:609][601]LogAudio: Display: Audio Device (ID: 59) registered with world 'RunMap'.
+[2023.05.10-14.43.49:621][601]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-14.43.49:621][601]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-16.43.49
+[2023.05.10-14.43.49:622][601]LogWorld: Bringing up level for play took: 0.000375
+[2023.05.10-14.43.49:623][601]LogOnline: OSS: Created online subsystem instance for: :Context_112
+[2023.05.10-14.43.49:638][601]PIE: Server logged in
+[2023.05.10-14.43.49:639][601]PIE: Play in editor total start time 0.161 seconds.
+[2023.05.10-14.43.50:425][686]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-14.43.52:176][896]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 2
+[2023.05.10-14.43.54:486][173]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 3
+[2023.05.10-14.43.56:403][403]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-14.43.57:113][488]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 2
+[2023.05.10-14.43.58:179][616]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 3
+[2023.05.10-14.43.58:765][686]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 4
+[2023.05.10-14.43.59:631][790]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 5
+[2023.05.10-14.44.00:215][855]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-14.44.00:215][855]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-14.44.00:215][855]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-14.44.00:217][855]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.44.00:230][855]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2023.05.10-14.44.00:231][855]LogNiagaraEditor: onPieEnd
+[2023.05.10-14.44.00:238][855]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.44.00:321][855]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-14.44.00:322][855]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=59
+[2023.05.10-14.44.00:323][855]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=59
+[2023.05.10-14.44.00:326][855]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-14.44.00:330][855]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2023.05.10-14.44.00:362][856]LogPlayLevel: Display: Destroying online subsystem :Context_112
