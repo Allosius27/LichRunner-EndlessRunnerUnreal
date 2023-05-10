@@ -7818,3 +7818,571 @@ Make sure 'BP_RunCharacter_C' has been compiled for  Get _runCharacter
 [2023.05.10-14.44.00:326][855]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2023.05.10-14.44.00:330][855]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
 [2023.05.10-14.44.00:362][856]LogPlayLevel: Display: Destroying online subsystem :Context_112
+[2023.05.10-14.50.39:836][904]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2023.05.10-14.50.39:858][904]LogContentBrowser: Creating deferred item: NewFolder
+[2023.05.10-14.50.39:865][905]LogContentBrowser: Renaming the item being created (Deferred Item: NewFolder).
+[2023.05.10-14.50.43:781][374]LogContentBrowser: Attempting asset rename: NewFolder -> WidgetBlueprints
+[2023.05.10-14.50.43:781][374]LogContentBrowser: End creating deferred item NewFolder
+[2023.05.10-14.51.36:227][ 37]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2023.05.10-14.51.42:196][ 37]LogSlate: Window 'Pick Root Widget for New Widget Blueprint' being destroyed
+[2023.05.10-14.51.42:203][ 37]LogContentBrowser: Deferred new asset file creation: NewWidgetBlueprint
+[2023.05.10-14.51.42:209][ 37]LogContentBrowser: Creating deferred item: NewWidgetBlueprint
+[2023.05.10-14.51.42:621][ 39]LogContentBrowser: Renaming the item being created (Deferred Item: NewWidgetBlueprint).
+[2023.05.10-14.51.50:002][900]LogContentBrowser: Attempting asset rename: NewWidgetBlueprint -> WBP_CoinsDisplay
+[2023.05.10-14.51.50:009][900]LogContentBrowser: End creating deferred item NewWidgetBlueprint
+[2023.05.10-14.51.51:722][ 97]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/WidgetBlueprints/WBP_CoinsDisplay.WBP_CoinsDisplay
+[2023.05.10-14.51.51:722][ 97]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.51.51:729][ 97]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-14.51.51:734][ 97]LogSlate: Warning: The command 'UMGEditor.OpenAnimDrawer' has the same default chord as 'EditorViewport.Next' [Ctrl+Shift+Space Bar]
+[2023.05.10-14.51.52:020][ 97]LogSlateStyle: Warning: Unable to find Slate Widget Style 'None'. Using FToolbarStyle defaults instead.
+[2023.05.10-14.51.52:020][ 97]LogSlateStyle: Warning: Unable to find Slate Widget Style 'None'. Using FToolbarStyle defaults instead.
+[2023.05.10-14.51.52:126][ 97]LogSlateStyle: Warning: Missing Resource from 'CoreStyle' Style: 'Unable to find SlateColor 'Foreground'.'
+[2023.05.10-14.54.30:778][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/BrazierFlame.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.30:795][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/BrazierFlame_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.30:812][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/CambriaMath.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.30:831][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/CambriaMath_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.30:846][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Candara.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.30:862][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Candara_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.30:880][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Diablo_Heavy.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.30:896][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Diablo_Heavy_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.30:914][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Diablo_Light.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.30:930][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Diablo_Light_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.30:947][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/GoudyBookletter1911.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.30:963][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/GoudyBookletter1911_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.30:980][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/RAVIE.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.32:147][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/RAVIE_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.32:196][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/SellYourSoul.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.32:212][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/SellYourSoul_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.32:229][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/SupernaturalKnight.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.32:245][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/SupernaturalKnight_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.32:262][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/The_Impostor.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.32:279][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/The_Impostor_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.32:295][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Vampire_Wars.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.32:312][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Vampire_Wars_0_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.32:329][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Vampire_Wars_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.32:346][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Vampire_Wars_Italic.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.32:362][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Vampire_Wars_Italic_0_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.54.33:380][511]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Vampire_Wars_Italic_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.19:197][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/BrazierFlame.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.19:214][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/BrazierFlame_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.19:229][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/CambriaMath.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.19:246][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/CambriaMath_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.19:263][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Candara.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.19:279][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Candara_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.19:296][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Diablo_Heavy.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.19:313][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Diablo_Heavy_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.19:329][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Diablo_Light.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.19:347][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Diablo_Light_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.19:363][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/GoudyBookletter1911.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.19:380][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/GoudyBookletter1911_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.19:396][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/RAVIE.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.20:564][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/RAVIE_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.20:614][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/SellYourSoul.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.20:630][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/SellYourSoul_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.20:646][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/SupernaturalKnight.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.20:663][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/SupernaturalKnight_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.20:679][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/The_Impostor.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.20:696][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/The_Impostor_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.20:713][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Vampire_Wars.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.20:729][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Vampire_Wars_0_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.20:746][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Vampire_Wars_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.20:763][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Vampire_Wars_Italic.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.20:780][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Vampire_Wars_Italic_0_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.55.21:780][857]LogAssetTools: Warning: Failed to import 'D:\Projets GIT\RiseOfShelturu\RiseOfShelturu\Content\Art\Fonts/Vampire_Wars_Italic_Font.uasset'. Unknown extension 'uasset'.
+[2023.05.10-14.56.05:166][974]LogLinker: Warning: [AssetLog] D:\Projets GIT\LichRunner-EndlessRunnerUnreal\LichRunner\Content\Fonts\BrazierFlame_Font.uasset: Failed to load '/Game/Art/Fonts/BrazierFlame': Can't find file.
+[2023.05.10-14.56.05:166][974]LogLinker: Warning: VerifyImport: Failed to load package for import object 'Package /Game/Art/Fonts/BrazierFlame'
+[2023.05.10-14.56.05:167][974]LogLinker: Warning: [AssetLog] D:\Projets GIT\LichRunner-EndlessRunnerUnreal\LichRunner\Content\Fonts\CambriaMath_Font.uasset: Failed to load '/Game/Art/Fonts/CambriaMath': Can't find file.
+[2023.05.10-14.56.05:167][974]LogLinker: Warning: VerifyImport: Failed to load package for import object 'Package /Game/Art/Fonts/CambriaMath'
+[2023.05.10-14.56.05:168][974]LogLinker: Warning: [AssetLog] D:\Projets GIT\LichRunner-EndlessRunnerUnreal\LichRunner\Content\Fonts\Candara_Font.uasset: Failed to load '/Game/Art/Fonts/Candara': Can't find file.
+[2023.05.10-14.56.05:168][974]LogLinker: Warning: VerifyImport: Failed to load package for import object 'Package /Game/Art/Fonts/Candara'
+[2023.05.10-14.56.05:169][974]LogLinker: Warning: [AssetLog] D:\Projets GIT\LichRunner-EndlessRunnerUnreal\LichRunner\Content\Fonts\Diablo_Heavy_Font.uasset: Failed to load '/Game/Art/Fonts/Diablo_Heavy': Can't find file.
+[2023.05.10-14.56.05:169][974]LogLinker: Warning: VerifyImport: Failed to load package for import object 'Package /Game/Art/Fonts/Diablo_Heavy'
+[2023.05.10-14.56.05:170][974]LogLinker: Warning: [AssetLog] D:\Projets GIT\LichRunner-EndlessRunnerUnreal\LichRunner\Content\Fonts\Diablo_Light_Font.uasset: Failed to load '/Game/Art/Fonts/Diablo_Light': Can't find file.
+[2023.05.10-14.56.05:170][974]LogLinker: Warning: VerifyImport: Failed to load package for import object 'Package /Game/Art/Fonts/Diablo_Light'
+[2023.05.10-14.56.05:170][974]LogLinker: Warning: [AssetLog] D:\Projets GIT\LichRunner-EndlessRunnerUnreal\LichRunner\Content\Fonts\GoudyBookletter1911_Font.uasset: Failed to load '/Game/Art/Fonts/GoudyBookletter1911': Can't find file.
+[2023.05.10-14.56.05:171][974]LogLinker: Warning: VerifyImport: Failed to load package for import object 'Package /Game/Art/Fonts/GoudyBookletter1911'
+[2023.05.10-14.56.05:171][974]LogLinker: Warning: [AssetLog] D:\Projets GIT\LichRunner-EndlessRunnerUnreal\LichRunner\Content\Fonts\RAVIE_Font.uasset: Failed to load '/Game/Art/Fonts/RAVIE': Can't find file.
+[2023.05.10-14.56.05:171][974]LogLinker: Warning: VerifyImport: Failed to load package for import object 'Package /Game/Art/Fonts/RAVIE'
+[2023.05.10-14.56.05:172][974]LogLinker: Warning: [AssetLog] D:\Projets GIT\LichRunner-EndlessRunnerUnreal\LichRunner\Content\Fonts\SellYourSoul_Font.uasset: Failed to load '/Game/Art/Fonts/SellYourSoul': Can't find file.
+[2023.05.10-14.56.05:172][974]LogLinker: Warning: VerifyImport: Failed to load package for import object 'Package /Game/Art/Fonts/SellYourSoul'
+[2023.05.10-14.56.05:173][974]LogLinker: Warning: [AssetLog] D:\Projets GIT\LichRunner-EndlessRunnerUnreal\LichRunner\Content\Fonts\SupernaturalKnight_Font.uasset: Failed to load '/Game/Art/Fonts/SupernaturalKnight': Can't find file.
+[2023.05.10-14.56.05:173][974]LogLinker: Warning: VerifyImport: Failed to load package for import object 'Package /Game/Art/Fonts/SupernaturalKnight'
+[2023.05.10-14.56.05:173][974]LogLinker: Warning: [AssetLog] D:\Projets GIT\LichRunner-EndlessRunnerUnreal\LichRunner\Content\Fonts\The_Impostor_Font.uasset: Failed to load '/Game/Art/Fonts/The_Impostor': Can't find file.
+[2023.05.10-14.56.05:173][974]LogLinker: Warning: VerifyImport: Failed to load package for import object 'Package /Game/Art/Fonts/The_Impostor'
+[2023.05.10-14.56.05:174][974]LogLinker: Warning: [AssetLog] D:\Projets GIT\LichRunner-EndlessRunnerUnreal\LichRunner\Content\Fonts\Vampire_Wars_0_Font.uasset: Failed to load '/Game/Art/Fonts/Vampire_Wars': Can't find file.
+[2023.05.10-14.56.05:174][974]LogLinker: Warning: VerifyImport: Failed to load package for import object 'Package /Game/Art/Fonts/Vampire_Wars'
+[2023.05.10-14.56.05:176][974]LogLinker: Warning: [AssetLog] D:\Projets GIT\LichRunner-EndlessRunnerUnreal\LichRunner\Content\Fonts\Vampire_Wars_Italic_0_Font.uasset: Failed to load '/Game/Art/Fonts/Vampire_Wars_Italic': Can't find file.
+[2023.05.10-14.56.05:176][974]LogLinker: Warning: VerifyImport: Failed to load package for import object 'Package /Game/Art/Fonts/Vampire_Wars_Italic'
+[2023.05.10-14.56.05:206][975]LogSlate: Last resort fallback font was requested. Font: '', Character: 'V (U+0056)'
+[2023.05.10-14.56.06:036][975]LogSlate: Took 0.828560 seconds to synchronously load lazily loaded font '../../../Engine/Content/SlateDebug/Fonts/LastResort.ttf' (5269K)
+[2023.05.10-14.56.39:370][  8]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2023.05.10-14.56.40:921][  8]LogSlate: Window 'Delete Assets' being destroyed
+[2023.05.10-14.56.41:030][  8]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2023.05.10-14.56.41:129][  8]LogUObjectHash: Compacting FUObjectHashTables data took   1.74ms
+[2023.05.10-14.56.41:218][  8]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2023.05.10-14.56.41:238][  8]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-14.56.41:246][  9]LogSlate: Took 0.000361 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2023.05.10-14.56.41:249][  9]LogSlate: Took 0.000166 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2023.05.10-14.56.41:254][  9]LogSlate: Took 0.000439 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2023.05.10-14.56.41:256][  9]LogSlate: Took 0.000394 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2023.05.10-14.56.41:259][  9]LogSlate: Took 0.000309 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2023.05.10-14.56.41:261][  9]LogSlate: Took 0.000556 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2023.05.10-14.56.41:265][  9]LogSlate: Took 0.000352 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2023.05.10-14.56.45:156][389]LogSlate: Took 0.002323 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2023.05.10-14.56.52:862][ 94]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2023.05.10-14.56.54:163][ 94]LogSlate: Window 'Delete Assets' being destroyed
+[2023.05.10-14.56.54:264][ 94]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2023.05.10-14.56.54:353][ 94]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
+[2023.05.10-14.56.54:445][ 94]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2023.05.10-14.58.19:071][240]LogEditorTransaction: Undo Remove Widget
+[2023.05.10-14.58.19:226][240]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_28:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.05.10-14.58.19:228][240]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_33:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.05.10-14.58.48:696][857]LogSlate: Window 'Color Picker' being destroyed
+[2023.05.10-15.00.24:887][132]LogSlate: Window 'Color Picker' being destroyed
+[2023.05.10-15.00.35:209][176]LogSavePackage: Moving output files for package: /Game/Blueprints/WidgetBlueprints/WBP_CoinsDisplay
+[2023.05.10-15.00.35:209][176]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/WBP_CoinsDisplay04287F3841D0FEF764E335960901C92F.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/WidgetBlueprints/WBP_CoinsDisplay.uasset'
+[2023.05.10-15.00.35:228][176]AssetCheck: New page: Asset Save: WBP_CoinsDisplay
+[2023.05.10-15.00.35:228][176]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/WidgetBlueprints/WBP_CoinsDisplay.WBP_CoinsDisplay
+[2023.05.10-15.00.35:502][201]BlueprintLog: New page: Compile WBP_CoinsDisplay
+[2023.05.10-15.00.35:626][201]LogUObjectHash: Compacting FUObjectHashTables data took   1.83ms
+[2023.05.10-15.01.02:206][959]LogSlateStyle: Warning: Unable to find Slate Widget Style 'None'. Using FToolbarStyle defaults instead.
+[2023.05.10-15.01.02:206][959]LogSlateStyle: Warning: Unable to find Slate Widget Style 'None'. Using FToolbarStyle defaults instead.
+[2023.05.10-15.02.00:096][692]LogSavePackage: Moving output files for package: /Game/Blueprints/WidgetBlueprints/WBP_CoinsDisplay
+[2023.05.10-15.02.00:096][692]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/WBP_CoinsDisplayE037A4A8479BF9295888D493FC7D879F.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/WidgetBlueprints/WBP_CoinsDisplay.uasset'
+[2023.05.10-15.02.00:121][692]AssetCheck: New page: Asset Save: WBP_CoinsDisplay
+[2023.05.10-15.02.00:121][692]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/WidgetBlueprints/WBP_CoinsDisplay.WBP_CoinsDisplay
+[2023.05.10-15.02.00:357][715]BlueprintLog: New page: Compile WBP_CoinsDisplay
+[2023.05.10-15.02.00:478][715]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2023.05.10-15.02.03:854][ 55]LogSlateStyle: Warning: Unable to find Slate Widget Style 'None'. Using FToolbarStyle defaults instead.
+[2023.05.10-15.02.03:855][ 55]LogSlateStyle: Warning: Unable to find Slate Widget Style 'None'. Using FToolbarStyle defaults instead.
+[2023.05.10-15.02.56:164][350]LogSavePackage: Moving output files for package: /Game/Blueprints/WidgetBlueprints/WBP_CoinsDisplay
+[2023.05.10-15.02.56:165][350]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/WBP_CoinsDisplay12B9AD25415A7CF11F10CC944A8C9FFA.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/WidgetBlueprints/WBP_CoinsDisplay.uasset'
+[2023.05.10-15.02.56:183][350]AssetCheck: New page: Asset Save: WBP_CoinsDisplay
+[2023.05.10-15.02.56:183][350]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/WidgetBlueprints/WBP_CoinsDisplay.WBP_CoinsDisplay
+[2023.05.10-15.02.56:351][366]BlueprintLog: New page: Compile WBP_CoinsDisplay
+[2023.05.10-15.02.56:473][366]LogUObjectHash: Compacting FUObjectHashTables data took   2.36ms
+[2023.05.10-15.04.51:785][ 20]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2023.05.10-15.05.29:669][719]LogSavePackage: Moving output files for package: /Game/Blueprints/GameModes/BP_RunGameMode
+[2023.05.10-15.05.29:670][719]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_RunGameModeCC3485F045E5566BB57C12A497A5B019.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/GameModes/BP_RunGameMode.uasset'
+[2023.05.10-15.05.29:689][719]AssetCheck: New page: Asset Save: BP_RunGameMode
+[2023.05.10-15.05.29:689][719]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/GameModes/BP_RunGameMode.BP_RunGameMode
+[2023.05.10-15.05.29:881][738]BlueprintLog: New page: Compile BP_RunGameMode
+[2023.05.10-15.05.30:015][738]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2023.05.10-15.05.31:106][823]LogUObjectHash: Compacting FUObjectHashTables data took   1.63ms
+[2023.05.10-15.05.33:096][ 41]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2023.05.10-15.05.33:101][ 41]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2023.05.10-15.05.33:102][ 41]PIE: New page: PIE session: RunMap (May 10, 2023, 7:05:33 PM)
+[2023.05.10-15.05.33:137][ 41]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.05.33:139][ 41]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001461s)
+[2023.05.10-15.05.33:139][ 41]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001550s)
+[2023.05.10-15.05.33:139][ 41]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-15.05.33:139][ 41]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-15.05.33:139][ 41]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-15.05.33:140][ 41]LogPlayLevel: PIE: World Init took: (0.000659s)
+[2023.05.10-15.05.33:228][ 41]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
+[2023.05.10-15.05.33:233][ 41]LogAudio: Display: Creating Audio Device:                 Id: 60, Scope: Unique, Realtime: True
+[2023.05.10-15.05.33:233][ 41]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2023.05.10-15.05.33:233][ 41]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2023.05.10-15.05.33:233][ 41]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2023.05.10-15.05.33:233][ 41]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2023.05.10-15.05.33:233][ 41]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2023.05.10-15.05.33:233][ 41]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2023.05.10-15.05.33:233][ 41]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2023.05.10-15.05.33:233][ 41]LogAudio: Display: AudioDevice MaxSources: 32
+[2023.05.10-15.05.33:233][ 41]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2023.05.10-15.05.33:233][ 41]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2023.05.10-15.05.33:233][ 41]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2023.05.10-15.05.33:235][ 41]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2023.05.10-15.05.33:246][ 41]LogAudioMixer: Display: Using Audio Hardware Device ASUS VG249 (NVIDIA High Definition Audio)
+[2023.05.10-15.05.33:246][ 41]LogAudioMixer: Display: Initializing Sound Submixes...
+[2023.05.10-15.05.33:246][ 41]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2023.05.10-15.05.33:246][ 41]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2023.05.10-15.05.33:247][ 41]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=60
+[2023.05.10-15.05.33:247][ 41]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=60
+[2023.05.10-15.05.33:247][ 41]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=60
+[2023.05.10-15.05.33:247][ 41]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=60
+[2023.05.10-15.05.33:247][ 41]LogInit: FAudioDevice initialized.
+[2023.05.10-15.05.33:248][ 41]LogAudio: Display: Audio Device (ID: 60) registered with world 'RunMap'.
+[2023.05.10-15.05.33:258][ 41]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-15.05.33:258][ 41]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-17.05.33
+[2023.05.10-15.05.33:258][ 41]LogWorld: Bringing up level for play took: 0.000376
+[2023.05.10-15.05.33:259][ 41]LogOnline: OSS: Created online subsystem instance for: :Context_115
+[2023.05.10-15.05.33:275][ 41]PIE: Server logged in
+[2023.05.10-15.05.33:275][ 41]PIE: Play in editor total start time 0.174 seconds.
+[2023.05.10-15.05.36:428][408]LogNet: Browse: /Game/Maps/RunMap
+[2023.05.10-15.05.36:428][408]LogLoad: LoadMap: /Game/Maps/RunMap
+[2023.05.10-15.05.36:428][408]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.05.36:428][408]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-15.05.36:430][408]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-15.05.36:565][408]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-15.05.36:569][408]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2023.05.10-15.05.36:574][408]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.05.36:575][408]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001246s)
+[2023.05.10-15.05.36:575][408]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001314s)
+[2023.05.10-15.05.36:575][408]LogAudio: Display: Audio Device (ID: 60) registered with world 'RunMap'.
+[2023.05.10-15.05.36:575][408]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-15.05.36:575][408]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-15.05.36:576][408]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-15.05.36:576][408]LogPlayLevel: PIE: World Init took: (0.000553s)
+[2023.05.10-15.05.36:576][408]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-15.05.36:576][408]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-17.05.36
+[2023.05.10-15.05.36:576][408]LogWorld: Bringing up level for play took: 0.000281
+[2023.05.10-15.05.36:591][408]LogLoad: Took 0.163497 seconds to LoadMap(/Game/Maps/UEDPIE_0_RunMap)
+[2023.05.10-15.05.37:288][491]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.05.37:288][491]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.05.37:305][493]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.05.37:305][493]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.05.37:314][494]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.05.37:314][494]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.05.37:322][495]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.05.37:322][495]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.05.37:330][496]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.05.37:330][496]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.05.39:788][791]LogNet: Browse: /Game/Maps/RunMap
+[2023.05.10-15.05.39:789][791]LogLoad: LoadMap: /Game/Maps/RunMap
+[2023.05.10-15.05.39:789][791]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.05.39:789][791]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-15.05.39:791][791]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-15.05.39:914][791]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-15.05.39:919][791]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2023.05.10-15.05.39:924][791]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.05.39:925][791]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001257s)
+[2023.05.10-15.05.39:925][791]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001322s)
+[2023.05.10-15.05.39:925][791]LogAudio: Display: Audio Device (ID: 60) registered with world 'RunMap'.
+[2023.05.10-15.05.39:925][791]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-15.05.39:925][791]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-15.05.39:926][791]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-15.05.39:926][791]LogPlayLevel: PIE: World Init took: (0.000570s)
+[2023.05.10-15.05.39:926][791]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-15.05.39:926][791]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-17.05.39
+[2023.05.10-15.05.39:926][791]LogWorld: Bringing up level for play took: 0.000276
+[2023.05.10-15.05.39:944][791]LogLoad: Took 0.154836 seconds to LoadMap(/Game/Maps/UEDPIE_0_RunMap)
+[2023.05.10-15.05.39:956][792]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-15.05.40:520][857]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 2
+[2023.05.10-15.05.42:028][ 38]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-15.05.44:014][276]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 2
+[2023.05.10-15.05.45:200][418]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 3
+[2023.05.10-15.05.46:443][567]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 3
+[2023.05.10-15.05.48:495][813]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 4
+[2023.05.10-15.05.49:355][916]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 5
+[2023.05.10-15.05.50:847][ 95]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 4
+[2023.05.10-15.05.52:674][314]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 6
+[2023.05.10-15.05.54:527][536]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 7
+[2023.05.10-15.05.54:971][589]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 8
+[2023.05.10-15.05.55:471][649]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 9
+[2023.05.10-15.05.55:496][652]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 10
+[2023.05.10-15.05.56:304][749]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 5
+[2023.05.10-15.05.56:857][815]LogBlueprintUserMessages: [BP_RockObstacle_C_7] Hit
+[2023.05.10-15.05.56:857][815]LogBlueprintUserMessages: [BP_RockObstacle_C_7] Hit
+[2023.05.10-15.05.56:865][816]LogBlueprintUserMessages: [BP_RockObstacle_C_7] Hit
+[2023.05.10-15.05.56:865][816]LogBlueprintUserMessages: [BP_RockObstacle_C_7] Hit
+[2023.05.10-15.05.56:873][817]LogBlueprintUserMessages: [BP_RockObstacle_C_7] Hit
+[2023.05.10-15.05.56:873][817]LogBlueprintUserMessages: [BP_RockObstacle_C_7] Hit
+[2023.05.10-15.05.59:356][115]LogNet: Browse: /Game/Maps/RunMap
+[2023.05.10-15.05.59:357][115]LogLoad: LoadMap: /Game/Maps/RunMap
+[2023.05.10-15.05.59:357][115]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.05.59:357][115]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-15.05.59:359][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-15.05.59:474][115]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-15.05.59:480][115]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2023.05.10-15.05.59:486][115]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.05.59:487][115]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001339s)
+[2023.05.10-15.05.59:487][115]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001411s)
+[2023.05.10-15.05.59:487][115]LogAudio: Display: Audio Device (ID: 60) registered with world 'RunMap'.
+[2023.05.10-15.05.59:487][115]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-15.05.59:487][115]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-15.05.59:487][115]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-15.05.59:488][115]LogPlayLevel: PIE: World Init took: (0.000570s)
+[2023.05.10-15.05.59:488][115]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-15.05.59:488][115]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-17.05.59
+[2023.05.10-15.05.59:488][115]LogWorld: Bringing up level for play took: 0.000293
+[2023.05.10-15.05.59:504][115]LogLoad: Took 0.148019 seconds to LoadMap(/Game/Maps/UEDPIE_0_RunMap)
+[2023.05.10-15.06.00:819][272]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-15.06.02:205][438]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-15.06.03:231][561]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 2
+[2023.05.10-15.06.04:958][768]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 3
+[2023.05.10-15.06.05:119][787]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 4
+[2023.05.10-15.06.05:493][832]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 5
+[2023.05.10-15.06.05:529][832]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-15.06.05:529][832]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.06.05:529][832]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-15.06.05:531][832]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-15.06.05:545][832]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2023.05.10-15.06.05:545][832]LogNiagaraEditor: onPieEnd
+[2023.05.10-15.06.05:553][832]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-15.06.05:639][832]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-15.06.05:640][832]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=60
+[2023.05.10-15.06.05:641][832]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=60
+[2023.05.10-15.06.05:648][832]LogUObjectHash: Compacting FUObjectHashTables data took   1.55ms
+[2023.05.10-15.06.05:681][833]LogPlayLevel: Display: Destroying online subsystem :Context_115
+[2023.05.10-15.06.37:319][530]LogSavePackage: Moving output files for package: /Game/Blueprints/Actors/Characters/BP_RunCharacter
+[2023.05.10-15.06.37:320][530]LogSavePackage: Moving '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Saved/BP_RunCharacter28E672604984FBBE97311DA7EE714146.tmp' to '../../../../../Projets GIT/LichRunner-EndlessRunnerUnreal/LichRunner/Content/Blueprints/Actors/Characters/BP_RunCharacter.uasset'
+[2023.05.10-15.06.37:338][530]AssetCheck: New page: Asset Save: BP_RunCharacter
+[2023.05.10-15.06.37:338][530]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Actors/Characters/BP_RunCharacter.BP_RunCharacter
+[2023.05.10-15.06.37:492][542]BlueprintLog: New page: Compile BP_RunCharacter
+[2023.05.10-15.06.37:684][542]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2023.05.10-15.06.37:723][542]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.DESTROYED_BP_RockObstacle_C_CHILDACTOR_983.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-15.06.37:728][542]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.DESTROYED_BP_RockObstacle_C_CHILDACTOR_391.DefaultSceneRoot) Trying to register component with IsValid() == false. Aborting.
+[2023.05.10-15.06.39:521][694]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2023.05.10-15.06.39:526][694]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2023.05.10-15.06.39:526][694]PIE: New page: PIE session: RunMap (May 10, 2023, 7:06:39 PM)
+[2023.05.10-15.06.39:549][694]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.06.39:551][694]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001934s)
+[2023.05.10-15.06.39:551][694]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.002025s)
+[2023.05.10-15.06.39:551][694]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-15.06.39:551][694]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-15.06.39:551][694]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-15.06.39:551][694]LogPlayLevel: PIE: World Init took: (0.000722s)
+[2023.05.10-15.06.39:641][694]LogUObjectHash: Compacting FUObjectHashTables data took   1.59ms
+[2023.05.10-15.06.39:648][694]LogAudio: Display: Creating Audio Device:                 Id: 61, Scope: Unique, Realtime: True
+[2023.05.10-15.06.39:648][694]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2023.05.10-15.06.39:648][694]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2023.05.10-15.06.39:648][694]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2023.05.10-15.06.39:648][694]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2023.05.10-15.06.39:648][694]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2023.05.10-15.06.39:648][694]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2023.05.10-15.06.39:648][694]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2023.05.10-15.06.39:648][694]LogAudio: Display: AudioDevice MaxSources: 32
+[2023.05.10-15.06.39:648][694]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2023.05.10-15.06.39:648][694]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2023.05.10-15.06.39:649][694]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2023.05.10-15.06.39:650][694]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2023.05.10-15.06.39:661][694]LogAudioMixer: Display: Using Audio Hardware Device ASUS VG249 (NVIDIA High Definition Audio)
+[2023.05.10-15.06.39:661][694]LogAudioMixer: Display: Initializing Sound Submixes...
+[2023.05.10-15.06.39:661][694]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2023.05.10-15.06.39:661][694]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2023.05.10-15.06.39:663][694]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=61
+[2023.05.10-15.06.39:663][694]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=61
+[2023.05.10-15.06.39:664][694]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=61
+[2023.05.10-15.06.39:664][694]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=61
+[2023.05.10-15.06.39:664][694]LogInit: FAudioDevice initialized.
+[2023.05.10-15.06.39:664][694]LogAudio: Display: Audio Device (ID: 61) registered with world 'RunMap'.
+[2023.05.10-15.06.39:671][694]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-15.06.39:671][694]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-17.06.39
+[2023.05.10-15.06.39:671][694]LogWorld: Bringing up level for play took: 0.000371
+[2023.05.10-15.06.39:672][694]LogOnline: OSS: Created online subsystem instance for: :Context_116
+[2023.05.10-15.06.39:689][694]PIE: Server logged in
+[2023.05.10-15.06.39:690][694]PIE: Play in editor total start time 0.164 seconds.
+[2023.05.10-15.06.40:630][797]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-15.06.40:924][832]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.06.40:924][832]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.06.40:932][833]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.06.40:932][833]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.06.40:940][834]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.06.40:940][834]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.06.40:957][836]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.06.40:957][836]LogBlueprintUserMessages: [BP_RockObstacle_C_0] Hit
+[2023.05.10-15.06.43:423][132]LogNet: Browse: /Game/Maps/RunMap
+[2023.05.10-15.06.43:423][132]LogLoad: LoadMap: /Game/Maps/RunMap
+[2023.05.10-15.06.43:423][132]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.06.43:424][132]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-15.06.43:426][132]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-15.06.43:545][132]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-15.06.43:550][132]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2023.05.10-15.06.43:556][132]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.06.43:557][132]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001235s)
+[2023.05.10-15.06.43:557][132]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001303s)
+[2023.05.10-15.06.43:557][132]LogAudio: Display: Audio Device (ID: 61) registered with world 'RunMap'.
+[2023.05.10-15.06.43:557][132]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-15.06.43:557][132]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-15.06.43:557][132]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-15.06.43:558][132]LogPlayLevel: PIE: World Init took: (0.000557s)
+[2023.05.10-15.06.43:558][132]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-15.06.43:558][132]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-17.06.43
+[2023.05.10-15.06.43:558][132]LogWorld: Bringing up level for play took: 0.000269
+[2023.05.10-15.06.43:574][132]LogLoad: Took 0.151398 seconds to LoadMap(/Game/Maps/UEDPIE_0_RunMap)
+[2023.05.10-15.06.44:096][194]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-15.06.45:131][318]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-15.06.45:324][341]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 2
+[2023.05.10-15.06.45:924][413]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 3
+[2023.05.10-15.06.46:915][532]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 2
+[2023.05.10-15.06.47:110][555]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 3
+[2023.05.10-15.06.47:668][622]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 4
+[2023.05.10-15.06.48:070][660]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 5
+[2023.05.10-15.06.48:579][721]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 6
+[2023.05.10-15.06.50:087][902]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 4
+[2023.05.10-15.06.51:413][ 61]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 5
+[2023.05.10-15.06.51:799][107]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 7
+[2023.05.10-15.06.52:482][189]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 8
+[2023.05.10-15.06.52:776][224]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 9
+[2023.05.10-15.06.53:034][255]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 6
+[2023.05.10-15.06.53:642][328]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 7
+[2023.05.10-15.06.54:070][379]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 8
+[2023.05.10-15.06.54:486][429]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 10
+[2023.05.10-15.06.54:887][477]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 11
+[2023.05.10-15.06.54:947][484]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 9
+[2023.05.10-15.06.56:389][657]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 12
+[2023.05.10-15.06.57:091][741]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 10
+[2023.05.10-15.06.57:557][797]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 13
+[2023.05.10-15.06.59:425][ 21]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 14
+[2023.05.10-15.07.00:068][ 98]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 15
+[2023.05.10-15.07.00:361][133]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 11
+[2023.05.10-15.07.01:620][284]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 12
+[2023.05.10-15.07.02:662][409]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 16
+[2023.05.10-15.07.04:122][584]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 17
+[2023.05.10-15.07.04:641][646]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 13
+[2023.05.10-15.07.05:324][728]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 14
+[2023.05.10-15.07.05:626][764]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 15
+[2023.05.10-15.07.07:259][960]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 16
+[2023.05.10-15.07.08:219][ 75]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 17
+[2023.05.10-15.07.08:427][100]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 18
+[2023.05.10-15.07.09:003][169]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 18
+[2023.05.10-15.07.09:220][195]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 19
+[2023.05.10-15.07.09:262][200]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 20
+[2023.05.10-15.07.09:795][264]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 21
+[2023.05.10-15.07.10:479][346]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 22
+[2023.05.10-15.07.10:930][400]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 19
+[2023.05.10-15.07.12:965][644]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 20
+[2023.05.10-15.07.14:508][829]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 21
+[2023.05.10-15.07.17:368][172]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 22
+[2023.05.10-15.07.18:470][304]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 23
+[2023.05.10-15.07.19:180][389]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 23
+[2023.05.10-15.07.22:139][744]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 24
+[2023.05.10-15.07.22:626][802]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 25
+[2023.05.10-15.07.24:151][985]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 24
+[2023.05.10-15.07.24:893][ 74]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 25
+[2023.05.10-15.07.25:768][179]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 26
+[2023.05.10-15.07.26:620][281]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 27
+[2023.05.10-15.07.26:661][286]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 26
+[2023.05.10-15.07.27:237][355]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 27
+[2023.05.10-15.07.28:330][486]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 28
+[2023.05.10-15.07.28:433][498]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 29
+[2023.05.10-15.07.28:917][556]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 30
+[2023.05.10-15.07.32:510][987]LogNet: Browse: /Game/Maps/RunMap
+[2023.05.10-15.07.32:510][987]LogLoad: LoadMap: /Game/Maps/RunMap
+[2023.05.10-15.07.32:510][987]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.07.32:511][987]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-15.07.32:512][987]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-15.07.32:638][987]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-15.07.32:643][987]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
+[2023.05.10-15.07.32:650][987]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.07.32:651][987]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001439s)
+[2023.05.10-15.07.32:651][987]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001514s)
+[2023.05.10-15.07.32:651][987]LogAudio: Display: Audio Device (ID: 61) registered with world 'RunMap'.
+[2023.05.10-15.07.32:651][987]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-15.07.32:651][987]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-15.07.32:652][987]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-15.07.32:652][987]LogPlayLevel: PIE: World Init took: (0.000634s)
+[2023.05.10-15.07.32:652][987]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-15.07.32:652][987]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-17.07.32
+[2023.05.10-15.07.32:652][987]LogWorld: Bringing up level for play took: 0.000311
+[2023.05.10-15.07.32:666][987]LogLoad: Took 0.156427 seconds to LoadMap(/Game/Maps/UEDPIE_0_RunMap)
+[2023.05.10-15.07.33:169][ 42]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-15.07.33:169][ 42]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.07.33:169][ 42]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-15.07.33:171][ 42]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-15.07.33:184][ 42]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2023.05.10-15.07.33:184][ 42]LogNiagaraEditor: onPieEnd
+[2023.05.10-15.07.33:192][ 42]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-15.07.33:279][ 42]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-15.07.33:279][ 42]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=61
+[2023.05.10-15.07.33:281][ 42]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=61
+[2023.05.10-15.07.33:284][ 42]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-15.07.33:288][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   1.94ms
+[2023.05.10-15.07.33:321][ 43]LogPlayLevel: Display: Destroying online subsystem :Context_116
+[2023.05.10-15.07.39:968][645]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2023.05.10-15.07.39:973][645]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2023.05.10-15.07.39:973][645]PIE: New page: PIE session: RunMap (May 10, 2023, 7:07:39 PM)
+[2023.05.10-15.07.40:009][645]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.07.40:011][645]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001483s)
+[2023.05.10-15.07.40:011][645]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001571s)
+[2023.05.10-15.07.40:011][645]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-15.07.40:011][645]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-15.07.40:011][645]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-15.07.40:011][645]LogPlayLevel: PIE: World Init took: (0.000588s)
+[2023.05.10-15.07.40:101][645]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2023.05.10-15.07.40:105][645]LogAudio: Display: Creating Audio Device:                 Id: 62, Scope: Unique, Realtime: True
+[2023.05.10-15.07.40:105][645]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2023.05.10-15.07.40:105][645]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2023.05.10-15.07.40:105][645]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2023.05.10-15.07.40:105][645]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2023.05.10-15.07.40:105][645]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2023.05.10-15.07.40:105][645]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2023.05.10-15.07.40:105][645]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2023.05.10-15.07.40:105][645]LogAudio: Display: AudioDevice MaxSources: 32
+[2023.05.10-15.07.40:105][645]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2023.05.10-15.07.40:105][645]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2023.05.10-15.07.40:105][645]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2023.05.10-15.07.40:107][645]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2023.05.10-15.07.40:117][645]LogAudioMixer: Display: Using Audio Hardware Device ASUS VG249 (NVIDIA High Definition Audio)
+[2023.05.10-15.07.40:117][645]LogAudioMixer: Display: Initializing Sound Submixes...
+[2023.05.10-15.07.40:118][645]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2023.05.10-15.07.40:118][645]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2023.05.10-15.07.40:118][645]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=62
+[2023.05.10-15.07.40:118][645]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=62
+[2023.05.10-15.07.40:119][645]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=62
+[2023.05.10-15.07.40:119][645]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=62
+[2023.05.10-15.07.40:119][645]LogInit: FAudioDevice initialized.
+[2023.05.10-15.07.40:119][645]LogAudio: Display: Audio Device (ID: 62) registered with world 'RunMap'.
+[2023.05.10-15.07.40:128][645]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-15.07.40:128][645]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-17.07.40
+[2023.05.10-15.07.40:128][645]LogWorld: Bringing up level for play took: 0.000357
+[2023.05.10-15.07.40:129][645]LogOnline: OSS: Created online subsystem instance for: :Context_117
+[2023.05.10-15.07.40:143][645]PIE: Server logged in
+[2023.05.10-15.07.40:144][645]PIE: Play in editor total start time 0.171 seconds.
+[2023.05.10-15.07.45:040][220]LogNet: Browse: /Game/Maps/RunMap
+[2023.05.10-15.07.45:040][220]LogLoad: LoadMap: /Game/Maps/RunMap
+[2023.05.10-15.07.45:040][220]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.07.45:040][220]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-15.07.45:042][220]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-15.07.45:155][220]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-15.07.45:159][220]LogUObjectHash: Compacting FUObjectHashTables data took   1.86ms
+[2023.05.10-15.07.45:164][220]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.07.45:166][220]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001300s)
+[2023.05.10-15.07.45:166][220]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001365s)
+[2023.05.10-15.07.45:166][220]LogAudio: Display: Audio Device (ID: 62) registered with world 'RunMap'.
+[2023.05.10-15.07.45:166][220]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-15.07.45:166][220]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-15.07.45:166][220]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-15.07.45:166][220]LogPlayLevel: PIE: World Init took: (0.000539s)
+[2023.05.10-15.07.45:166][220]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-15.07.45:166][220]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-17.07.45
+[2023.05.10-15.07.45:167][220]LogWorld: Bringing up level for play took: 0.000298
+[2023.05.10-15.07.45:181][220]LogLoad: Took 0.140908 seconds to LoadMap(/Game/Maps/UEDPIE_0_RunMap)
+[2023.05.10-15.07.47:792][533]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-15.07.48:968][674]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 1
+[2023.05.10-15.07.49:377][723]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 2
+[2023.05.10-15.07.50:394][845]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 2
+[2023.05.10-15.07.50:895][905]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 3
+[2023.05.10-15.07.51:221][944]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 3
+[2023.05.10-15.07.52:854][140]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 4
+[2023.05.10-15.07.53:707][242]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 5
+[2023.05.10-15.07.55:933][499]LogBlueprintUserMessages: [BP_RunCharacter_C_0] 6
+[2023.05.10-15.07.58:019][749]LogBlueprintUserMessages: [BP_RockObstacle_C_3] Hit
+[2023.05.10-15.07.58:019][749]LogBlueprintUserMessages: [BP_RockObstacle_C_3] Hit
+[2023.05.10-15.07.58:028][750]LogBlueprintUserMessages: [BP_RockObstacle_C_3] Hit
+[2023.05.10-15.07.58:028][750]LogBlueprintUserMessages: [BP_RockObstacle_C_3] Hit
+[2023.05.10-15.07.58:037][751]LogBlueprintUserMessages: [BP_RockObstacle_C_3] Hit
+[2023.05.10-15.07.58:037][751]LogBlueprintUserMessages: [BP_RockObstacle_C_3] Hit
+[2023.05.10-15.08.00:520][ 49]LogNet: Browse: /Game/Maps/RunMap
+[2023.05.10-15.08.00:520][ 49]LogLoad: LoadMap: /Game/Maps/RunMap
+[2023.05.10-15.08.00:520][ 49]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.08.00:521][ 49]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-15.08.00:523][ 49]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-15.08.00:647][ 49]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.05.10-15.08.00:651][ 49]LogUObjectHash: Compacting FUObjectHashTables data took   2.65ms
+[2023.05.10-15.08.00:657][ 49]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.08.00:658][ 49]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001217s)
+[2023.05.10-15.08.00:658][ 49]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RunMap.RunMap to /Game/Maps/UEDPIE_0_RunMap.RunMap (0.001282s)
+[2023.05.10-15.08.00:658][ 49]LogAudio: Display: Audio Device (ID: 62) registered with world 'RunMap'.
+[2023.05.10-15.08.00:658][ 49]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2023.05.10-15.08.00:658][ 49]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.05.10-15.08.00:658][ 49]LogAIModule: Creating AISystem for world RunMap
+[2023.05.10-15.08.00:659][ 49]LogPlayLevel: PIE: World Init took: (0.000541s)
+[2023.05.10-15.08.00:659][ 49]LogLoad: Game class is 'BP_RunGameMode_C'
+[2023.05.10-15.08.00:659][ 49]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RunMap.RunMap up for play (max tick rate 0) at 2023.05.10-17.08.00
+[2023.05.10-15.08.00:659][ 49]LogWorld: Bringing up level for play took: 0.000286
+[2023.05.10-15.08.00:674][ 49]LogLoad: Took 0.154844 seconds to LoadMap(/Game/Maps/UEDPIE_0_RunMap)
+[2023.05.10-15.08.01:160][101]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-15.08.01:160][101]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RunMap
+[2023.05.10-15.08.01:160][101]LogWorld: UWorld::CleanupWorld for RunMap, bSessionEnded=true, bCleanupResources=true
+[2023.05.10-15.08.01:162][101]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-15.08.01:170][101]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2023.05.10-15.08.01:171][101]LogNiagaraEditor: onPieEnd
+[2023.05.10-15.08.01:178][101]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.05.10-15.08.01:264][101]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.05.10-15.08.01:265][101]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=62
+[2023.05.10-15.08.01:266][101]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=62
+[2023.05.10-15.08.01:272][101]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
+[2023.05.10-15.08.01:305][102]LogPlayLevel: Display: Destroying online subsystem :Context_117
+[2023.05.10-15.08.04:008][379]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
