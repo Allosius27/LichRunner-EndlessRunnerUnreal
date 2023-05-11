@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "LichRunner",
+			"Path": "D:\\Projets GIT\\LichRunner-EndlessRunnerUnreal\\LichRunner\\Source\\LichRunner.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "LichRunnerEditor",
+			"Path": "D:\\Projets GIT\\LichRunner-EndlessRunnerUnreal\\LichRunner\\Source\\LichRunnerEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

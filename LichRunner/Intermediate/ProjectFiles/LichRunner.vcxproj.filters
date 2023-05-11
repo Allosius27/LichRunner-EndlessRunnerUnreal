@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\LichRunner.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\LichRunner.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\LichRunnerEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\1682519281771.png" />
+    <None Include="..\..\LichRunner.png" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\HoloLens">
+      <UniqueIdentifier>{4C8DD267-CDE7-336F-8602-F5F485D22BAB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\HoloLens\HoloLensEngine.ini">
+      <Filter>Config\HoloLens</Filter>
+    </None>
+    <Filter Include="Source\LichRunner">
+      <UniqueIdentifier>{27200A15-0EB3-3CAD-80AD-705EE93EA250}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\LichRunner\LichRunner.Build.cs">
+      <Filter>Source\LichRunner</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\LichRunner\LichRunner.cpp">
+      <Filter>Source\LichRunner</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LichRunner\LichRunner.h">
+      <Filter>Source\LichRunner</Filter>
+    </ClInclude>
+    <Filter Include="Source\LichRunner\Private">
+      <UniqueIdentifier>{2C927848-7336-3988-B25F-233578CBC4F3}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\LichRunner\Private\SampleActor.cpp">
+      <Filter>Source\LichRunner\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\LichRunner\Public">
+      <UniqueIdentifier>{D05C8BA4-4C32-3BB8-AB1E-35AF74875069}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\LichRunner\Public\SampleActor.h">
+      <Filter>Source\LichRunner\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

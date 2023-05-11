@@ -1,0 +1,29 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\source\\lichrunner\\private\\samplepawn.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\lichrunnereditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\development\\lichrunner\\definitions.lichrunner.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\source\\lichrunner\\public\\samplepawn.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\lichrunner\\samplepawn.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\floatingpawnmovement.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\pawnmovementcomponent.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\navmovementcomponent.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\ai\\navigation\\pathfollowingagentinterface.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\pathfollowingagentinterface.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\movementcomponent.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\movementcomponent.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\navmovementcomponent.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\pawnmovementcomponent.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\floatingpawnmovement.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\camera\\cameracomponent.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\cameracomponent.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\springarmcomponent.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\springarmcomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

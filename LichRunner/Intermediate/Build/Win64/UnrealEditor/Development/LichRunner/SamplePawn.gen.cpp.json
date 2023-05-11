@@ -1,0 +1,15 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\lichrunner\\samplepawn.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\lichrunnereditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\development\\lichrunner\\definitions.lichrunner.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\source\\lichrunner\\public\\samplepawn.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\lichrunner\\samplepawn.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Projets GIT\\LichRunner-EndlessRunnerUnreal\\LichRunner\\Source\\LichRunner\\LichRunner.Build.cs",
+		"D:\\Projets GIT\\LichRunner-EndlessRunnerUnreal\\LichRunner\\Source\\LichRunner.Target.cs",
+		"D:\\Projets GIT\\LichRunner-EndlessRunnerUnreal\\LichRunner\\Source\\LichRunnerEditor.Target.cs"
+	],
+	"EngineVersion": "5.0.3"
+}
