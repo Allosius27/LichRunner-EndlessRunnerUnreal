@@ -3,6 +3,8 @@
 
 #include "SamplePawn.h"
 
+#include "Bullet.h"
+
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/FloatingPawnMovement.h"
 #include "Camera/CameraComponent.h"
@@ -58,6 +60,25 @@ void ASamplePawn::LookUp(float scale)
 	AddControllerPitchInput(scale);
 }
 
+void ASamplePawn::Shoot()
+{
+	if(!BulletClass) return;
+
+	// Spawn the bullet
+	FActorSpawnParameters spawnParams;
+	spawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+	spawnParams.bNoFail = true;
+	spawnParams.Owner = this;
+	spawnParams.Instigator = this;
+
+	FTransform transform;
+	transform.SetLocation(GetActorForwardVector() * BulletSpawnOffset + GetActorLocation());
+	transform.SetRotation(GetActorRotation().Quaternion());
+	transform.SetScale3D(FVector(1.0f));
+
+	GetWorld()->SpawnActor<ABullet>(BulletClass, transform, spawnParams);
+}
+
 // Called every frame
 void ASamplePawn::Tick(float DeltaTime)
 {
@@ -74,5 +95,7 @@ void ASamplePawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAxis("Move Right / Left", this, &ASamplePawn::MoveRight);
 	PlayerInputComponent->BindAxis("Turn Right / Left Mouse", this, &ASamplePawn::Turn);
 	PlayerInputComponent->BindAxis("Look Up / Down Mouse", this, &ASamplePawn::LookUp);
+
+	PlayerInputComponent->BindAction("Shoot", IE_Pressed, this, &ASamplePawn::Shoot);
 }
 

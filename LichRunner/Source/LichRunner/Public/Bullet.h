@@ -19,6 +19,15 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	class UStaticMeshComponent* StaticMesh;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	class UProjectileMovementComponent* Movement;
+
+	UFUNCTION()
+	void OnBulletHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit);
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

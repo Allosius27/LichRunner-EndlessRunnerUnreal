@@ -8,14 +8,24 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+struct FHitResult;
 #ifdef LICHRUNNER_Bullet_generated_h
 #error "Bullet.generated.h already included, missing '#pragma once' in Bullet.h"
 #endif
 #define LICHRUNNER_Bullet_generated_h
 
 #define FID_LichRunner_Source_LichRunner_Public_Bullet_h_12_SPARSE_DATA
-#define FID_LichRunner_Source_LichRunner_Public_Bullet_h_12_RPC_WRAPPERS
-#define FID_LichRunner_Source_LichRunner_Public_Bullet_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_LichRunner_Source_LichRunner_Public_Bullet_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnBulletHit);
+
+
+#define FID_LichRunner_Source_LichRunner_Public_Bullet_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnBulletHit);
+
+
 #define FID_LichRunner_Source_LichRunner_Public_Bullet_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABullet(); \

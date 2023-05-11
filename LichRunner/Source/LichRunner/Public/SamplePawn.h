@@ -30,12 +30,19 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	class USpringArmComponent* SpringArm;
+
+	UPROPERTY(EditAnywhere)
+	class TSubclassOf<class ABullet>BulletClass;
+
+	UPROPERTY(EditAnywhere)
+	float BulletSpawnOffset;
 	
 	// Input bindings
 	void MoveForward(float scale);
 	void MoveRight(float scale);
 	void Turn(float scale);
 	void LookUp(float scale);
+	void Shoot();
 
 public:	
 	// Called every frame

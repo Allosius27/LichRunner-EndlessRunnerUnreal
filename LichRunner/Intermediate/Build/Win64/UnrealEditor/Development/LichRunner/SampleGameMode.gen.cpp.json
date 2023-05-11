@@ -1,0 +1,19 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\lichrunner\\samplegamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\lichrunnereditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\development\\lichrunner\\definitions.lichrunner.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\source\\lichrunner\\public\\samplegamemode.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\lichrunner\\samplegamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeSamplePawn() {}
 	ENGINE_API UClass* Z_Construct_UClass_UFloatingPawnMovement_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	LICHRUNNER_API UClass* Z_Construct_UClass_ABullet_NoRegister();
 // End Cross Module References
 	void ASamplePawn::StaticRegisterNativesASamplePawn()
 	{
@@ -48,6 +50,14 @@ void EmptyLinkFunctionForGeneratedCodeSamplePawn() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_SpringArm_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_SpringArm;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_BulletClass_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_BulletClass;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_BulletSpawnOffset_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_BulletSpawnOffset;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -95,11 +105,27 @@ void EmptyLinkFunctionForGeneratedCodeSamplePawn() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASamplePawn_Statics::NewProp_SpringArm = { "SpringArm", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASamplePawn, SpringArm), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASamplePawn_Statics::NewProp_SpringArm_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASamplePawn_Statics::NewProp_SpringArm_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASamplePawn_Statics::NewProp_BulletClass_MetaData[] = {
+		{ "Category", "SamplePawn" },
+		{ "ModuleRelativePath", "Public/SamplePawn.h" },
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASamplePawn_Statics::NewProp_BulletClass = { "BulletClass", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASamplePawn, BulletClass), Z_Construct_UClass_ABullet_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASamplePawn_Statics::NewProp_BulletClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASamplePawn_Statics::NewProp_BulletClass_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASamplePawn_Statics::NewProp_BulletSpawnOffset_MetaData[] = {
+		{ "Category", "SamplePawn" },
+		{ "ModuleRelativePath", "Public/SamplePawn.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASamplePawn_Statics::NewProp_BulletSpawnOffset = { "BulletSpawnOffset", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASamplePawn, BulletSpawnOffset), METADATA_PARAMS(Z_Construct_UClass_ASamplePawn_Statics::NewProp_BulletSpawnOffset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASamplePawn_Statics::NewProp_BulletSpawnOffset_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASamplePawn_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASamplePawn_Statics::NewProp_StaticMesh,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASamplePawn_Statics::NewProp_Movement,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASamplePawn_Statics::NewProp_Camera,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASamplePawn_Statics::NewProp_SpringArm,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASamplePawn_Statics::NewProp_BulletClass,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASamplePawn_Statics::NewProp_BulletSpawnOffset,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASamplePawn_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASamplePawn>::IsAbstract,
@@ -137,9 +163,9 @@ void EmptyLinkFunctionForGeneratedCodeSamplePawn() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_SamplePawn_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ASamplePawn, ASamplePawn::StaticClass, TEXT("ASamplePawn"), &Z_Registration_Info_UClass_ASamplePawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASamplePawn), 3676378294U) },
+		{ Z_Construct_UClass_ASamplePawn, ASamplePawn::StaticClass, TEXT("ASamplePawn"), &Z_Registration_Info_UClass_ASamplePawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASamplePawn), 341341622U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_SamplePawn_h_3569787931(TEXT("/Script/LichRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_SamplePawn_h_1035351522(TEXT("/Script/LichRunner"),
 		Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_SamplePawn_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_SamplePawn_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
