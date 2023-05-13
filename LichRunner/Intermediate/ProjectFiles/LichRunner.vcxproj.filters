@@ -52,14 +52,56 @@
     <Filter Include="Source\LichRunner\Private">
       <UniqueIdentifier>{2C927848-7336-3988-B25F-233578CBC4F3}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\LichRunner\Private\Bullet.cpp">
+      <Filter>Source\LichRunner\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\LichRunner\Private\SampleActor.cpp">
       <Filter>Source\LichRunner\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LichRunner\Private\SampleGameMode.cpp">
+      <Filter>Source\LichRunner\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LichRunner\Private\SamplePawn.cpp">
+      <Filter>Source\LichRunner\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LichRunner\Private\Target.cpp">
+      <Filter>Source\LichRunner\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\LichRunner\Private\Actors">
+      <UniqueIdentifier>{9A3947FE-2461-382D-B002-E6B2DF04A39A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\LichRunner\Private\Actors\Characters">
+      <UniqueIdentifier>{41262879-06EE-37DB-A83E-45F105073019}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\LichRunner\Private\Actors\Characters\RunCharacter.cpp">
+      <Filter>Source\LichRunner\Private\Actors\Characters</Filter>
     </ClCompile>
     <Filter Include="Source\LichRunner\Public">
       <UniqueIdentifier>{D05C8BA4-4C32-3BB8-AB1E-35AF74875069}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\LichRunner\Public\Bullet.h">
+      <Filter>Source\LichRunner\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\LichRunner\Public\SampleActor.h">
       <Filter>Source\LichRunner\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LichRunner\Public\SampleGameMode.h">
+      <Filter>Source\LichRunner\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LichRunner\Public\SamplePawn.h">
+      <Filter>Source\LichRunner\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LichRunner\Public\Target.h">
+      <Filter>Source\LichRunner\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\LichRunner\Public\Actors">
+      <UniqueIdentifier>{5D4891D5-EAD7-3019-8DED-5A7B6D668F28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\LichRunner\Public\Actors\Characters">
+      <UniqueIdentifier>{634BD8A4-DA5A-3DCA-B9C2-650F1BAEBFB5}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\LichRunner\Public\Actors\Characters\RunCharacter.h">
+      <Filter>Source\LichRunner\Public\Actors\Characters</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
