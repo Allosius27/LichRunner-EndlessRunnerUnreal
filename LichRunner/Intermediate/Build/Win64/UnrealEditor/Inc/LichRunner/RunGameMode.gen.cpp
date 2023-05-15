@@ -27,9 +27,11 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 	}
 	DEFINE_FUNCTION(ARunGameMode::execCreateTile)
 	{
+		P_GET_UBOOL(Z_Param_tileCanCreateObstacles);
+		P_GET_UBOOL(Z_Param_tileCanCreatePickups);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->CreateTile();
+		P_THIS->CreateTile(Z_Param_tileCanCreateObstacles,Z_Param_tileCanCreatePickups);
 		P_NATIVE_END;
 	}
 	void ARunGameMode::StaticRegisterNativesARunGameMode()
@@ -43,10 +45,34 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 	}
 	struct Z_Construct_UFunction_ARunGameMode_CreateTile_Statics
 	{
+		struct RunGameMode_eventCreateTile_Parms
+		{
+			bool tileCanCreateObstacles;
+			bool tileCanCreatePickups;
+		};
+		static void NewProp_tileCanCreateObstacles_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_tileCanCreateObstacles;
+		static void NewProp_tileCanCreatePickups_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_tileCanCreatePickups;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::NewProp_tileCanCreateObstacles_SetBit(void* Obj)
+	{
+		((RunGameMode_eventCreateTile_Parms*)Obj)->tileCanCreateObstacles = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::NewProp_tileCanCreateObstacles = { "tileCanCreateObstacles", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(RunGameMode_eventCreateTile_Parms), &Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::NewProp_tileCanCreateObstacles_SetBit, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::NewProp_tileCanCreatePickups_SetBit(void* Obj)
+	{
+		((RunGameMode_eventCreateTile_Parms*)Obj)->tileCanCreatePickups = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::NewProp_tileCanCreatePickups = { "tileCanCreatePickups", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(RunGameMode_eventCreateTile_Parms), &Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::NewProp_tileCanCreatePickups_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::NewProp_tileCanCreateObstacles,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::NewProp_tileCanCreatePickups,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::Function_MetaDataParams[] = {
@@ -54,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 		{ "ModuleRelativePath", "Public/GameModes/RunGameMode.h" },
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARunGameMode, nullptr, "CreateTile", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::Function_MetaDataParams)) };
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARunGameMode, nullptr, "CreateTile", nullptr, nullptr, sizeof(Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::RunGameMode_eventCreateTile_Parms), Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ARunGameMode_CreateTile_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_ARunGameMode_CreateTile()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -114,6 +140,16 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 #endif
 		static const UECodeGen_Private::FIntPropertyParams NewProp_InitTilesToSpawnCount;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_HasObstaclesCreation_MetaData[];
+#endif
+		static void NewProp_HasObstaclesCreation_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_HasObstaclesCreation;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_HasPickupsCreation_MetaData[];
+#endif
+		static void NewProp_HasPickupsCreation_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_HasPickupsCreation;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_TileClass_MetaData[];
 #endif
 		static const UECodeGen_Private::FClassPropertyParams NewProp_TileClass;
@@ -130,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_LichRunner,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ARunGameMode_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ARunGameMode_CreateTile, "CreateTile" }, // 1329565356
+		{ &Z_Construct_UFunction_ARunGameMode_CreateTile, "CreateTile" }, // 3099271023
 		{ &Z_Construct_UFunction_ARunGameMode_OnTileExited, "OnTileExited" }, // 687313644
 	};
 #if WITH_METADATA
@@ -150,6 +186,28 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 #endif
 	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ARunGameMode_Statics::NewProp_InitTilesToSpawnCount = { "InitTilesToSpawnCount", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARunGameMode, InitTilesToSpawnCount), METADATA_PARAMS(Z_Construct_UClass_ARunGameMode_Statics::NewProp_InitTilesToSpawnCount_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunGameMode_Statics::NewProp_InitTilesToSpawnCount_MetaData)) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasObstaclesCreation_MetaData[] = {
+		{ "Category", "Inspector | Game World" },
+		{ "ModuleRelativePath", "Public/GameModes/RunGameMode.h" },
+	};
+#endif
+	void Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasObstaclesCreation_SetBit(void* Obj)
+	{
+		((ARunGameMode*)Obj)->HasObstaclesCreation = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasObstaclesCreation = { "HasObstaclesCreation", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ARunGameMode), &Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasObstaclesCreation_SetBit, METADATA_PARAMS(Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasObstaclesCreation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasObstaclesCreation_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasPickupsCreation_MetaData[] = {
+		{ "Category", "Inspector | Game World" },
+		{ "ModuleRelativePath", "Public/GameModes/RunGameMode.h" },
+	};
+#endif
+	void Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasPickupsCreation_SetBit(void* Obj)
+	{
+		((ARunGameMode*)Obj)->HasPickupsCreation = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasPickupsCreation = { "HasPickupsCreation", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ARunGameMode), &Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasPickupsCreation_SetBit, METADATA_PARAMS(Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasPickupsCreation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasPickupsCreation_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunGameMode_Statics::NewProp_TileClass_MetaData[] = {
 		{ "Category", "Protected | Game World" },
 		{ "ModuleRelativePath", "Public/GameModes/RunGameMode.h" },
@@ -165,6 +223,8 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ARunGameMode_Statics::NewProp_CurrentSpawnTransform = { "CurrentSpawnTransform", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARunGameMode, CurrentSpawnTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UClass_ARunGameMode_Statics::NewProp_CurrentSpawnTransform_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunGameMode_Statics::NewProp_CurrentSpawnTransform_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ARunGameMode_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunGameMode_Statics::NewProp_InitTilesToSpawnCount,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasObstaclesCreation,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasPickupsCreation,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunGameMode_Statics::NewProp_TileClass,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunGameMode_Statics::NewProp_CurrentSpawnTransform,
 	};
@@ -204,9 +264,9 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ARunGameMode, ARunGameMode::StaticClass, TEXT("ARunGameMode"), &Z_Registration_Info_UClass_ARunGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunGameMode), 309789378U) },
+		{ Z_Construct_UClass_ARunGameMode, ARunGameMode::StaticClass, TEXT("ARunGameMode"), &Z_Registration_Info_UClass_ARunGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunGameMode), 693976189U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_2791306646(TEXT("/Script/LichRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_2500132154(TEXT("/Script/LichRunner"),
 		Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

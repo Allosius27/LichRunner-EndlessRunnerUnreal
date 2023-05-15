@@ -30,6 +30,26 @@ public:
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 		class UBoxComponent* ExitTrigger;
 
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
+		class UBoxComponent* SpawnObstaclesTrigger;
+
+
+		UPROPERTY(EditAnywhere, Category = "Public | Spawnables")
+		TArray<class TSubclassOf<class AObstacle>> ObstaclesClass;
+	
+	
+		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public |Stats")
+		bool CanCreateObstacles;
+
+		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public |Stats")
+		bool CanCreatePickups;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Public |Stats")
+		float ObstacleSpawnRandomWeight;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Public |Stats")
+		float PickupSpawnRandomWeight;
+
 		
 		UPROPERTY(BlueprintAssignable)
 		FPlayerExitTriggerSignature OnExited;
@@ -48,8 +68,19 @@ public:
 		UFUNCTION(BlueprintCallable, Category = "World")
 		FTransform GetAttachTransform();
 
+
+		UFUNCTION(Category = "Init")
+		void Init(bool createObstacles, bool createPickups);
+	
+		UFUNCTION(Category = "World")
+		void SpawnObstacle(float randomWeight);
+	
 		UFUNCTION(Category = "World")
 		void TileExited();
+
+	
+		UFUNCTION(Category = "Utils")
+		bool RandomWeight(float weight, float rangeMin, float rangeMax) const;
 
 	#pragma endregion
 

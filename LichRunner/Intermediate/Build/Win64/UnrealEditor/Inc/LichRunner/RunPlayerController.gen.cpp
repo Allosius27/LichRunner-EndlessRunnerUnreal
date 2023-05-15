@@ -101,11 +101,11 @@ void EmptyLinkFunctionForGeneratedCodeRunPlayerController() {}
 #endif
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunPlayerController_Statics::NewProp_RunCharacter_MetaData[] = {
-		{ "Category", "Protected | Characters" },
+		{ "Category", "Public | Characters" },
 		{ "ModuleRelativePath", "Public/Controllers/RunPlayerController.h" },
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARunPlayerController_Statics::NewProp_RunCharacter = { "RunCharacter", nullptr, (EPropertyFlags)0x0020080000020001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARunPlayerController, RunCharacter), Z_Construct_UClass_ARunCharacter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARunPlayerController_Statics::NewProp_RunCharacter_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunPlayerController_Statics::NewProp_RunCharacter_MetaData)) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARunPlayerController_Statics::NewProp_RunCharacter = { "RunCharacter", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARunPlayerController, RunCharacter), Z_Construct_UClass_ARunCharacter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARunPlayerController_Statics::NewProp_RunCharacter_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunPlayerController_Statics::NewProp_RunCharacter_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ARunPlayerController_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunPlayerController_Statics::NewProp_RunCharacter,
 	};
@@ -145,9 +145,9 @@ void EmptyLinkFunctionForGeneratedCodeRunPlayerController() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Controllers_RunPlayerController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ARunPlayerController, ARunPlayerController::StaticClass, TEXT("ARunPlayerController"), &Z_Registration_Info_UClass_ARunPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunPlayerController), 3459329595U) },
+		{ Z_Construct_UClass_ARunPlayerController, ARunPlayerController::StaticClass, TEXT("ARunPlayerController"), &Z_Registration_Info_UClass_ARunPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunPlayerController), 52401464U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Controllers_RunPlayerController_h_1952032824(TEXT("/Script/LichRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Controllers_RunPlayerController_h_2838952111(TEXT("/Script/LichRunner"),
 		Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Controllers_RunPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Controllers_RunPlayerController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

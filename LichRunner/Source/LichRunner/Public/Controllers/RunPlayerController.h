@@ -20,6 +20,13 @@ class LICHRUNNER_API ARunPlayerController : public APlayerController
 public:
 	ARunPlayerController();
 
+	#pragma region UPROPERTIES
+		
+		UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Public | Characters")
+		ARunCharacter* RunCharacter;
+
+	#pragma endregion 
+
 	#pragma region METHODS
 		
 		virtual void Tick(float DeltaTime) override;
@@ -38,13 +45,6 @@ public:
 #pragma region PROTECTED
 	
 protected:
-
-	#pragma region UPROPERTIES
-	
-		UPROPERTY(VisibleAnywhere, Category = "Protected | Characters")
-		ARunCharacter* RunCharacter;
-
-	#pragma endregion 
 
 	#pragma region METHODS
 		

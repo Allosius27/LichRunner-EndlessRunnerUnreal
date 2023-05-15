@@ -24,12 +24,18 @@ public:
 		UPROPERTY(EditAnywhere, Category = "Inspector | Game World")
 		int32 InitTilesToSpawnCount;
 
+		UPROPERTY(EditAnywhere, Category = "Inspector | Game World")
+		bool HasObstaclesCreation;
+
+		UPROPERTY(EditAnywhere, Category = "Inspector | Game World")
+		bool HasPickupsCreation;
+
 	#pragma endregion 
 
 	#pragma region UFUNCTIONS
 
 		UFUNCTION(BlueprintCallable, Category = "Game World")
-		void CreateTile();
+		void CreateTile(bool tileCanCreateObstacles, bool tileCanCreatePickups);
 
 	#pragma endregion 
 

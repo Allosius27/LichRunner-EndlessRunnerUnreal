@@ -21,6 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeTile() {}
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UArrowComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	LICHRUNNER_API UClass* Z_Construct_UClass_AObstacle_NoRegister();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature_Statics
 	{
@@ -74,11 +76,38 @@ void EmptyLinkFunctionForGeneratedCodeTile() {}
 		P_THIS->OnOverlapBegin(Z_Param_OverlappedComp,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(ATile::execRandomWeight)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_weight);
+		P_GET_PROPERTY(FFloatProperty,Z_Param_rangeMin);
+		P_GET_PROPERTY(FFloatProperty,Z_Param_rangeMax);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->RandomWeight(Z_Param_weight,Z_Param_rangeMin,Z_Param_rangeMax);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ATile::execTileExited)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		P_THIS->TileExited();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ATile::execSpawnObstacle)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_randomWeight);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SpawnObstacle(Z_Param_randomWeight);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ATile::execInit)
+	{
+		P_GET_UBOOL(Z_Param_createObstacles);
+		P_GET_UBOOL(Z_Param_createPickups);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Init(Z_Param_createObstacles,Z_Param_createPickups);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(ATile::execGetAttachTransform)
@@ -93,8 +122,11 @@ void EmptyLinkFunctionForGeneratedCodeTile() {}
 		UClass* Class = ATile::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetAttachTransform", &ATile::execGetAttachTransform },
+			{ "Init", &ATile::execInit },
 			{ "OnDestroyTile", &ATile::execOnDestroyTile },
 			{ "OnOverlapBegin", &ATile::execOnOverlapBegin },
+			{ "RandomWeight", &ATile::execRandomWeight },
+			{ "SpawnObstacle", &ATile::execSpawnObstacle },
 			{ "TileExited", &ATile::execTileExited },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -129,6 +161,53 @@ void EmptyLinkFunctionForGeneratedCodeTile() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATile_GetAttachTransform_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ATile_Init_Statics
+	{
+		struct Tile_eventInit_Parms
+		{
+			bool createObstacles;
+			bool createPickups;
+		};
+		static void NewProp_createObstacles_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_createObstacles;
+		static void NewProp_createPickups_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_createPickups;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ATile_Init_Statics::NewProp_createObstacles_SetBit(void* Obj)
+	{
+		((Tile_eventInit_Parms*)Obj)->createObstacles = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ATile_Init_Statics::NewProp_createObstacles = { "createObstacles", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(Tile_eventInit_Parms), &Z_Construct_UFunction_ATile_Init_Statics::NewProp_createObstacles_SetBit, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_ATile_Init_Statics::NewProp_createPickups_SetBit(void* Obj)
+	{
+		((Tile_eventInit_Parms*)Obj)->createPickups = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ATile_Init_Statics::NewProp_createPickups = { "createPickups", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(Tile_eventInit_Parms), &Z_Construct_UFunction_ATile_Init_Statics::NewProp_createPickups_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ATile_Init_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATile_Init_Statics::NewProp_createObstacles,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATile_Init_Statics::NewProp_createPickups,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATile_Init_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Init" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATile_Init_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATile, nullptr, "Init", nullptr, nullptr, sizeof(Z_Construct_UFunction_ATile_Init_Statics::Tile_eventInit_Parms), Z_Construct_UFunction_ATile_Init_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_Init_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATile_Init_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_Init_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATile_Init()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATile_Init_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -237,6 +316,89 @@ void EmptyLinkFunctionForGeneratedCodeTile() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ATile_RandomWeight_Statics
+	{
+		struct Tile_eventRandomWeight_Parms
+		{
+			float weight;
+			float rangeMin;
+			float rangeMax;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_weight;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_rangeMin;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_rangeMax;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ATile_RandomWeight_Statics::NewProp_weight = { "weight", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Tile_eventRandomWeight_Parms, weight), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ATile_RandomWeight_Statics::NewProp_rangeMin = { "rangeMin", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Tile_eventRandomWeight_Parms, rangeMin), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ATile_RandomWeight_Statics::NewProp_rangeMax = { "rangeMax", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Tile_eventRandomWeight_Parms, rangeMax), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_ATile_RandomWeight_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((Tile_eventRandomWeight_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ATile_RandomWeight_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(Tile_eventRandomWeight_Parms), &Z_Construct_UFunction_ATile_RandomWeight_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ATile_RandomWeight_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATile_RandomWeight_Statics::NewProp_weight,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATile_RandomWeight_Statics::NewProp_rangeMin,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATile_RandomWeight_Statics::NewProp_rangeMax,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATile_RandomWeight_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATile_RandomWeight_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Utils" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATile_RandomWeight_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATile, nullptr, "RandomWeight", nullptr, nullptr, sizeof(Z_Construct_UFunction_ATile_RandomWeight_Statics::Tile_eventRandomWeight_Parms), Z_Construct_UFunction_ATile_RandomWeight_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_RandomWeight_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATile_RandomWeight_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_RandomWeight_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATile_RandomWeight()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATile_RandomWeight_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ATile_SpawnObstacle_Statics
+	{
+		struct Tile_eventSpawnObstacle_Parms
+		{
+			float randomWeight;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_randomWeight;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ATile_SpawnObstacle_Statics::NewProp_randomWeight = { "randomWeight", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Tile_eventSpawnObstacle_Parms, randomWeight), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ATile_SpawnObstacle_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATile_SpawnObstacle_Statics::NewProp_randomWeight,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATile_SpawnObstacle_Statics::Function_MetaDataParams[] = {
+		{ "Category", "World" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATile_SpawnObstacle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATile, nullptr, "SpawnObstacle", nullptr, nullptr, sizeof(Z_Construct_UFunction_ATile_SpawnObstacle_Statics::Tile_eventSpawnObstacle_Parms), Z_Construct_UFunction_ATile_SpawnObstacle_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_SpawnObstacle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATile_SpawnObstacle_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_SpawnObstacle_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATile_SpawnObstacle()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATile_SpawnObstacle_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ATile_TileExited_Statics
 	{
 #if WITH_METADATA
@@ -285,6 +447,33 @@ void EmptyLinkFunctionForGeneratedCodeTile() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_ExitTrigger;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_SpawnObstaclesTrigger_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_SpawnObstaclesTrigger;
+		static const UECodeGen_Private::FClassPropertyParams NewProp_ObstaclesClass_Inner;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ObstaclesClass_MetaData[];
+#endif
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_ObstaclesClass;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CanCreateObstacles_MetaData[];
+#endif
+		static void NewProp_CanCreateObstacles_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_CanCreateObstacles;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CanCreatePickups_MetaData[];
+#endif
+		static void NewProp_CanCreatePickups_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_CanCreatePickups;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ObstacleSpawnRandomWeight_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_ObstacleSpawnRandomWeight;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_PickupSpawnRandomWeight_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_PickupSpawnRandomWeight;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnExited_MetaData[];
 #endif
 		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnExited;
@@ -302,8 +491,11 @@ void EmptyLinkFunctionForGeneratedCodeTile() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ATile_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ATile_GetAttachTransform, "GetAttachTransform" }, // 542204062
+		{ &Z_Construct_UFunction_ATile_Init, "Init" }, // 3060485553
 		{ &Z_Construct_UFunction_ATile_OnDestroyTile, "OnDestroyTile" }, // 692142733
 		{ &Z_Construct_UFunction_ATile_OnOverlapBegin, "OnOverlapBegin" }, // 4096535520
+		{ &Z_Construct_UFunction_ATile_RandomWeight, "RandomWeight" }, // 4171170062
+		{ &Z_Construct_UFunction_ATile_SpawnObstacle, "SpawnObstacle" }, // 1907933906
 		{ &Z_Construct_UFunction_ATile_TileExited, "TileExited" }, // 3066916421
 	};
 #if WITH_METADATA
@@ -337,6 +529,58 @@ void EmptyLinkFunctionForGeneratedCodeTile() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATile_Statics::NewProp_ExitTrigger = { "ExitTrigger", nullptr, (EPropertyFlags)0x001000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATile, ExitTrigger), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATile_Statics::NewProp_ExitTrigger_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATile_Statics::NewProp_ExitTrigger_MetaData)) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATile_Statics::NewProp_SpawnObstaclesTrigger_MetaData[] = {
+		{ "Category", "Components" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATile_Statics::NewProp_SpawnObstaclesTrigger = { "SpawnObstaclesTrigger", nullptr, (EPropertyFlags)0x001000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATile, SpawnObstaclesTrigger), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATile_Statics::NewProp_SpawnObstaclesTrigger_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATile_Statics::NewProp_SpawnObstaclesTrigger_MetaData)) };
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATile_Statics::NewProp_ObstaclesClass_Inner = { "ObstaclesClass", nullptr, (EPropertyFlags)0x0004000000000000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AObstacle_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATile_Statics::NewProp_ObstaclesClass_MetaData[] = {
+		{ "Category", "Public | Spawnables" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ATile_Statics::NewProp_ObstaclesClass = { "ObstaclesClass", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATile, ObstaclesClass), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_ATile_Statics::NewProp_ObstaclesClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATile_Statics::NewProp_ObstaclesClass_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATile_Statics::NewProp_CanCreateObstacles_MetaData[] = {
+		{ "Category", "Public |Stats" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	void Z_Construct_UClass_ATile_Statics::NewProp_CanCreateObstacles_SetBit(void* Obj)
+	{
+		((ATile*)Obj)->CanCreateObstacles = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ATile_Statics::NewProp_CanCreateObstacles = { "CanCreateObstacles", nullptr, (EPropertyFlags)0x0010000000020005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ATile), &Z_Construct_UClass_ATile_Statics::NewProp_CanCreateObstacles_SetBit, METADATA_PARAMS(Z_Construct_UClass_ATile_Statics::NewProp_CanCreateObstacles_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATile_Statics::NewProp_CanCreateObstacles_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATile_Statics::NewProp_CanCreatePickups_MetaData[] = {
+		{ "Category", "Public |Stats" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	void Z_Construct_UClass_ATile_Statics::NewProp_CanCreatePickups_SetBit(void* Obj)
+	{
+		((ATile*)Obj)->CanCreatePickups = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ATile_Statics::NewProp_CanCreatePickups = { "CanCreatePickups", nullptr, (EPropertyFlags)0x0010000000020005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ATile), &Z_Construct_UClass_ATile_Statics::NewProp_CanCreatePickups_SetBit, METADATA_PARAMS(Z_Construct_UClass_ATile_Statics::NewProp_CanCreatePickups_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATile_Statics::NewProp_CanCreatePickups_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATile_Statics::NewProp_ObstacleSpawnRandomWeight_MetaData[] = {
+		{ "Category", "Public |Stats" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATile_Statics::NewProp_ObstacleSpawnRandomWeight = { "ObstacleSpawnRandomWeight", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATile, ObstacleSpawnRandomWeight), METADATA_PARAMS(Z_Construct_UClass_ATile_Statics::NewProp_ObstacleSpawnRandomWeight_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATile_Statics::NewProp_ObstacleSpawnRandomWeight_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATile_Statics::NewProp_PickupSpawnRandomWeight_MetaData[] = {
+		{ "Category", "Public |Stats" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATile_Statics::NewProp_PickupSpawnRandomWeight = { "PickupSpawnRandomWeight", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATile, PickupSpawnRandomWeight), METADATA_PARAMS(Z_Construct_UClass_ATile_Statics::NewProp_PickupSpawnRandomWeight_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATile_Statics::NewProp_PickupSpawnRandomWeight_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATile_Statics::NewProp_OnExited_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
 	};
@@ -353,6 +597,13 @@ void EmptyLinkFunctionForGeneratedCodeTile() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_SceneRoot,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_AttachPoint,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_ExitTrigger,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_SpawnObstaclesTrigger,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_ObstaclesClass_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_ObstaclesClass,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_CanCreateObstacles,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_CanCreatePickups,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_ObstacleSpawnRandomWeight,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_PickupSpawnRandomWeight,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_OnExited,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_TileEndLifeTime,
 	};
@@ -392,9 +643,9 @@ void EmptyLinkFunctionForGeneratedCodeTile() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ATile, ATile::StaticClass, TEXT("ATile"), &Z_Registration_Info_UClass_ATile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATile), 4214819920U) },
+		{ Z_Construct_UClass_ATile, ATile::StaticClass, TEXT("ATile"), &Z_Registration_Info_UClass_ATile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATile), 2968234004U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_2388067096(TEXT("/Script/LichRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_2878442615(TEXT("/Script/LichRunner"),
 		Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

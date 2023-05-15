@@ -35,7 +35,10 @@ static inline void FPlayerExitTriggerSignature_DelegateWrapper(const FMulticastS
  \
 	DECLARE_FUNCTION(execOnDestroyTile); \
 	DECLARE_FUNCTION(execOnOverlapBegin); \
+	DECLARE_FUNCTION(execRandomWeight); \
 	DECLARE_FUNCTION(execTileExited); \
+	DECLARE_FUNCTION(execSpawnObstacle); \
+	DECLARE_FUNCTION(execInit); \
 	DECLARE_FUNCTION(execGetAttachTransform);
 
 
@@ -43,7 +46,10 @@ static inline void FPlayerExitTriggerSignature_DelegateWrapper(const FMulticastS
  \
 	DECLARE_FUNCTION(execOnDestroyTile); \
 	DECLARE_FUNCTION(execOnOverlapBegin); \
+	DECLARE_FUNCTION(execRandomWeight); \
 	DECLARE_FUNCTION(execTileExited); \
+	DECLARE_FUNCTION(execSpawnObstacle); \
+	DECLARE_FUNCTION(execInit); \
 	DECLARE_FUNCTION(execGetAttachTransform);
 
 

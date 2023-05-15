@@ -12,6 +12,9 @@ ARunGameMode::ARunGameMode()
 	CurrentSpawnTransform.SetLocation(FVector(0.0f, 0.0f, -100.0f));
 	CurrentSpawnTransform.SetRotation(FRotator(0.0f, 0.0f, 0.0f).Quaternion());
 	CurrentSpawnTransform.SetScale3D(FVector(1.0f));
+
+	HasObstaclesCreation = true;
+	HasPickupsCreation = true;
 }
 
 
@@ -22,11 +25,11 @@ void ARunGameMode::BeginPlay()
 
 	for (int i = 0; i < InitTilesToSpawnCount; ++i)
 	{
-		CreateTile();
+		CreateTile(false, true);
 	}
 }
 
-void ARunGameMode::CreateTile()
+void ARunGameMode::CreateTile(bool tileCanCreateObstacles, bool tileCanCreatePickups)
 {
 	if(!TileClass) return;
 
@@ -37,12 +40,17 @@ void ARunGameMode::CreateTile()
 
 	ATile* tileSpawned = GetWorld()->SpawnActor<ATile>(TileClass, CurrentSpawnTransform, spawnParams);
 	CurrentSpawnTransform = tileSpawned->GetAttachTransform();
+	
+	bool createObstacles = HasObstaclesCreation && tileCanCreateObstacles;
+	bool createPickups = HasPickupsCreation && tileCanCreatePickups;
+	tileSpawned->Init(createObstacles, createPickups);
+	
 	tileSpawned->OnExited.AddDynamic(this, &ARunGameMode::OnTileExited);
 }
 
 void ARunGameMode::OnTileExited(ATile* tile)
 {
-	CreateTile();
+	CreateTile(true, true);
 	tile->TileExited();
 }
 
