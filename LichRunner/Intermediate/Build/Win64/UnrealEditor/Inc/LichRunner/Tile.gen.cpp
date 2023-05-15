@@ -9,13 +9,256 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTile() {}
 // Cross Module References
+	LICHRUNNER_API UFunction* Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature();
+	UPackage* Z_Construct_UPackage__Script_LichRunner();
 	LICHRUNNER_API UClass* Z_Construct_UClass_ATile_NoRegister();
 	LICHRUNNER_API UClass* Z_Construct_UClass_ATile();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
-	UPackage* Z_Construct_UPackage__Script_LichRunner();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FTransform();
+	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UArrowComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature_Statics
+	{
+		struct _Script_LichRunner_eventPlayerExitTriggerSignature_Parms
+		{
+			ATile* Tile;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Tile;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature_Statics::NewProp_Tile = { "Tile", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_LichRunner_eventPlayerExitTriggerSignature_Parms, Tile), Z_Construct_UClass_ATile_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature_Statics::NewProp_Tile,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_LichRunner, nullptr, "PlayerExitTriggerSignature__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature_Statics::_Script_LichRunner_eventPlayerExitTriggerSignature_Parms), Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(ATile::execOnDestroyTile)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OnDestroyTile();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ATile::execOnOverlapBegin)
+	{
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComp);
+		P_GET_OBJECT(AActor,Z_Param_OtherActor);
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp);
+		P_GET_PROPERTY(FIntProperty,Z_Param_OtherBodyIndex);
+		P_GET_UBOOL(Z_Param_bFromSweep);
+		P_GET_STRUCT_REF(FHitResult,Z_Param_Out_SweepResult);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OnOverlapBegin(Z_Param_OverlappedComp,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ATile::execTileExited)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->TileExited();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ATile::execGetAttachTransform)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FTransform*)Z_Param__Result=P_THIS->GetAttachTransform();
+		P_NATIVE_END;
+	}
 	void ATile::StaticRegisterNativesATile()
 	{
+		UClass* Class = ATile::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "GetAttachTransform", &ATile::execGetAttachTransform },
+			{ "OnDestroyTile", &ATile::execOnDestroyTile },
+			{ "OnOverlapBegin", &ATile::execOnOverlapBegin },
+			{ "TileExited", &ATile::execTileExited },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ATile_GetAttachTransform_Statics
+	{
+		struct Tile_eventGetAttachTransform_Parms
+		{
+			FTransform ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ATile_GetAttachTransform_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Tile_eventGetAttachTransform_Parms, ReturnValue), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ATile_GetAttachTransform_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATile_GetAttachTransform_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATile_GetAttachTransform_Statics::Function_MetaDataParams[] = {
+		{ "Category", "World" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATile_GetAttachTransform_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATile, nullptr, "GetAttachTransform", nullptr, nullptr, sizeof(Z_Construct_UFunction_ATile_GetAttachTransform_Statics::Tile_eventGetAttachTransform_Parms), Z_Construct_UFunction_ATile_GetAttachTransform_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_GetAttachTransform_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATile_GetAttachTransform_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_GetAttachTransform_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATile_GetAttachTransform()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATile_GetAttachTransform_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ATile_OnDestroyTile_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATile_OnDestroyTile_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Stats" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATile_OnDestroyTile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATile, nullptr, "OnDestroyTile", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATile_OnDestroyTile_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_OnDestroyTile_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATile_OnDestroyTile()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATile_OnDestroyTile_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ATile_OnOverlapBegin_Statics
+	{
+		struct Tile_eventOnOverlapBegin_Parms
+		{
+			UPrimitiveComponent* OverlappedComp;
+			AActor* OtherActor;
+			UPrimitiveComponent* OtherComp;
+			int32 OtherBodyIndex;
+			bool bFromSweep;
+			FHitResult SweepResult;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OverlappedComp_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OverlappedComp;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OtherComp_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherComp;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_OtherBodyIndex;
+		static void NewProp_bFromSweep_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bFromSweep;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_SweepResult_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_SweepResult;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_OverlappedComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_OverlappedComp = { "OverlappedComp", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Tile_eventOnOverlapBegin_Parms, OverlappedComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_OverlappedComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_OverlappedComp_MetaData)) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Tile_eventOnOverlapBegin_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_OtherComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_OtherComp = { "OtherComp", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Tile_eventOnOverlapBegin_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_OtherComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_OtherComp_MetaData)) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_OtherBodyIndex = { "OtherBodyIndex", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Tile_eventOnOverlapBegin_Parms, OtherBodyIndex), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_bFromSweep_SetBit(void* Obj)
+	{
+		((Tile_eventOnOverlapBegin_Parms*)Obj)->bFromSweep = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_bFromSweep = { "bFromSweep", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(Tile_eventOnOverlapBegin_Parms), &Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_bFromSweep_SetBit, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_SweepResult_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_SweepResult = { "SweepResult", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Tile_eventOnOverlapBegin_Parms, SweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_SweepResult_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_SweepResult_MetaData)) }; // 1416937132
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_OverlappedComp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_OtherActor,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_OtherComp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_OtherBodyIndex,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_bFromSweep,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::NewProp_SweepResult,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Collisions" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATile, nullptr, "OnOverlapBegin", nullptr, nullptr, sizeof(Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::Tile_eventOnOverlapBegin_Parms), Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00480401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATile_OnOverlapBegin()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATile_OnOverlapBegin_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ATile_TileExited_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATile_TileExited_Statics::Function_MetaDataParams[] = {
+		{ "Category", "World" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATile_TileExited_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATile, nullptr, "TileExited", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATile_TileExited_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATile_TileExited_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATile_TileExited()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATile_TileExited_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ATile);
 	UClass* Z_Construct_UClass_ATile_NoRegister()
@@ -25,9 +268,31 @@ void EmptyLinkFunctionForGeneratedCodeTile() {}
 	struct Z_Construct_UClass_ATile_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_SceneRoot_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_SceneRoot;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_AttachPoint_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_AttachPoint;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ExitTrigger_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ExitTrigger;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnExited_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnExited;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_TileEndLifeTime_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_TileEndLifeTime;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -35,12 +300,62 @@ void EmptyLinkFunctionForGeneratedCodeTile() {}
 		(UObject* (*)())Z_Construct_UClass_AActor,
 		(UObject* (*)())Z_Construct_UPackage__Script_LichRunner,
 	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ATile_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ATile_GetAttachTransform, "GetAttachTransform" }, // 542204062
+		{ &Z_Construct_UFunction_ATile_OnDestroyTile, "OnDestroyTile" }, // 692142733
+		{ &Z_Construct_UFunction_ATile_OnOverlapBegin, "OnOverlapBegin" }, // 4096535520
+		{ &Z_Construct_UFunction_ATile_TileExited, "TileExited" }, // 3066916421
+	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATile_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Actors/Obstacles/Tile.h" },
 		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATile_Statics::NewProp_SceneRoot_MetaData[] = {
+		{ "Category", "Components" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATile_Statics::NewProp_SceneRoot = { "SceneRoot", nullptr, (EPropertyFlags)0x001000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATile, SceneRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATile_Statics::NewProp_SceneRoot_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATile_Statics::NewProp_SceneRoot_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATile_Statics::NewProp_AttachPoint_MetaData[] = {
+		{ "Category", "Components" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATile_Statics::NewProp_AttachPoint = { "AttachPoint", nullptr, (EPropertyFlags)0x001000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATile, AttachPoint), Z_Construct_UClass_UArrowComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATile_Statics::NewProp_AttachPoint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATile_Statics::NewProp_AttachPoint_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATile_Statics::NewProp_ExitTrigger_MetaData[] = {
+		{ "Category", "Components" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATile_Statics::NewProp_ExitTrigger = { "ExitTrigger", nullptr, (EPropertyFlags)0x001000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATile, ExitTrigger), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATile_Statics::NewProp_ExitTrigger_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATile_Statics::NewProp_ExitTrigger_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATile_Statics::NewProp_OnExited_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_ATile_Statics::NewProp_OnExited = { "OnExited", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATile, OnExited), Z_Construct_UDelegateFunction_LichRunner_PlayerExitTriggerSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_ATile_Statics::NewProp_OnExited_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATile_Statics::NewProp_OnExited_MetaData)) }; // 2383932497
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATile_Statics::NewProp_TileEndLifeTime_MetaData[] = {
+		{ "Category", "Protected | Stats" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Tile.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATile_Statics::NewProp_TileEndLifeTime = { "TileEndLifeTime", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATile, TileEndLifeTime), METADATA_PARAMS(Z_Construct_UClass_ATile_Statics::NewProp_TileEndLifeTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATile_Statics::NewProp_TileEndLifeTime_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATile_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_SceneRoot,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_AttachPoint,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_ExitTrigger,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_OnExited,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATile_Statics::NewProp_TileEndLifeTime,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ATile_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ATile>::IsAbstract,
 	};
@@ -49,12 +364,12 @@ void EmptyLinkFunctionForGeneratedCodeTile() {}
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
-		nullptr,
+		FuncInfo,
+		Z_Construct_UClass_ATile_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_ATile_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ATile_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ATile_Statics::Class_MetaDataParams))
@@ -77,9 +392,9 @@ void EmptyLinkFunctionForGeneratedCodeTile() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ATile, ATile::StaticClass, TEXT("ATile"), &Z_Registration_Info_UClass_ATile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATile), 3785182834U) },
+		{ Z_Construct_UClass_ATile, ATile::StaticClass, TEXT("ATile"), &Z_Registration_Info_UClass_ATile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATile), 4214819920U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_3248091378(TEXT("/Script/LichRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_2388067096(TEXT("/Script/LichRunner"),
 		Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

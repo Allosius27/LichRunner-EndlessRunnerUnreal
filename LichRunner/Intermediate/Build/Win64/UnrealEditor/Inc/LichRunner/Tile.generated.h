@@ -8,15 +8,46 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class ATile;
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef LICHRUNNER_Tile_generated_h
 #error "Tile.generated.h already included, missing '#pragma once' in Tile.h"
 #endif
 #define LICHRUNNER_Tile_generated_h
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_SPARSE_DATA
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_RPC_WRAPPERS
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_9_DELEGATE \
+struct _Script_LichRunner_eventPlayerExitTriggerSignature_Parms \
+{ \
+	ATile* Tile; \
+}; \
+static inline void FPlayerExitTriggerSignature_DelegateWrapper(const FMulticastScriptDelegate& PlayerExitTriggerSignature, ATile* Tile) \
+{ \
+	_Script_LichRunner_eventPlayerExitTriggerSignature_Parms Parms; \
+	Parms.Tile=Tile; \
+	PlayerExitTriggerSignature.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_SPARSE_DATA
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnDestroyTile); \
+	DECLARE_FUNCTION(execOnOverlapBegin); \
+	DECLARE_FUNCTION(execTileExited); \
+	DECLARE_FUNCTION(execGetAttachTransform);
+
+
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnDestroyTile); \
+	DECLARE_FUNCTION(execOnOverlapBegin); \
+	DECLARE_FUNCTION(execTileExited); \
+	DECLARE_FUNCTION(execGetAttachTransform);
+
+
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATile(); \
 	friend struct Z_Construct_UClass_ATile_Statics; \
@@ -25,7 +56,7 @@ public: \
 	DECLARE_SERIALIZER(ATile)
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_INCLASS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesATile(); \
 	friend struct Z_Construct_UClass_ATile_Statics; \
@@ -34,7 +65,7 @@ public: \
 	DECLARE_SERIALIZER(ATile)
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_STANDARD_CONSTRUCTORS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATile(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATile) \
@@ -47,7 +78,7 @@ private: \
 public:
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ATile(ATile&&); \
@@ -58,25 +89,25 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ATile)
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_9_PROLOG
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_GENERATED_BODY_LEGACY \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_11_PROLOG
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_SPARSE_DATA \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_RPC_WRAPPERS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_INCLASS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_STANDARD_CONSTRUCTORS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_SPARSE_DATA \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_RPC_WRAPPERS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_INCLASS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_GENERATED_BODY \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_SPARSE_DATA \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_INCLASS_NO_PURE_DECLS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_12_ENHANCED_CONSTRUCTORS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_SPARSE_DATA \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_INCLASS_NO_PURE_DECLS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Tile_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

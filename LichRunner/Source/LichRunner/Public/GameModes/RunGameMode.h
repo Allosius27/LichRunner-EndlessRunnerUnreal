@@ -19,5 +19,48 @@ class LICHRUNNER_API ARunGameMode : public AGameModeBase
 public:
 	ARunGameMode();
 
-#pragma  endregion 
+	#pragma region UPROPERTIES
+
+		UPROPERTY(EditAnywhere, Category = "Inspector | Game World")
+		int32 InitTilesToSpawnCount;
+
+	#pragma endregion 
+
+	#pragma region UFUNCTIONS
+
+		UFUNCTION(BlueprintCallable, Category = "Game World")
+		void CreateTile();
+
+	#pragma endregion 
+
+#pragma  endregion
+
+
+#pragma region PROTECTED
+
+	#pragma region UPROPERTIES
+
+		UPROPERTY(EditAnywhere, Category = "Protected | Game World")
+		class TSubclassOf<class ATile>TileClass;
+
+		UPROPERTY(EditAnywhere, Category = "Protected | Game World")
+		FTransform CurrentSpawnTransform;
+
+	#pragma endregion
+
+	#pragma region UFUNCTIONS
+
+		UFUNCTION(Category = "Game World")
+		void OnTileExited(ATile* tile);
+
+	#pragma endregion 
+
+	#pragma region METHODS
+			
+		// Called when the game starts or when spawned
+		virtual void BeginPlay() override;
+
+	#pragma endregion
+
+#pragma endregion 
 };

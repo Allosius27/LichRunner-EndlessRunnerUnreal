@@ -8,14 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class ATile;
 #ifdef LICHRUNNER_RunGameMode_generated_h
 #error "RunGameMode.generated.h already included, missing '#pragma once' in RunGameMode.h"
 #endif
 #define LICHRUNNER_RunGameMode_generated_h
 
 #define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_SPARSE_DATA
-#define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_RPC_WRAPPERS
-#define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnTileExited); \
+	DECLARE_FUNCTION(execCreateTile);
+
+
+#define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnTileExited); \
+	DECLARE_FUNCTION(execCreateTile);
+
+
 #define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesARunGameMode(); \

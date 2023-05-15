@@ -20,13 +20,18 @@ class LICHRUNNER_API ARunPlayerController : public APlayerController
 public:
 	ARunPlayerController();
 
-#pragma region METHODS
-	
-	virtual void Tick(float DeltaTime) override;
+	#pragma region METHODS
+		
+		virtual void Tick(float DeltaTime) override;
 
-	void MoveRight(float axisValue);
+	#pragma endregion
 
-#pragma endregion
+	#pragma region UFUNCTIONS
+		
+		UFUNCTION(Category = "PlayerMovements")
+		void MoveRight(float axisValue);
+
+	#pragma endregion 
 
 #pragma endregion 
 
@@ -34,15 +39,19 @@ public:
 	
 protected:
 
-	UPROPERTY(VisibleAnywhere)
-	ARunCharacter* RunCharacter;
-
-#pragma region METHODS
+	#pragma region UPROPERTIES
 	
-	virtual void BeginPlay() override;
-	virtual  void SetupInputComponent() override;
+		UPROPERTY(VisibleAnywhere, Category = "Protected | Characters")
+		ARunCharacter* RunCharacter;
 
-#pragma endregion 
+	#pragma endregion 
+
+	#pragma region METHODS
+		
+		virtual void BeginPlay() override;
+		virtual  void SetupInputComponent() override;
+
+	#pragma endregion 
 
 #pragma endregion
 	

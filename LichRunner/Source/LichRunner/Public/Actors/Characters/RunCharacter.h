@@ -17,25 +17,25 @@ public:
 	// Sets default values for this character's properties
 	ARunCharacter();
 
-#pragma region UPROPERTIES
+	#pragma region UPROPERTIES
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera")
-	class UCameraComponent* Camera;
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Camera")
+		class UCameraComponent* Camera;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Camera")
-	class USpringArmComponent* SpringArm;
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Inspector | Camera")
+		class USpringArmComponent* SpringArm;
 
-#pragma endregion 
+	#pragma endregion 
 
-#pragma  region METHODS
-	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	#pragma  region METHODS
+		
+		// Called every frame
+		virtual void Tick(float DeltaTime) override;
 
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+		// Called to bind functionality to input
+		virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-#pragma endregion 
+	#pragma endregion 
 
 #pragma  endregion 
 
@@ -43,12 +43,12 @@ public:
 	
 protected:
 
-#pragma  region METHODS
-	
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	#pragma  region METHODS
+		
+		// Called when the game starts or when spawned
+		virtual void BeginPlay() override;
 
-#pragma endregion 
+	#pragma endregion 
 
 #pragma  endregion 
 

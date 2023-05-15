@@ -14,9 +14,15 @@ ARunCharacter::ARunCharacter()
 
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>("SpringArm");
 	SpringArm->SetupAttachment(RootComponent);
+	SpringArm->TargetArmLength = 550.0f;
+	SpringArm->SocketOffset = FVector(0.0f, 0.0f, 150.0f);
+	SpringArm->bDoCollisionTest = false;
+	SpringArm->bUsePawnControlRotation = true;
 	
 	Camera = CreateDefaultSubobject<UCameraComponent>("Camera");
 	Camera->SetupAttachment(SpringArm);
+	Camera->SetRelativeLocation(FVector(4.0f, 0.0f, 47.0f));
+	Camera->SetRelativeRotation(FRotator(-15.0f, 0.0f, 0.0f));
 
 }
 
