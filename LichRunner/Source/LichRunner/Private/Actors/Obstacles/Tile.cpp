@@ -18,9 +18,12 @@ ATile::ATile()
 
 	AttachPoint = CreateDefaultSubobject<UArrowComponent>("AttachPoint");
 	AttachPoint->SetupAttachment(SceneRoot);
+	AttachPoint->SetRelativeLocation(FVector(1000.0f, 0.0f, 0.0f));
 
 	ExitTrigger = CreateDefaultSubobject<UBoxComponent>("ExitTrigger");
 	ExitTrigger->SetupAttachment(SceneRoot);
+	ExitTrigger->SetRelativeLocation(FVector(1050.0f, 0.0f, 190.0f));
+	ExitTrigger->SetBoxExtent(FVector(32.0f, 500.0f, 200.0f));
 
 	TileEndLifeTime = 2.0f;
 }
@@ -55,7 +58,7 @@ void ATile::TileExited()
 {
 	if(GEngine)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("Tile Exited To %f"), GetWorld()->TimeSeconds));
+		//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("Tile Exited To %f"), GetWorld()->TimeSeconds));
 	}
 
 	GetWorldTimerManager().SetTimer(EndLifeTileTimerHandle, this, &ATile::OnDestroyTile, TileEndLifeTime, false);
