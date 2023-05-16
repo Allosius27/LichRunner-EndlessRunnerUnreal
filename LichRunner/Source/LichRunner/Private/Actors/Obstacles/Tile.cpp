@@ -5,6 +5,7 @@
 
 #include "Actors/Characters/RunCharacter.h"
 #include "Actors/Obstacles/Obstacle.h"
+#include "Actors/Pickups/Pickup.h"
 #include "Components/ArrowComponent.h"
 #include "Components/BoxComponent.h"
 #include "Kismet/KismetMathLibrary.h"
@@ -32,10 +33,17 @@ ATile::ATile()
 	SpawnObstaclesTrigger->SetRelativeLocation(FVector(800.0f, 0.0f, 0.0f));
 	SpawnObstaclesTrigger->SetBoxExtent(FVector(100.0f, 400.0f, 10.0f));
 
+	SpawnPickupsTrigger = CreateDefaultSubobject<UBoxComponent>("SpawnPickupsTrigger");
+	SpawnPickupsTrigger->SetupAttachment(SceneRoot);
+	SpawnPickupsTrigger->SetRelativeLocation(FVector(520.0f, 0.0f, 0.0f));
+	SpawnPickupsTrigger->SetBoxExtent(FVector(400.0f, 400.0f, 10.0f));
+	
+
 	TileEndLifeTime = 2.0f;
 	
 	ObstacleSpawnRandomWeight = 0.6f;
 	PickupSpawnRandomWeight = 0.3f;
+	PickupsToSpawnCount = 4;
 }
 
 // Called when the game starts or when spawned
@@ -44,6 +52,20 @@ void ATile::BeginPlay()
 	Super::BeginPlay();
 
 	ExitTrigger->OnComponentBeginOverlap.AddDynamic(this, &ATile::ATile::OnOverlapBegin);
+}
+
+void ATile::Init(bool createObstacles, bool createPickups)
+{
+	CanCreateObstacles = createObstacles;
+	CanCreatePickups = createPickups;
+
+	SpawnObstacle(ObstacleSpawnRandomWeight);
+	
+	for (int i = 0; i < PickupsToSpawnCount; ++i)
+	{
+		SpawnPickup(PickupSpawnRandomWeight);
+	}
+	
 }
 
 // Called every frame
@@ -67,13 +89,6 @@ void ATile::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAct
 }
 
 
-void ATile::Init(bool createObstacles, bool createPickups)
-{
-	CanCreateObstacles = createObstacles;
-	CanCreatePickups = createPickups;
-
-	SpawnObstacle(ObstacleSpawnRandomWeight);
-}
 
 FTransform ATile::GetAttachTransform()
 {
@@ -99,6 +114,27 @@ void ATile::SpawnObstacle(float randomWeight)
 		
 		AObstacle* obstacle = GetWorld()->SpawnActor<AObstacle>(ObstaclesClass[rnd], transform, spawnParams);
 		obstacle->AttachToActor(this, FAttachmentTransformRules::KeepWorldTransform);
+	}
+}
+
+void ATile::SpawnPickup(float randomWeight)
+{
+	if(RandomWeight(randomWeight, 0, 1) && CanCreatePickups)
+	{
+		FVector pointPos = UKismetMathLibrary::RandomPointInBoundingBox(SpawnPickupsTrigger->GetComponentLocation(), SpawnPickupsTrigger->GetScaledBoxExtent());
+		int rnd = FMath::RandRange(0, PickupsClass.Num()-1);
+		
+		FActorSpawnParameters spawnParams;
+		spawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+		spawnParams.bNoFail = true;
+		
+		FTransform transform;
+		transform.SetLocation(pointPos);
+		transform.SetRotation(GetActorRotation().Quaternion());
+		transform.SetScale3D(FVector(1.0f));
+		
+		APickup* pickup = GetWorld()->SpawnActor<APickup>(PickupsClass[rnd], transform, spawnParams);
+		pickup->AttachToActor(this, FAttachmentTransformRules::KeepWorldTransform);
 	}
 }
 

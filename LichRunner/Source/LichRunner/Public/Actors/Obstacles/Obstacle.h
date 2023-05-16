@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Actors/Characters/RunCharacter.h"
 #include "GameFramework/Actor.h"
 #include "Obstacle.generated.h"
 
@@ -42,8 +43,11 @@ protected:
 
 	#pragma region UFUNCTIONS
 
-	UFUNCTION(BlueprintImplementableEvent)
-	void OnHit();
+		UFUNCTION()
+		void OnHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit);
+		
+		UFUNCTION(BlueprintImplementableEvent)
+		void HitPlayer(ARunCharacter* runCharacter);
 
 	#pragma endregion 
 

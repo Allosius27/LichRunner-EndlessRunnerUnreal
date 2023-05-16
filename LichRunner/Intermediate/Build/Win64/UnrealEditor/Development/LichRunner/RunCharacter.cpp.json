@@ -7,6 +7,8 @@
         "Includes": [
             "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\development\\lichrunner\\definitions.lichrunner.h",
             "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\source\\lichrunner\\public\\actors\\characters\\runcharacter.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\source\\lichrunner\\public\\actors\\pickups\\pickup.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\lichrunner\\pickup.generated.h",
             "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
             "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
             "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\charactermovementreplication.generated.h",

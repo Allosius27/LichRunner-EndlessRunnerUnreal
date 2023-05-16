@@ -19,11 +19,13 @@ AObstacle::AObstacle()
 	StaticMesh->SetCollisionProfileName(FName("BlockAllDynamic"));
 }
 
+
 // Called when the game starts or when spawned
 void AObstacle::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	OnActorHit.AddDynamic(this, &AObstacle::OnHit);
 }
 
 // Called every frame
@@ -31,5 +33,14 @@ void AObstacle::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void AObstacle::OnHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit)
+{
+	if(ARunCharacter* player = Cast<ARunCharacter>(OtherActor))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Player Detected"));
+		HitPlayer(player);
+	}
 }
 

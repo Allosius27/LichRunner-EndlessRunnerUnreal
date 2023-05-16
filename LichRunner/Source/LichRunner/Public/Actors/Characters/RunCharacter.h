@@ -3,8 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Actors/Pickups/Pickup.h"
 #include "GameFramework/Character.h"
 #include "RunCharacter.generated.h"
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FPlayerDeathSignature);
 
 UCLASS()
 class LICHRUNNER_API ARunCharacter : public ACharacter
@@ -24,8 +27,34 @@ public:
 
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Inspector | Camera")
 		class USpringArmComponent* SpringArm;
+	
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
+		float DeathDelay;
+	
+	
+		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
+		bool IsAlive;
 
-	#pragma endregion 
+		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
+		int YellowCoinsStored;
+			
+		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
+		int BlueCoinsStored;
+
+		UPROPERTY(BlueprintAssignable)
+		FPlayerDeathSignature DispatcherOnPlayerDeath;
+
+	#pragma endregion
+
+	#pragma region UFUNCTIONS
+	
+		UFUNCTION(BlueprintCallable, Category = "Stats")
+		void CharacterDeath();
+
+		UFUNCTION(BlueprintCallable, Category = "Stats")
+		void AddCoins(int count, ETypePickup typePickup);
+
+	#pragma  endregion
 
 	#pragma  region METHODS
 		
@@ -42,6 +71,19 @@ public:
 #pragma region PROTECTED
 	
 protected:
+
+	#pragma region UPROPERTIES
+	
+		FTimerHandle DeathTimerHandle;
+
+	#pragma endregion 
+
+	#pragma region UFUNCTIONS
+	
+		UFUNCTION(BlueprintImplementableEvent, Category = "Stats")
+		void DisableVisual();
+
+	#pragma endregion 
 
 	#pragma  region METHODS
 		

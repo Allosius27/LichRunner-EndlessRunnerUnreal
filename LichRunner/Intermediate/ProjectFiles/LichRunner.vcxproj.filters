@@ -76,6 +76,33 @@
     <ClCompile Include="..\..\Source\LichRunner\Private\Actors\Characters\RunCharacter.cpp">
       <Filter>Source\LichRunner\Private\Actors\Characters</Filter>
     </ClCompile>
+    <Filter Include="Source\LichRunner\Private\Actors\Obstacles">
+      <UniqueIdentifier>{5EFE5629-43B1-330E-AA02-DF627742601A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\LichRunner\Private\Actors\Obstacles\Obstacle.cpp">
+      <Filter>Source\LichRunner\Private\Actors\Obstacles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LichRunner\Private\Actors\Obstacles\Tile.cpp">
+      <Filter>Source\LichRunner\Private\Actors\Obstacles</Filter>
+    </ClCompile>
+    <Filter Include="Source\LichRunner\Private\Actors\Pickups">
+      <UniqueIdentifier>{B6B070C6-D4AA-3F03-B0BF-40C689849EE0}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\LichRunner\Private\Actors\Pickups\Pickup.cpp">
+      <Filter>Source\LichRunner\Private\Actors\Pickups</Filter>
+    </ClCompile>
+    <Filter Include="Source\LichRunner\Private\Controllers">
+      <UniqueIdentifier>{8967D7AF-F8ED-3647-A473-B4450CEA6302}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\LichRunner\Private\Controllers\RunPlayerController.cpp">
+      <Filter>Source\LichRunner\Private\Controllers</Filter>
+    </ClCompile>
+    <Filter Include="Source\LichRunner\Private\GameModes">
+      <UniqueIdentifier>{0FA28FFE-912D-33D4-8069-14AFDAC91CE5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\LichRunner\Private\GameModes\RunGameMode.cpp">
+      <Filter>Source\LichRunner\Private\GameModes</Filter>
+    </ClCompile>
     <Filter Include="Source\LichRunner\Public">
       <UniqueIdentifier>{D05C8BA4-4C32-3BB8-AB1E-35AF74875069}</UniqueIdentifier>
     </Filter>
@@ -102,6 +129,33 @@
     </Filter>
     <ClInclude Include="..\..\Source\LichRunner\Public\Actors\Characters\RunCharacter.h">
       <Filter>Source\LichRunner\Public\Actors\Characters</Filter>
+    </ClInclude>
+    <Filter Include="Source\LichRunner\Public\Actors\Obstacles">
+      <UniqueIdentifier>{E3AEA806-6FAF-3515-AD88-33C89A6B20B8}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\LichRunner\Public\Actors\Obstacles\Obstacle.h">
+      <Filter>Source\LichRunner\Public\Actors\Obstacles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LichRunner\Public\Actors\Obstacles\Tile.h">
+      <Filter>Source\LichRunner\Public\Actors\Obstacles</Filter>
+    </ClInclude>
+    <Filter Include="Source\LichRunner\Public\Actors\Pickups">
+      <UniqueIdentifier>{CC5ED0E8-84FB-3A83-8CBD-2FC59461A60A}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\LichRunner\Public\Actors\Pickups\Pickup.h">
+      <Filter>Source\LichRunner\Public\Actors\Pickups</Filter>
+    </ClInclude>
+    <Filter Include="Source\LichRunner\Public\Controllers">
+      <UniqueIdentifier>{DEAC66FD-312C-3A43-BE77-10480252800D}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\LichRunner\Public\Controllers\RunPlayerController.h">
+      <Filter>Source\LichRunner\Public\Controllers</Filter>
+    </ClInclude>
+    <Filter Include="Source\LichRunner\Public\GameModes">
+      <UniqueIdentifier>{4A71D467-4D27-3D28-82F6-94FB0D3001F3}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\LichRunner\Public\GameModes\RunGameMode.h">
+      <Filter>Source\LichRunner\Public\GameModes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

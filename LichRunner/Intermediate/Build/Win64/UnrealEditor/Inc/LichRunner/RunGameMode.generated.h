@@ -17,13 +17,17 @@ class ATile;
 #define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_SPARSE_DATA
 #define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execRestartLevel); \
 	DECLARE_FUNCTION(execOnTileExited); \
+	DECLARE_FUNCTION(execGameOver); \
 	DECLARE_FUNCTION(execCreateTile);
 
 
 #define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execRestartLevel); \
 	DECLARE_FUNCTION(execOnTileExited); \
+	DECLARE_FUNCTION(execGameOver); \
 	DECLARE_FUNCTION(execCreateTile);
 
 

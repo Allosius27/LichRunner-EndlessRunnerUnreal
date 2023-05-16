@@ -4,6 +4,7 @@
 #include "GameModes/RunGameMode.h"
 
 #include "Actors/Obstacles/Tile.h"
+#include "Kismet/GameplayStatics.h"
 
 ARunGameMode::ARunGameMode()
 {
@@ -15,6 +16,8 @@ ARunGameMode::ARunGameMode()
 
 	HasObstaclesCreation = true;
 	HasPickupsCreation = true;
+
+	RestartLevelDelay = 2.5f;
 }
 
 
@@ -48,9 +51,25 @@ void ARunGameMode::CreateTile(bool tileCanCreateObstacles, bool tileCanCreatePic
 	tileSpawned->OnExited.AddDynamic(this, &ARunGameMode::OnTileExited);
 }
 
+
 void ARunGameMode::OnTileExited(ATile* tile)
 {
 	CreateTile(true, true);
 	tile->TileExited();
 }
 
+
+void ARunGameMode::GameOver()
+{
+	GetWorldTimerManager().SetTimer(RestartLevelTimerHandle, this, &ARunGameMode::RestartLevel, RestartLevelDelay, false);
+}
+
+void ARunGameMode::RestartLevel()
+{
+	if(GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Purple, TEXT("Restart Level"));
+	}
+	
+	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
+}

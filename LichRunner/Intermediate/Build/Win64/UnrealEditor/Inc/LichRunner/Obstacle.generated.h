@@ -8,17 +8,34 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+struct FHitResult;
+class ARunCharacter;
 #ifdef LICHRUNNER_Obstacle_generated_h
 #error "Obstacle.generated.h already included, missing '#pragma once' in Obstacle.h"
 #endif
 #define LICHRUNNER_Obstacle_generated_h
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_SPARSE_DATA
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_RPC_WRAPPERS
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_EVENT_PARMS
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_CALLBACK_WRAPPERS
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_SPARSE_DATA
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnHit);
+
+
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnHit);
+
+
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_EVENT_PARMS \
+	struct Obstacle_eventHitPlayer_Parms \
+	{ \
+		ARunCharacter* runCharacter; \
+	};
+
+
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_CALLBACK_WRAPPERS
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAObstacle(); \
 	friend struct Z_Construct_UClass_AObstacle_Statics; \
@@ -27,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(AObstacle)
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_INCLASS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesAObstacle(); \
 	friend struct Z_Construct_UClass_AObstacle_Statics; \
@@ -36,7 +53,7 @@ public: \
 	DECLARE_SERIALIZER(AObstacle)
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_STANDARD_CONSTRUCTORS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AObstacle(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AObstacle) \
@@ -49,7 +66,7 @@ private: \
 public:
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AObstacle(AObstacle&&); \
@@ -60,30 +77,30 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AObstacle)
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_9_PROLOG \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_EVENT_PARMS
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_10_PROLOG \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_EVENT_PARMS
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_GENERATED_BODY_LEGACY \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_SPARSE_DATA \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_RPC_WRAPPERS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_CALLBACK_WRAPPERS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_INCLASS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_STANDARD_CONSTRUCTORS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_SPARSE_DATA \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_RPC_WRAPPERS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_CALLBACK_WRAPPERS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_INCLASS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_GENERATED_BODY \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_SPARSE_DATA \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_CALLBACK_WRAPPERS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_INCLASS_NO_PURE_DECLS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_12_ENHANCED_CONSTRUCTORS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_SPARSE_DATA \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_CALLBACK_WRAPPERS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_INCLASS_NO_PURE_DECLS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

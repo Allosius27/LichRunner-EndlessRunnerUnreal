@@ -6,21 +6,76 @@
 #include "GameFramework/Actor.h"
 #include "Pickup.generated.h"
 
+UENUM(BlueprintType)
+enum class ETypePickup : uint8 {
+	E_YellowCoin = 0 UMETA(DisplayName = "YellowCoin"),
+	E_BlueCoin = 1  UMETA(DisplayName = "BlueCoin"),
+};
+
 UCLASS()
 class LICHRUNNER_API APickup : public AActor
 {
 	GENERATED_BODY()
+
+#pragma region PUBLIC
 	
 public:	
 	// Sets default values for this actor's properties
 	APickup();
 
+	#pragma region UPROPERTIES
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
+		ETypePickup TypePickup;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
+		int PickupCoinsCount;
+
+	#pragma endregion 
+
+	#pragma region METHODS
+
+		// Called every frame
+		virtual void Tick(float DeltaTime) override;
+
+	#pragma endregion 
+
+#pragma endregion
+
+#pragma region PROTECTED
+	
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	#pragma region UPROPERTIES
+		
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
+		class USceneComponent* SceneRoot;
+	
+		UPROPERTY(VisibleAnywhere, Category = "Components")
+		class UStaticMeshComponent* StaticMesh;
 
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
+		class USphereComponent* PickupTrigger;
+
+	#pragma endregion
+
+	#pragma region UFUNCTIONS
+
+		UFUNCTION(Category = "Collisions")
+		void OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	
+		UFUNCTION(BlueprintImplementableEvent)
+		void OnGet(ARunCharacter* runCharacter);
+
+	#pragma endregion 
+
+	#pragma region METHODS
+		
+		// Called when the game starts or when spawned
+		virtual void BeginPlay() override;
+
+	#pragma endregion 
+
+#pragma endregion 
+	
 };

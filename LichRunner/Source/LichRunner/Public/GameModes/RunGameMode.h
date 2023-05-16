@@ -30,12 +30,18 @@ public:
 		UPROPERTY(EditAnywhere, Category = "Inspector | Game World")
 		bool HasPickupsCreation;
 
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Global Management")
+		float RestartLevelDelay;
+
 	#pragma endregion 
 
 	#pragma region UFUNCTIONS
 
 		UFUNCTION(BlueprintCallable, Category = "Game World")
 		void CreateTile(bool tileCanCreateObstacles, bool tileCanCreatePickups);
+
+		UFUNCTION(BlueprintCallable, Category = "Global Management")
+		void GameOver();
 
 	#pragma endregion 
 
@@ -52,12 +58,17 @@ public:
 		UPROPERTY(EditAnywhere, Category = "Protected | Game World")
 		FTransform CurrentSpawnTransform;
 
+		FTimerHandle RestartLevelTimerHandle;
+
 	#pragma endregion
 
 	#pragma region UFUNCTIONS
 
 		UFUNCTION(Category = "Game World")
 		void OnTileExited(ATile* tile);
+
+		UFUNCTION(Category = "Global Management")
+		void RestartLevel();
 
 	#pragma endregion 
 

@@ -24,6 +24,8 @@ ARunCharacter::ARunCharacter()
 	Camera->SetRelativeLocation(FVector(4.0f, 0.0f, 47.0f));
 	Camera->SetRelativeRotation(FRotator(-15.0f, 0.0f, 0.0f));
 
+	IsAlive = true;
+	DeathDelay = 1.5f;
 }
 
 // Called when the game starts or when spawned
@@ -45,5 +47,34 @@ void ARunCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+void ARunCharacter::CharacterDeath()
+{
+	if(!IsAlive)
+	{
+		return;
+	}
+	
+	IsAlive = false;
+
+	DispatcherOnPlayerDeath.Broadcast();
+	
+	APlayerController* playerController = GetWorld()->GetFirstPlayerController();
+	playerController->DisableInput(playerController);
+
+	GetWorldTimerManager().SetTimer(DeathTimerHandle, this, &ARunCharacter::DisableVisual, DeathDelay, false);
+}
+
+void ARunCharacter::AddCoins(int count, ETypePickup typePickup)
+{
+	if(typePickup == ETypePickup::E_YellowCoin)
+	{
+		YellowCoinsStored += count;
+	}
+	else if(typePickup == ETypePickup::E_BlueCoin)
+	{
+		BlueCoinsStored += count;
+	}
 }
 
