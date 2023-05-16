@@ -3799,3 +3799,7 @@ Please use /Niagara/DynamicInputs/Angles/AngleConversion.AngleConversion instead
 [2023.05.16-11.55.00:520][824]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2023.05.16-11.55.00:859][824]LogUObjectHash: Compacting FUObjectHashTables data took   3.41ms
 [2023.05.16-11.55.00:958][825]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2023.05.16-11.58.42:827][301]LogUObjectHash: Compacting FUObjectHashTables data took   3.75ms
+[2023.05.16-11.59.32:587][767]LogUObjectGlobals: Warning: Failed to find object 'Class None.Physics'
+[2023.05.16-12.00.22:691][418]LogSlate: Window 'Project Settings' being destroyed
+[2023.05.16-12.00.22:697][418]LogSlate: Window 'Project Settings' being destroyed
