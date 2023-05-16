@@ -36,12 +36,18 @@ public:
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 		class UBoxComponent* SpawnPickupsTrigger;
 
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
+		class UBoxComponent* SpawnEnemiesTrigger;
+
 
 		UPROPERTY(EditAnywhere, Category = "Inspector | Spawnables")
 		TArray<class TSubclassOf<class AObstacle>> ObstaclesClass;
 
 		UPROPERTY(EditAnywhere, Category = "Inspector | Spawnables")
 		TArray<class TSubclassOf<class APickup>> PickupsClass;
+
+		UPROPERTY(EditAnywhere, Category = "Inspector | Spawnables")
+		TArray<class TSubclassOf<class AEnemy>> EnemiesClass;
 	
 	
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector |Stats")
@@ -53,12 +59,21 @@ public:
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector |Stats")
 		int PickupsToSpawnCount;
 
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector |Stats")
+		float EnemySpawnRandomWeight;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector |Stats")
+		int EnemiesToSpawnCount;
+
 	
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public |Stats")
 		bool CanCreateObstacles;
 
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public |Stats")
 		bool CanCreatePickups;
+
+		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public |Stats")
+		bool CanCreateEnemies;
 
 
 		
@@ -81,7 +96,7 @@ public:
 
 
 		UFUNCTION(Category = "Init")
-		void Init(bool createObstacles, bool createPickups);
+		void Init(bool createObstacles, bool createPickups, bool createEnemies);
 	
 	
 		UFUNCTION(Category = "World")
@@ -89,6 +104,9 @@ public:
 
 		UFUNCTION(Category = "World")
 		void SpawnPickup(float randomWeight);
+
+		UFUNCTION(Category = "World")
+		void SpawnEnemy(float randomWeight);
 	
 	
 		UFUNCTION(Category = "World")

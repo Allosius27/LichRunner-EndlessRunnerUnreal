@@ -27,19 +27,30 @@ public:
 
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Inspector | Camera")
 		class USpringArmComponent* SpringArm;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Inspector | ActorComponents")
+		class UStatsComponent* StatsComponent;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Inspector | ActorComponents")
+		class UPlayerStatsComponent* PlayerStatsComponent;
 	
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
 		float DeathDelay;
 	
 	
+	
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
 		bool IsAlive;
+	
 
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
 		int YellowCoinsStored;
 			
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
 		int BlueCoinsStored;
+
+		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
+		int EnemiesKilledCount;
 
 		UPROPERTY(BlueprintAssignable)
 		FPlayerDeathSignature DispatcherOnPlayerDeath;

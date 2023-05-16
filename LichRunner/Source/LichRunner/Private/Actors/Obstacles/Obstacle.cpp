@@ -17,6 +17,8 @@ AObstacle::AObstacle()
 	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>("StaticMesh");
 	StaticMesh->SetupAttachment(SceneRoot);
 	StaticMesh->SetCollisionProfileName(FName("BlockAllDynamic"));
+
+	IsMortal = true;
 }
 
 
@@ -40,7 +42,11 @@ void AObstacle::OnHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpul
 	if(ARunCharacter* player = Cast<ARunCharacter>(OtherActor))
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Player Detected"));
-		HitPlayer(player);
+		if(IsMortal)
+		{
+			HitPlayer(player);
+		}
+		
 	}
 }
 

@@ -139,6 +139,11 @@ void EmptyLinkFunctionForGeneratedCodeObstacle() {}
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_IsMortal_MetaData[];
+#endif
+		static void NewProp_IsMortal_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_IsMortal;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_StaticMesh_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_StaticMesh;
@@ -165,6 +170,17 @@ void EmptyLinkFunctionForGeneratedCodeObstacle() {}
 	};
 #endif
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AObstacle_Statics::NewProp_IsMortal_MetaData[] = {
+		{ "Category", "Inspector | Stats" },
+		{ "ModuleRelativePath", "Public/Actors/Obstacles/Obstacle.h" },
+	};
+#endif
+	void Z_Construct_UClass_AObstacle_Statics::NewProp_IsMortal_SetBit(void* Obj)
+	{
+		((AObstacle*)Obj)->IsMortal = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AObstacle_Statics::NewProp_IsMortal = { "IsMortal", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AObstacle), &Z_Construct_UClass_AObstacle_Statics::NewProp_IsMortal_SetBit, METADATA_PARAMS(Z_Construct_UClass_AObstacle_Statics::NewProp_IsMortal_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AObstacle_Statics::NewProp_IsMortal_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AObstacle_Statics::NewProp_StaticMesh_MetaData[] = {
 		{ "Category", "Components" },
 		{ "EditInline", "true" },
@@ -181,6 +197,7 @@ void EmptyLinkFunctionForGeneratedCodeObstacle() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AObstacle_Statics::NewProp_SceneRoot = { "SceneRoot", nullptr, (EPropertyFlags)0x002008000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AObstacle, SceneRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AObstacle_Statics::NewProp_SceneRoot_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AObstacle_Statics::NewProp_SceneRoot_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AObstacle_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObstacle_Statics::NewProp_IsMortal,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObstacle_Statics::NewProp_StaticMesh,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObstacle_Statics::NewProp_SceneRoot,
 	};
@@ -220,9 +237,9 @@ void EmptyLinkFunctionForGeneratedCodeObstacle() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AObstacle, AObstacle::StaticClass, TEXT("AObstacle"), &Z_Registration_Info_UClass_AObstacle, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AObstacle), 1253627640U) },
+		{ Z_Construct_UClass_AObstacle, AObstacle::StaticClass, TEXT("AObstacle"), &Z_Registration_Info_UClass_AObstacle, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AObstacle), 2448285445U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_3624643153(TEXT("/Script/LichRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_399290004(TEXT("/Script/LichRunner"),
 		Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Obstacles_Obstacle_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

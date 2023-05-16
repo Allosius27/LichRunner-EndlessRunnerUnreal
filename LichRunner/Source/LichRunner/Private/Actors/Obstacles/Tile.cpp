@@ -3,6 +3,7 @@
 
 #include "Actors/Obstacles/Tile.h"
 
+#include "Actors/Characters/Enemy.h"
 #include "Actors/Characters/RunCharacter.h"
 #include "Actors/Obstacles/Obstacle.h"
 #include "Actors/Pickups/Pickup.h"
@@ -37,6 +38,11 @@ ATile::ATile()
 	SpawnPickupsTrigger->SetupAttachment(SceneRoot);
 	SpawnPickupsTrigger->SetRelativeLocation(FVector(520.0f, 0.0f, 0.0f));
 	SpawnPickupsTrigger->SetBoxExtent(FVector(400.0f, 400.0f, 10.0f));
+
+	SpawnEnemiesTrigger = CreateDefaultSubobject<UBoxComponent>("SpawnEnemiesTrigger");
+	SpawnEnemiesTrigger->SetupAttachment(SceneRoot);
+	SpawnEnemiesTrigger->SetRelativeLocation(FVector(500.0f, 0.0f, 0.0f));
+	SpawnEnemiesTrigger->SetBoxExtent(FVector(100.0f, 400.0f, 10.0f));
 	
 
 	TileEndLifeTime = 2.0f;
@@ -44,6 +50,8 @@ ATile::ATile()
 	ObstacleSpawnRandomWeight = 0.6f;
 	PickupSpawnRandomWeight = 0.3f;
 	PickupsToSpawnCount = 4;
+	EnemySpawnRandomWeight = 0.8f;
+	EnemiesToSpawnCount = 5;
 }
 
 // Called when the game starts or when spawned
@@ -54,16 +62,22 @@ void ATile::BeginPlay()
 	ExitTrigger->OnComponentBeginOverlap.AddDynamic(this, &ATile::ATile::OnOverlapBegin);
 }
 
-void ATile::Init(bool createObstacles, bool createPickups)
+void ATile::Init(bool createObstacles, bool createPickups, bool createEnemies)
 {
 	CanCreateObstacles = createObstacles;
 	CanCreatePickups = createPickups;
+	CanCreateEnemies = createEnemies;
 
 	SpawnObstacle(ObstacleSpawnRandomWeight);
 	
 	for (int i = 0; i < PickupsToSpawnCount; ++i)
 	{
 		SpawnPickup(PickupSpawnRandomWeight);
+	}
+
+	for (int i = 0; i < EnemiesToSpawnCount; ++i)
+	{
+		SpawnEnemy(EnemySpawnRandomWeight);
 	}
 	
 }
@@ -135,6 +149,27 @@ void ATile::SpawnPickup(float randomWeight)
 		
 		APickup* pickup = GetWorld()->SpawnActor<APickup>(PickupsClass[rnd], transform, spawnParams);
 		pickup->AttachToActor(this, FAttachmentTransformRules::KeepWorldTransform);
+	}
+}
+
+void ATile::SpawnEnemy(float randomWeight)
+{
+	if(RandomWeight(randomWeight, 0, 1) && CanCreateEnemies)
+	{
+		FVector pointPos = UKismetMathLibrary::RandomPointInBoundingBox(SpawnEnemiesTrigger->GetComponentLocation(), SpawnEnemiesTrigger->GetScaledBoxExtent());
+		int rnd = FMath::RandRange(0, EnemiesClass.Num()-1);
+		
+		FActorSpawnParameters spawnParams;
+		spawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+		spawnParams.bNoFail = true;
+		
+		FTransform transform;
+		transform.SetLocation(pointPos);
+		transform.SetRotation(GetActorRotation().Quaternion());
+		transform.SetScale3D(FVector(1.0f));
+		
+		AEnemy* enemy = GetWorld()->SpawnActor<AEnemy>(EnemiesClass[rnd], transform, spawnParams);
+		enemy->AttachToActor(this, FAttachmentTransformRules::KeepWorldTransform);
 	}
 }
 

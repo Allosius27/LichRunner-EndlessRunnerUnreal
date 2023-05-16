@@ -3,6 +3,8 @@
 
 #include "Actors/Characters/RunCharacter.h"
 
+#include "Actors/Characters/PlayerStatsComponent.h"
+#include "Actors/Characters/StatsComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 
@@ -24,6 +26,10 @@ ARunCharacter::ARunCharacter()
 	Camera->SetRelativeLocation(FVector(4.0f, 0.0f, 47.0f));
 	Camera->SetRelativeRotation(FRotator(-15.0f, 0.0f, 0.0f));
 
+	StatsComponent = CreateDefaultSubobject<UStatsComponent>("GenericStatsComponent");
+	PlayerStatsComponent = CreateDefaultSubobject<UPlayerStatsComponent>("PlayerUniqueStatsComponent");
+	
+	
 	IsAlive = true;
 	DeathDelay = 1.5f;
 }
@@ -32,6 +38,8 @@ ARunCharacter::ARunCharacter()
 void ARunCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+
 	
 }
 

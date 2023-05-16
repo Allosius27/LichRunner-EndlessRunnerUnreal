@@ -30,6 +30,9 @@ public:
 		UPROPERTY(EditAnywhere, Category = "Inspector | Game World")
 		bool HasPickupsCreation;
 
+		UPROPERTY(EditAnywhere, Category = "Inspector | Game World")
+		bool HasEnemiesCreation;
+
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Global Management")
 		float RestartLevelDelay;
 
@@ -38,7 +41,7 @@ public:
 	#pragma region UFUNCTIONS
 
 		UFUNCTION(BlueprintCallable, Category = "Game World")
-		void CreateTile(bool tileCanCreateObstacles, bool tileCanCreatePickups);
+		void CreateTile(bool tileCanCreateObstacles, bool tileCanCreatePickups, bool tileCanCreateEnemies);
 
 		UFUNCTION(BlueprintCallable, Category = "Global Management")
 		void GameOver();

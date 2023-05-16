@@ -11,6 +11,7 @@ ARunPlayerController::ARunPlayerController()
 }
 
 
+
 void ARunPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
@@ -33,12 +34,26 @@ void ARunPlayerController::BeginPlay()
 void ARunPlayerController::SetupInputComponent()
 {
 	Super::SetupInputComponent();
+	
 	InputComponent->BindAxis("Move Right / Left", this, &ARunPlayerController::MoveRight);
+	
+	InputComponent->BindAction("Jump", IE_Pressed, this, &ARunPlayerController::Jump);
+	InputComponent->BindAction("Jump", IE_Released, this, &ARunPlayerController::EndJump);
 }
 
 void ARunPlayerController::MoveRight(float axisValue)
 {
 	RunCharacter->AddMovementInput(RunCharacter->GetActorRightVector(), axisValue);
+}
+
+void ARunPlayerController::Jump()
+{
+	RunCharacter->Jump();
+}
+
+void ARunPlayerController::EndJump()
+{
+	RunCharacter->StopJumping();
 }
 
 void ARunPlayerController::Tick(float DeltaTime)

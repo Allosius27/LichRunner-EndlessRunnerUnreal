@@ -18,6 +18,13 @@ public:
 	// Sets default values for this actor's properties
 	AObstacle();
 
+	#pragma region UPROPERTIES
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
+		bool IsMortal;
+
+	#pragma endregion 
+
 	#pragma region METHODS
 		
 		// Called every frame

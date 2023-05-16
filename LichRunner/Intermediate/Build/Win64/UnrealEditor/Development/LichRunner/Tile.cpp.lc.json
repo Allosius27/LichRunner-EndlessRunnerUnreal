@@ -1,0 +1,36 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\source\\lichrunner\\private\\actors\\obstacles\\tile.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\lichrunnereditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\development\\lichrunner\\definitions.lichrunner.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\source\\lichrunner\\public\\actors\\obstacles\\tile.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\lichrunner\\tile.generated.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\source\\lichrunner\\public\\actors\\characters\\runcharacter.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\source\\lichrunner\\public\\actors\\pickups\\pickup.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\lichrunner\\pickup.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\charactermovementreplication.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\rootmotionsource.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\character.generated.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\lichrunner\\runcharacter.generated.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\source\\lichrunner\\public\\actors\\obstacles\\obstacle.h",
+            "d:\\projets git\\lichrunner-endlessrunnerunreal\\lichrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\lichrunner\\obstacle.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\components\\arrowcomponent.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\arrowcomponent.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\shapecomponent.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\boxcomponent.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.h",
+            "d:\\jeux\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\kismetmathlibrary.generated.h",
+            "d:\\jeux\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

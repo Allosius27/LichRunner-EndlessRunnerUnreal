@@ -15,6 +15,20 @@ void EmptyLinkFunctionForGeneratedCodeRunPlayerController() {}
 	UPackage* Z_Construct_UPackage__Script_LichRunner();
 	LICHRUNNER_API UClass* Z_Construct_UClass_ARunCharacter_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ARunPlayerController::execEndJump)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->EndJump();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ARunPlayerController::execJump)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Jump();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ARunPlayerController::execMoveRight)
 	{
 		P_GET_PROPERTY(FFloatProperty,Z_Param_axisValue);
@@ -27,9 +41,57 @@ void EmptyLinkFunctionForGeneratedCodeRunPlayerController() {}
 	{
 		UClass* Class = ARunPlayerController::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "EndJump", &ARunPlayerController::execEndJump },
+			{ "Jump", &ARunPlayerController::execJump },
 			{ "MoveRight", &ARunPlayerController::execMoveRight },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ARunPlayerController_EndJump_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARunPlayerController_EndJump_Statics::Function_MetaDataParams[] = {
+		{ "Category", "PlayerMovements" },
+		{ "ModuleRelativePath", "Public/Controllers/RunPlayerController.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ARunPlayerController_EndJump_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARunPlayerController, nullptr, "EndJump", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ARunPlayerController_EndJump_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ARunPlayerController_EndJump_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ARunPlayerController_EndJump()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ARunPlayerController_EndJump_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ARunPlayerController_Jump_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARunPlayerController_Jump_Statics::Function_MetaDataParams[] = {
+		{ "Category", "PlayerMovements" },
+		{ "ModuleRelativePath", "Public/Controllers/RunPlayerController.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ARunPlayerController_Jump_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARunPlayerController, nullptr, "Jump", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ARunPlayerController_Jump_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ARunPlayerController_Jump_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ARunPlayerController_Jump()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ARunPlayerController_Jump_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ARunPlayerController_MoveRight_Statics
 	{
@@ -89,6 +151,8 @@ void EmptyLinkFunctionForGeneratedCodeRunPlayerController() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_LichRunner,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ARunPlayerController_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ARunPlayerController_EndJump, "EndJump" }, // 2016873528
+		{ &Z_Construct_UFunction_ARunPlayerController_Jump, "Jump" }, // 3097824917
 		{ &Z_Construct_UFunction_ARunPlayerController_MoveRight, "MoveRight" }, // 1964371503
 	};
 #if WITH_METADATA
@@ -145,9 +209,9 @@ void EmptyLinkFunctionForGeneratedCodeRunPlayerController() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Controllers_RunPlayerController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ARunPlayerController, ARunPlayerController::StaticClass, TEXT("ARunPlayerController"), &Z_Registration_Info_UClass_ARunPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunPlayerController), 52401464U) },
+		{ Z_Construct_UClass_ARunPlayerController, ARunPlayerController::StaticClass, TEXT("ARunPlayerController"), &Z_Registration_Info_UClass_ARunPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunPlayerController), 644074218U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Controllers_RunPlayerController_h_2838952111(TEXT("/Script/LichRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Controllers_RunPlayerController_h_572143698(TEXT("/Script/LichRunner"),
 		Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Controllers_RunPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Controllers_RunPlayerController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

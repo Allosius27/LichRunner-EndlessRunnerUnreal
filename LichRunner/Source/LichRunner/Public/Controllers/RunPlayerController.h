@@ -38,6 +38,11 @@ public:
 		UFUNCTION(Category = "PlayerMovements")
 		void MoveRight(float axisValue);
 
+		UFUNCTION(Category = "PlayerMovements")
+		void Jump();
+		UFUNCTION(Category = "PlayerMovements")
+		void EndJump();
+
 	#pragma endregion 
 
 #pragma endregion 

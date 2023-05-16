@@ -16,6 +16,7 @@ ARunGameMode::ARunGameMode()
 
 	HasObstaclesCreation = true;
 	HasPickupsCreation = true;
+	HasEnemiesCreation = true;
 
 	RestartLevelDelay = 2.5f;
 }
@@ -28,11 +29,11 @@ void ARunGameMode::BeginPlay()
 
 	for (int i = 0; i < InitTilesToSpawnCount; ++i)
 	{
-		CreateTile(false, true);
+		CreateTile(false, true, false);
 	}
 }
 
-void ARunGameMode::CreateTile(bool tileCanCreateObstacles, bool tileCanCreatePickups)
+void ARunGameMode::CreateTile(bool tileCanCreateObstacles, bool tileCanCreatePickups, bool tileCanCreateEnemies)
 {
 	if(!TileClass) return;
 
@@ -46,7 +47,8 @@ void ARunGameMode::CreateTile(bool tileCanCreateObstacles, bool tileCanCreatePic
 	
 	bool createObstacles = HasObstaclesCreation && tileCanCreateObstacles;
 	bool createPickups = HasPickupsCreation && tileCanCreatePickups;
-	tileSpawned->Init(createObstacles, createPickups);
+	bool createEnemies = HasEnemiesCreation && tileCanCreateEnemies;
+	tileSpawned->Init(createObstacles, createPickups, createEnemies);
 	
 	tileSpawned->OnExited.AddDynamic(this, &ARunGameMode::OnTileExited);
 }
@@ -54,7 +56,7 @@ void ARunGameMode::CreateTile(bool tileCanCreateObstacles, bool tileCanCreatePic
 
 void ARunGameMode::OnTileExited(ATile* tile)
 {
-	CreateTile(true, true);
+	CreateTile(true, true, true);
 	tile->TileExited();
 }
 

@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeRunCharacter() {}
 	LICHRUNNER_API UEnum* Z_Construct_UEnum_LichRunner_ETypePickup();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
+	LICHRUNNER_API UClass* Z_Construct_UClass_UStatsComponent_NoRegister();
+	LICHRUNNER_API UClass* Z_Construct_UClass_UPlayerStatsComponent_NoRegister();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_LichRunner_PlayerDeathSignature__DelegateSignature_Statics
 	{
@@ -177,6 +179,14 @@ void EmptyLinkFunctionForGeneratedCodeRunCharacter() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_SpringArm;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_StatsComponent_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_StatsComponent;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_PlayerStatsComponent_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerStatsComponent;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_DeathDelay_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_DeathDelay;
@@ -193,6 +203,10 @@ void EmptyLinkFunctionForGeneratedCodeRunCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_BlueCoinsStored_MetaData[];
 #endif
 		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_BlueCoinsStored;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_EnemiesKilledCount_MetaData[];
+#endif
+		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_EnemiesKilledCount;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_DispatcherOnPlayerDeath_MetaData[];
 #endif
@@ -234,6 +248,22 @@ void EmptyLinkFunctionForGeneratedCodeRunCharacter() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARunCharacter_Statics::NewProp_SpringArm = { "SpringArm", nullptr, (EPropertyFlags)0x001000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARunCharacter, SpringArm), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARunCharacter_Statics::NewProp_SpringArm_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunCharacter_Statics::NewProp_SpringArm_MetaData)) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunCharacter_Statics::NewProp_StatsComponent_MetaData[] = {
+		{ "Category", "Inspector | ActorComponents" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Actors/Characters/RunCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARunCharacter_Statics::NewProp_StatsComponent = { "StatsComponent", nullptr, (EPropertyFlags)0x001000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARunCharacter, StatsComponent), Z_Construct_UClass_UStatsComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARunCharacter_Statics::NewProp_StatsComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunCharacter_Statics::NewProp_StatsComponent_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunCharacter_Statics::NewProp_PlayerStatsComponent_MetaData[] = {
+		{ "Category", "Inspector | ActorComponents" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Actors/Characters/RunCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARunCharacter_Statics::NewProp_PlayerStatsComponent = { "PlayerStatsComponent", nullptr, (EPropertyFlags)0x001000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARunCharacter, PlayerStatsComponent), Z_Construct_UClass_UPlayerStatsComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARunCharacter_Statics::NewProp_PlayerStatsComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunCharacter_Statics::NewProp_PlayerStatsComponent_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunCharacter_Statics::NewProp_DeathDelay_MetaData[] = {
 		{ "Category", "Inspector | Stats" },
 		{ "ModuleRelativePath", "Public/Actors/Characters/RunCharacter.h" },
@@ -266,6 +296,13 @@ void EmptyLinkFunctionForGeneratedCodeRunCharacter() {}
 #endif
 	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ARunCharacter_Statics::NewProp_BlueCoinsStored = { "BlueCoinsStored", nullptr, (EPropertyFlags)0x0010000000020005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARunCharacter, BlueCoinsStored), METADATA_PARAMS(Z_Construct_UClass_ARunCharacter_Statics::NewProp_BlueCoinsStored_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunCharacter_Statics::NewProp_BlueCoinsStored_MetaData)) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunCharacter_Statics::NewProp_EnemiesKilledCount_MetaData[] = {
+		{ "Category", "Public | Stats" },
+		{ "ModuleRelativePath", "Public/Actors/Characters/RunCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ARunCharacter_Statics::NewProp_EnemiesKilledCount = { "EnemiesKilledCount", nullptr, (EPropertyFlags)0x0010000000020005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARunCharacter, EnemiesKilledCount), METADATA_PARAMS(Z_Construct_UClass_ARunCharacter_Statics::NewProp_EnemiesKilledCount_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunCharacter_Statics::NewProp_EnemiesKilledCount_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunCharacter_Statics::NewProp_DispatcherOnPlayerDeath_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Actors/Characters/RunCharacter.h" },
 	};
@@ -274,10 +311,13 @@ void EmptyLinkFunctionForGeneratedCodeRunCharacter() {}
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ARunCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunCharacter_Statics::NewProp_Camera,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunCharacter_Statics::NewProp_SpringArm,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunCharacter_Statics::NewProp_StatsComponent,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunCharacter_Statics::NewProp_PlayerStatsComponent,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunCharacter_Statics::NewProp_DeathDelay,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunCharacter_Statics::NewProp_IsAlive,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunCharacter_Statics::NewProp_YellowCoinsStored,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunCharacter_Statics::NewProp_BlueCoinsStored,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunCharacter_Statics::NewProp_EnemiesKilledCount,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunCharacter_Statics::NewProp_DispatcherOnPlayerDeath,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ARunCharacter_Statics::StaticCppClassTypeInfo = {
@@ -316,9 +356,9 @@ void EmptyLinkFunctionForGeneratedCodeRunCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Characters_RunCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ARunCharacter, ARunCharacter::StaticClass, TEXT("ARunCharacter"), &Z_Registration_Info_UClass_ARunCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunCharacter), 1246750795U) },
+		{ Z_Construct_UClass_ARunCharacter, ARunCharacter::StaticClass, TEXT("ARunCharacter"), &Z_Registration_Info_UClass_ARunCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunCharacter), 4228661332U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Characters_RunCharacter_h_3331164514(TEXT("/Script/LichRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Characters_RunCharacter_h_140892016(TEXT("/Script/LichRunner"),
 		Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Characters_RunCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Characters_RunCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

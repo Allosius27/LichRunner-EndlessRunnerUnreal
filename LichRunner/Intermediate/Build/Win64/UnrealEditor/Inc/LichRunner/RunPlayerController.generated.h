@@ -16,11 +16,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_LichRunner_Source_LichRunner_Public_Controllers_RunPlayerController_h_16_SPARSE_DATA
 #define FID_LichRunner_Source_LichRunner_Public_Controllers_RunPlayerController_h_16_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execEndJump); \
+	DECLARE_FUNCTION(execJump); \
 	DECLARE_FUNCTION(execMoveRight);
 
 
 #define FID_LichRunner_Source_LichRunner_Public_Controllers_RunPlayerController_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execEndJump); \
+	DECLARE_FUNCTION(execJump); \
 	DECLARE_FUNCTION(execMoveRight);
 
 
