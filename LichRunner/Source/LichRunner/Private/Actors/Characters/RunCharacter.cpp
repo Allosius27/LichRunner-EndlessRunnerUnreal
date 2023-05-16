@@ -30,7 +30,6 @@ ARunCharacter::ARunCharacter()
 	PlayerStatsComponent = CreateDefaultSubobject<UPlayerStatsComponent>("PlayerUniqueStatsComponent");
 	
 	
-	IsAlive = true;
 	DeathDelay = 1.5f;
 }
 
@@ -59,12 +58,12 @@ void ARunCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 void ARunCharacter::CharacterDeath()
 {
-	if(!IsAlive)
+	if(!StatsComponent->IsAlive)
 	{
 		return;
 	}
 	
-	IsAlive = false;
+	StatsComponent->IsAlive = false;
 
 	DispatcherOnPlayerDeath.Broadcast();
 	

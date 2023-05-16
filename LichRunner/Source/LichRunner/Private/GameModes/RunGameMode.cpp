@@ -18,6 +18,8 @@ ARunGameMode::ARunGameMode()
 	HasPickupsCreation = true;
 	HasEnemiesCreation = true;
 
+
+	
 	RestartLevelDelay = 2.5f;
 }
 
@@ -51,6 +53,7 @@ void ARunGameMode::CreateTile(bool tileCanCreateObstacles, bool tileCanCreatePic
 	tileSpawned->Init(createObstacles, createPickups, createEnemies);
 	
 	tileSpawned->OnExited.AddDynamic(this, &ARunGameMode::OnTileExited);
+	
 }
 
 
@@ -65,6 +68,7 @@ void ARunGameMode::GameOver()
 {
 	GetWorldTimerManager().SetTimer(RestartLevelTimerHandle, this, &ARunGameMode::RestartLevel, RestartLevelDelay, false);
 }
+
 
 void ARunGameMode::RestartLevel()
 {

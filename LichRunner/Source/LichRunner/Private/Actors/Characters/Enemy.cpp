@@ -5,6 +5,7 @@
 
 #include "Actors/Characters/PlayerStatsComponent.h"
 #include "Actors/Characters/StatsComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AEnemy::AEnemy()
@@ -13,6 +14,8 @@ AEnemy::AEnemy()
 	PrimaryActorTick.bCanEverTick = true;
 
 	StatsComponent = CreateDefaultSubobject<UStatsComponent>("GenericStatsComponent");
+
+	DistanceAcceptanceToAttack = 150.0f;
 }
 
 // Called when the game starts or when spawned
@@ -26,6 +29,23 @@ void AEnemy::BeginPlay()
 void AEnemy::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if(FVector::Distance(GetActorLocation(), UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetActorLocation()) <= DistanceAcceptanceToAttack)
+	{
+		if(!IsAttacking)
+		{
+			Attack();
+			IsAttacking = true;
+		}
+	}
+	else
+	{
+		if(IsAttacking)
+		{
+			Follow(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+			IsAttacking = false;
+		}
+	}
 
 }
 

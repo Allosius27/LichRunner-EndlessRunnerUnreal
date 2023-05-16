@@ -37,11 +37,6 @@ public:
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
 		float DeathDelay;
 	
-	
-	
-		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
-		bool IsAlive;
-	
 
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
 		int YellowCoinsStored;

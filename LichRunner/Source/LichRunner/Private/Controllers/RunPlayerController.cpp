@@ -3,11 +3,13 @@
 
 #include "Controllers/RunPlayerController.h"
 
+#include "Actors/Characters/StatsComponent.h"
 #include "GameModes/RunGameMode.h"
 #include "Kismet/GameplayStatics.h"
 
 ARunPlayerController::ARunPlayerController()
 {
+	
 }
 
 
@@ -60,7 +62,7 @@ void ARunPlayerController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if(RunCharacter->IsAlive)
+	if(RunCharacter->StatsComponent->IsAlive)
 	{
 		RunCharacter->AddMovementInput(RunCharacter->GetActorForwardVector());
 	}

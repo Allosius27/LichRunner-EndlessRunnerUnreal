@@ -22,6 +22,9 @@ public:
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Inspector | ActorComponents")
 		class UStatsComponent* StatsComponent;
 
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Inspector | Stats")
+		float DistanceAcceptanceToAttack;
+
 	#pragma endregion
 
 	#pragma region UFUNCTIONS
@@ -31,6 +34,9 @@ public:
 
 		UFUNCTION(BlueprintCallable,BlueprintImplementableEvent)
 		void Wait();
+
+		UFUNCTION(BlueprintCallable,BlueprintImplementableEvent)
+		void Attack();
 
 	#pragma endregion 
 
@@ -49,6 +55,13 @@ public:
 #pragma region PROTECTED
 	
 protected:
+
+	#pragma region UPROPERTIES
+
+		UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Protected | Stats")
+		bool IsAttacking;
+
+	#pragma endregion 
 
 	#pragma region METHODS
 		

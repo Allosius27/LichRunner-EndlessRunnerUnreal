@@ -32,7 +32,8 @@ public:
 
 		UPROPERTY(EditAnywhere, Category = "Inspector | Game World")
 		bool HasEnemiesCreation;
-
+	
+	
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Global Management")
 		float RestartLevelDelay;
 
