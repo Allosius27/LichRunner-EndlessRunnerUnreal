@@ -44,16 +44,19 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 		static const UECodeGen_Private::FEnumParams EnumParams;
 	};
 	const UECodeGen_Private::FEnumeratorParam Z_Construct_UEnum_LichRunner_ETypePickup_Statics::Enumerators[] = {
-		{ "ETypePickup::E_YellowCoin", (int64)ETypePickup::E_YellowCoin },
-		{ "ETypePickup::E_BlueCoin", (int64)ETypePickup::E_BlueCoin },
+		{ "ETypePickup::E_ManaCoin", (int64)ETypePickup::E_ManaCoin },
+		{ "ETypePickup::E_ArchenCoin", (int64)ETypePickup::E_ArchenCoin },
+		{ "ETypePickup::E_HealthCoin", (int64)ETypePickup::E_HealthCoin },
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UEnum_LichRunner_ETypePickup_Statics::Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "E_BlueCoin.DisplayName", "BlueCoin" },
-		{ "E_BlueCoin.Name", "ETypePickup::E_BlueCoin" },
-		{ "E_YellowCoin.DisplayName", "YellowCoin" },
-		{ "E_YellowCoin.Name", "ETypePickup::E_YellowCoin" },
+		{ "E_ArchenCoin.DisplayName", "ArchenCoin" },
+		{ "E_ArchenCoin.Name", "ETypePickup::E_ArchenCoin" },
+		{ "E_HealthCoin.DisplayName", "HealthCoin" },
+		{ "E_HealthCoin.Name", "ETypePickup::E_HealthCoin" },
+		{ "E_ManaCoin.DisplayName", "ManaCoin" },
+		{ "E_ManaCoin.Name", "ETypePickup::E_ManaCoin" },
 		{ "ModuleRelativePath", "Public/Actors/Pickups/Pickup.h" },
 	};
 #endif
@@ -237,6 +240,14 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 #endif
 		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_PickupCoinsCount;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ScorePointsAdded_MetaData[];
+#endif
+		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_ScorePointsAdded;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_EffectValue_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_EffectValue;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_SceneRoot_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_SceneRoot;
@@ -273,7 +284,7 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 		{ "ModuleRelativePath", "Public/Actors/Pickups/Pickup.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APickup_Statics::NewProp_TypePickup = { "TypePickup", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APickup, TypePickup), Z_Construct_UEnum_LichRunner_ETypePickup, METADATA_PARAMS(Z_Construct_UClass_APickup_Statics::NewProp_TypePickup_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::NewProp_TypePickup_MetaData)) }; // 2101148545
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APickup_Statics::NewProp_TypePickup = { "TypePickup", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APickup, TypePickup), Z_Construct_UEnum_LichRunner_ETypePickup, METADATA_PARAMS(Z_Construct_UClass_APickup_Statics::NewProp_TypePickup_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::NewProp_TypePickup_MetaData)) }; // 629645013
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APickup_Statics::NewProp_PickupCoinsCount_MetaData[] = {
 		{ "Category", "Inspector | Stats" },
@@ -281,6 +292,20 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 	};
 #endif
 	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_APickup_Statics::NewProp_PickupCoinsCount = { "PickupCoinsCount", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APickup, PickupCoinsCount), METADATA_PARAMS(Z_Construct_UClass_APickup_Statics::NewProp_PickupCoinsCount_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::NewProp_PickupCoinsCount_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APickup_Statics::NewProp_ScorePointsAdded_MetaData[] = {
+		{ "Category", "Inspector | Stats" },
+		{ "ModuleRelativePath", "Public/Actors/Pickups/Pickup.h" },
+	};
+#endif
+	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_APickup_Statics::NewProp_ScorePointsAdded = { "ScorePointsAdded", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APickup, ScorePointsAdded), METADATA_PARAMS(Z_Construct_UClass_APickup_Statics::NewProp_ScorePointsAdded_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::NewProp_ScorePointsAdded_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APickup_Statics::NewProp_EffectValue_MetaData[] = {
+		{ "Category", "Inspector | Stats" },
+		{ "ModuleRelativePath", "Public/Actors/Pickups/Pickup.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APickup_Statics::NewProp_EffectValue = { "EffectValue", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APickup, EffectValue), METADATA_PARAMS(Z_Construct_UClass_APickup_Statics::NewProp_EffectValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::NewProp_EffectValue_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APickup_Statics::NewProp_SceneRoot_MetaData[] = {
 		{ "Category", "Components" },
@@ -309,6 +334,8 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_TypePickup_Underlying,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_TypePickup,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_PickupCoinsCount,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_ScorePointsAdded,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_EffectValue,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_SceneRoot,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_StaticMesh,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_PickupTrigger,
@@ -350,12 +377,12 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_Statics::EnumInfo[] = {
-		{ ETypePickup_StaticEnum, TEXT("ETypePickup"), &Z_Registration_Info_UEnum_ETypePickup, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2101148545U) },
+		{ ETypePickup_StaticEnum, TEXT("ETypePickup"), &Z_Registration_Info_UEnum_ETypePickup, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 629645013U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APickup, APickup::StaticClass, TEXT("APickup"), &Z_Registration_Info_UClass_APickup, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APickup), 1884820191U) },
+		{ Z_Construct_UClass_APickup, APickup::StaticClass, TEXT("APickup"), &Z_Registration_Info_UClass_APickup, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APickup), 2060132253U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_2011265044(TEXT("/Script/LichRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_1315654193(TEXT("/Script/LichRunner"),
 		Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_Statics::EnumInfo));

@@ -21,7 +21,7 @@ void ARunPlayerController::BeginPlay()
 	ARunGameMode* gameMode = Cast<ARunGameMode>(GetWorld()->GetAuthGameMode());
 	if(gameMode != nullptr)
 	{
-		RunCharacter->DispatcherOnPlayerDeath.AddDynamic(gameMode, &ARunGameMode::GameOver);
+		RunCharacter->StatsComponent->DispatcherOnDeath.AddDynamic(gameMode, &ARunGameMode::GameOver);
 	}
 	else
 	{
@@ -41,6 +41,8 @@ void ARunPlayerController::SetupInputComponent()
 	
 	InputComponent->BindAction("Jump", IE_Pressed, this, &ARunPlayerController::Jump);
 	InputComponent->BindAction("Jump", IE_Released, this, &ARunPlayerController::EndJump);
+	
+	InputComponent->BindAction("Shoot", IE_Released, this, &ARunPlayerController::Shoot);
 }
 
 void ARunPlayerController::MoveRight(float axisValue)
@@ -56,6 +58,11 @@ void ARunPlayerController::Jump()
 void ARunPlayerController::EndJump()
 {
 	RunCharacter->StopJumping();
+}
+
+void ARunPlayerController::Shoot()
+{
+	RunCharacter->Shoot();
 }
 
 void ARunPlayerController::Tick(float DeltaTime)

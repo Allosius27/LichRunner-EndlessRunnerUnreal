@@ -18,7 +18,7 @@ ARunGameMode::ARunGameMode()
 	HasPickupsCreation = true;
 	HasEnemiesCreation = true;
 
-
+	GameEnded = false;
 	
 	RestartLevelDelay = 2.5f;
 }
@@ -66,16 +66,18 @@ void ARunGameMode::OnTileExited(ATile* tile)
 
 void ARunGameMode::GameOver()
 {
-	GetWorldTimerManager().SetTimer(RestartLevelTimerHandle, this, &ARunGameMode::RestartLevel, RestartLevelDelay, false);
+	GameEnded = true;
+	//GetWorldTimerManager().SetTimer(RestartLevelTimerHandle, this, &ARunGameMode::RestartLevel, RestartLevelDelay, false);
+	OpenGameOverScreen();
 }
 
 
 void ARunGameMode::RestartLevel()
 {
-	if(GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Purple, TEXT("Restart Level"));
-	}
+	// if(GEngine)
+	// {
+	// 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Purple, TEXT("Restart Level"));
+	// }
 	
 	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
 }

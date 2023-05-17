@@ -18,29 +18,45 @@ public:
 	// Sets default values for this component's properties
 	UPlayerStatsComponent();
 
-#pragma region UPROPERTIES
+	#pragma region UPROPERTIES
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
-	float MaxManaPoints;
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
+		float MaxManaPoints;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
-	float MaxArchenPoints;
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
+		float MaxArchenPoints;
 
-	
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
-	float ManaPoints;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
-	float ArchenPoints;
-
-#pragma endregion 
-
-#pragma region METHODS
 		
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
+		float ManaPoints;
 
-#pragma endregion 
+		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
+		float ArchenPoints;
+
+	#pragma endregion
+
+	#pragma region UFUNCTIONS
+
+		UFUNCTION(BlueprintCallable)
+		void AddMana(float amount);
+
+		UFUNCTION(BlueprintCallable)
+		void RemoveMana(float amount);
+
+		UFUNCTION(BlueprintCallable)
+		void AddArchen(float amount);
+
+		UFUNCTION(BlueprintCallable)
+		void RemoveArchen(float amount);
+
+	#pragma endregion 
+
+	#pragma region METHODS
+			
+		// Called every frame
+		virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
+	#pragma endregion 
 
 #pragma endregion 
 
@@ -48,12 +64,12 @@ public:
 	
 protected:
 
-#pragma region METHODS
-		
-	// Called when the game starts
-	virtual void BeginPlay() override;
+	#pragma region METHODS
+			
+		// Called when the game starts
+		virtual void BeginPlay() override;
 
-#pragma endregion 
+	#pragma endregion 
 
 #pragma endregion
 		

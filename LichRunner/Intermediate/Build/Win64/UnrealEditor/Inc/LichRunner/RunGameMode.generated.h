@@ -31,6 +31,8 @@ class ATile;
 	DECLARE_FUNCTION(execCreateTile);
 
 
+#define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_EVENT_PARMS
+#define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_CALLBACK_WRAPPERS
 #define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesARunGameMode(); \
@@ -73,12 +75,16 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ARunGameMode)
 
 
-#define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_12_PROLOG
+#define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_12_PROLOG \
+	FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_EVENT_PARMS
+
+
 #define FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_SPARSE_DATA \
 	FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_RPC_WRAPPERS \
+	FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_CALLBACK_WRAPPERS \
 	FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_INCLASS \
 	FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_STANDARD_CONSTRUCTORS \
 public: \
@@ -90,6 +96,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_SPARSE_DATA \
 	FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_CALLBACK_WRAPPERS \
 	FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_INCLASS_NO_PURE_DECLS \
 	FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_15_ENHANCED_CONSTRUCTORS \
 private: \

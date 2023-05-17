@@ -27,7 +27,6 @@ void UPlayerStatsComponent::BeginPlay()
 	ArchenPoints = MaxArchenPoints;
 }
 
-
 // Called every frame
 void UPlayerStatsComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
@@ -35,4 +34,43 @@ void UPlayerStatsComponent::TickComponent(float DeltaTime, ELevelTick TickType, 
 
 	// ...
 }
+
+
+void UPlayerStatsComponent::AddMana(float amount)
+{
+	ManaPoints += amount;
+	if(ManaPoints >= MaxManaPoints)
+	{
+		ManaPoints = MaxManaPoints;
+	}
+}
+
+void UPlayerStatsComponent::RemoveMana(float amount)
+{
+	ManaPoints -= amount;
+	if(ManaPoints <= 0)
+	{
+		ManaPoints = 0;
+	}
+}
+
+void UPlayerStatsComponent::AddArchen(float amount)
+{
+	ArchenPoints += amount;
+	if(ArchenPoints >= MaxArchenPoints)
+	{
+		ArchenPoints = MaxArchenPoints;
+	}
+}
+
+void UPlayerStatsComponent::RemoveArchen(float amount)
+{
+	ArchenPoints -= amount;
+	if(ArchenPoints <= 0)
+	{
+		ArchenPoints = 0;
+	}
+}
+
+
 

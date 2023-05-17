@@ -25,10 +25,31 @@ public:
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Inspector | Stats")
 		float DistanceAcceptanceToAttack;
 
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Inspector | Stats")
+		float MaxDistanceToPlayer;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Inspector | Stats")
+		float DamagesMin;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Inspector | Stats")
+		float DamagesMax;
+
+		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
+		bool CanMove;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
+		int ScorePointsAdded;
+		
+
+
 	#pragma endregion
 
 	#pragma region UFUNCTIONS
 
+		UFUNCTION(BlueprintCallable)
+		void SetCanMove(bool value);
+	
+	
 		UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
 		void Follow(AActor* followTarget);
 
@@ -37,6 +58,12 @@ public:
 
 		UFUNCTION(BlueprintCallable,BlueprintImplementableEvent)
 		void Attack();
+
+		UFUNCTION(BlueprintCallable, Category = "Stats")
+		void EnemyHit(float amount);
+
+		UFUNCTION(BlueprintCallable, Category = "Stats")
+		void EnemyDeath();
 
 	#pragma endregion 
 
@@ -58,8 +85,29 @@ protected:
 
 	#pragma region UPROPERTIES
 
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
+		float DeathDelay;
+	
 		UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Protected | Stats")
 		bool IsAttacking;
+
+		UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Protected | Target")
+		ACharacter* PlayerCharacter;
+
+		FTimerHandle DeathTimerHandle;
+
+	#pragma endregion
+
+	#pragma region UFUNCTIONS
+
+		UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
+		void HitPlayer(ARunCharacter* runCharacter);
+
+		UFUNCTION(BlueprintCallable)
+		float GetDamages();
+
+		UFUNCTION(BlueprintCallable)
+		void OnDestroyEnemy();
 
 	#pragma endregion 
 
@@ -67,6 +115,10 @@ protected:
 		
 		// Called when the game starts or when spawned
 		virtual void BeginPlay() override;
+
+		void CheckDistanceToPlayer();
+		
+		void SetAttackState();
 
 	#pragma endregion 
 

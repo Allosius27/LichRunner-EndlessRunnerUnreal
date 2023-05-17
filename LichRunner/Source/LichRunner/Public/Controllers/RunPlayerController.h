@@ -43,6 +43,9 @@ public:
 		UFUNCTION(Category = "PlayerMovements")
 		void EndJump();
 
+		UFUNCTION(Category = "PlayerActions")
+		void Shoot();
+
 	#pragma endregion 
 
 #pragma endregion 

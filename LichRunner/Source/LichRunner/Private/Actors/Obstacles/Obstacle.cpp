@@ -41,7 +41,7 @@ void AObstacle::OnHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpul
 {
 	if(ARunCharacter* player = Cast<ARunCharacter>(OtherActor))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Player Detected"));
+		//UE_LOG(LogTemp, Warning, TEXT("Player Detected"));
 		if(IsMortal)
 		{
 			HitPlayer(player);

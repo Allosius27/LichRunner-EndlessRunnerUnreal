@@ -27,6 +27,8 @@ APickup::APickup()
 
 
 	PickupCoinsCount = 1;
+	ScorePointsAdded = 100;
+	EffectValue = 10.0f;
 }
 
 

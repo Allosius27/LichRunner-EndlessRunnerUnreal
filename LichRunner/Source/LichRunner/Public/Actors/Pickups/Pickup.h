@@ -8,8 +8,9 @@
 
 UENUM(BlueprintType)
 enum class ETypePickup : uint8 {
-	E_YellowCoin = 0 UMETA(DisplayName = "YellowCoin"),
-	E_BlueCoin = 1  UMETA(DisplayName = "BlueCoin"),
+	E_ManaCoin = 0 UMETA(DisplayName = "ManaCoin"),
+	E_ArchenCoin = 1  UMETA(DisplayName = "ArchenCoin"),
+	E_HealthCoin = 2  UMETA(DisplayName = "HealthCoin"),
 };
 
 UCLASS()
@@ -30,6 +31,12 @@ public:
 
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
 		int PickupCoinsCount;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
+		int ScorePointsAdded;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
+		float EffectValue;
 
 	#pragma endregion 
 

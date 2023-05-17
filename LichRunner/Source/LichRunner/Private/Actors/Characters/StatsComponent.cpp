@@ -27,6 +27,38 @@ void UStatsComponent::BeginPlay()
 }
 
 
+void UStatsComponent::TakeDamages(float amount)
+{
+
+	HealthPoints -= amount;
+	if(HealthPoints <= 0)
+	{
+		HealthPoints = 0;
+		Die(true);
+	}
+	
+	DispatcherOnDamage.Broadcast();
+}
+
+void UStatsComponent::Heal(float amount)
+{
+	HealthPoints += amount;
+	if(HealthPoints >= MaxHealthPoints)
+	{
+		HealthPoints = MaxHealthPoints;
+	}
+}
+
+void UStatsComponent::Die(bool value)
+{
+	IsAlive = !value;
+
+	if(!IsAlive)
+	{
+		DispatcherOnDeath.Broadcast();
+	}
+}
+
 // Called every frame
 void UStatsComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {

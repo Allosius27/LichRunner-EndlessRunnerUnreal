@@ -9,6 +9,7 @@
 #include "Actors/Pickups/Pickup.h"
 #include "Components/ArrowComponent.h"
 #include "Components/BoxComponent.h"
+#include "GameModes/RunGameMode.h"
 #include "Kismet/KismetMathLibrary.h"
 
 // Sets default values
@@ -94,10 +95,10 @@ void ATile::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAct
 {
 	if(ARunCharacter* player = Cast<ARunCharacter>(OtherActor))
 	{
-		if(GEngine)
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Tile Overlap Begin With Player"));
-		}
+		// if(GEngine)
+		// {
+		// 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Tile Overlap Begin With Player"));
+		// }
 		OnExited.Broadcast(this);
 	}
 }
@@ -169,33 +170,44 @@ void ATile::SpawnEnemy(float randomWeight)
 		transform.SetScale3D(FVector(1.0f));
 		
 		AEnemy* enemy = GetWorld()->SpawnActor<AEnemy>(EnemiesClass[rnd], transform, spawnParams);
-		enemy->AttachToActor(this, FAttachmentTransformRules::KeepWorldTransform);
+		//enemy->AttachToActor(this, FAttachmentTransformRules::KeepWorldTransform);
 	}
 }
 
 
 void ATile::TileExited()
 {
-	if(GEngine)
-	{
+	//if(GEngine)
+	//{
 		//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("Tile Exited To %f"), GetWorld()->TimeSeconds));
-	}
+	//}
 
 	GetWorldTimerManager().SetTimer(EndLifeTileTimerHandle, this, &ATile::OnDestroyTile, TileEndLifeTime, false);
 }
 
 void ATile::OnDestroyTile()
 {
-	if(GEngine)
+	ARunGameMode* gameMode = Cast<ARunGameMode>(GetWorld()->GetAuthGameMode());
+	if(gameMode != nullptr && gameMode->GameEnded)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Tile Destroy"));
+		return;
 	}
+	
+	// if(GEngine)
+	// {
+	// 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Tile Destroy"));
+	// }
+	
 	TArray<AActor*> attachedActors;
 	GetAttachedActors(attachedActors);
 	for (auto actor : attachedActors)
 	{
-		actor->Destroy();
+		if(actor != nullptr)
+		{
+			actor->Destroy();
+		}
 	}
+		
 	
 	Destroy();
 }

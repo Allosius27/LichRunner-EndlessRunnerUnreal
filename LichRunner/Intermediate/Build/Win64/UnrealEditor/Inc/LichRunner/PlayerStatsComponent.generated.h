@@ -14,8 +14,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define LICHRUNNER_PlayerStatsComponent_generated_h
 
 #define FID_LichRunner_Source_LichRunner_Public_Actors_Characters_PlayerStatsComponent_h_13_SPARSE_DATA
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Characters_PlayerStatsComponent_h_13_RPC_WRAPPERS
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Characters_PlayerStatsComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Characters_PlayerStatsComponent_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execRemoveArchen); \
+	DECLARE_FUNCTION(execAddArchen); \
+	DECLARE_FUNCTION(execRemoveMana); \
+	DECLARE_FUNCTION(execAddMana);
+
+
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Characters_PlayerStatsComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execRemoveArchen); \
+	DECLARE_FUNCTION(execAddArchen); \
+	DECLARE_FUNCTION(execRemoveMana); \
+	DECLARE_FUNCTION(execAddMana);
+
+
 #define FID_LichRunner_Source_LichRunner_Public_Actors_Characters_PlayerStatsComponent_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPlayerStatsComponent(); \

@@ -49,6 +49,11 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 		P_THIS->CreateTile(Z_Param_tileCanCreateObstacles,Z_Param_tileCanCreatePickups,Z_Param_tileCanCreateEnemies);
 		P_NATIVE_END;
 	}
+	static FName NAME_ARunGameMode_OpenGameOverScreen = FName(TEXT("OpenGameOverScreen"));
+	void ARunGameMode::OpenGameOverScreen()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ARunGameMode_OpenGameOverScreen),NULL);
+	}
 	void ARunGameMode::StaticRegisterNativesARunGameMode()
 	{
 		UClass* Class = ARunGameMode::StaticClass();
@@ -172,6 +177,29 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ARunGameMode_OpenGameOverScreen_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARunGameMode_OpenGameOverScreen_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Global Management" },
+		{ "ModuleRelativePath", "Public/GameModes/RunGameMode.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ARunGameMode_OpenGameOverScreen_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARunGameMode, nullptr, "OpenGameOverScreen", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ARunGameMode_OpenGameOverScreen_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ARunGameMode_OpenGameOverScreen_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ARunGameMode_OpenGameOverScreen()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ARunGameMode_OpenGameOverScreen_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ARunGameMode_RestartLevel_Statics
 	{
 #if WITH_METADATA
@@ -185,7 +213,7 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 		{ "ModuleRelativePath", "Public/GameModes/RunGameMode.h" },
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ARunGameMode_RestartLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARunGameMode, nullptr, "RestartLevel", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ARunGameMode_RestartLevel_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ARunGameMode_RestartLevel_Statics::Function_MetaDataParams)) };
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ARunGameMode_RestartLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARunGameMode, nullptr, "RestartLevel", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ARunGameMode_RestartLevel_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ARunGameMode_RestartLevel_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_ARunGameMode_RestartLevel()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -231,6 +259,11 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_RestartLevelDelay;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_GameEnded_MetaData[];
+#endif
+		static void NewProp_GameEnded_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_GameEnded;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_TileClass_MetaData[];
 #endif
 		static const UECodeGen_Private::FClassPropertyParams NewProp_TileClass;
@@ -250,7 +283,8 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 		{ &Z_Construct_UFunction_ARunGameMode_CreateTile, "CreateTile" }, // 2842451875
 		{ &Z_Construct_UFunction_ARunGameMode_GameOver, "GameOver" }, // 3837825612
 		{ &Z_Construct_UFunction_ARunGameMode_OnTileExited, "OnTileExited" }, // 687313644
-		{ &Z_Construct_UFunction_ARunGameMode_RestartLevel, "RestartLevel" }, // 4219511522
+		{ &Z_Construct_UFunction_ARunGameMode_OpenGameOverScreen, "OpenGameOverScreen" }, // 3082575553
+		{ &Z_Construct_UFunction_ARunGameMode_RestartLevel, "RestartLevel" }, // 1576249466
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunGameMode_Statics::Class_MetaDataParams[] = {
@@ -309,6 +343,17 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ARunGameMode_Statics::NewProp_RestartLevelDelay = { "RestartLevelDelay", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARunGameMode, RestartLevelDelay), METADATA_PARAMS(Z_Construct_UClass_ARunGameMode_Statics::NewProp_RestartLevelDelay_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunGameMode_Statics::NewProp_RestartLevelDelay_MetaData)) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunGameMode_Statics::NewProp_GameEnded_MetaData[] = {
+		{ "Category", "Public | Global Management" },
+		{ "ModuleRelativePath", "Public/GameModes/RunGameMode.h" },
+	};
+#endif
+	void Z_Construct_UClass_ARunGameMode_Statics::NewProp_GameEnded_SetBit(void* Obj)
+	{
+		((ARunGameMode*)Obj)->GameEnded = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ARunGameMode_Statics::NewProp_GameEnded = { "GameEnded", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ARunGameMode), &Z_Construct_UClass_ARunGameMode_Statics::NewProp_GameEnded_SetBit, METADATA_PARAMS(Z_Construct_UClass_ARunGameMode_Statics::NewProp_GameEnded_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunGameMode_Statics::NewProp_GameEnded_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunGameMode_Statics::NewProp_TileClass_MetaData[] = {
 		{ "Category", "Protected | Game World" },
 		{ "ModuleRelativePath", "Public/GameModes/RunGameMode.h" },
@@ -328,6 +373,7 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasPickupsCreation,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunGameMode_Statics::NewProp_HasEnemiesCreation,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunGameMode_Statics::NewProp_RestartLevelDelay,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunGameMode_Statics::NewProp_GameEnded,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunGameMode_Statics::NewProp_TileClass,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunGameMode_Statics::NewProp_CurrentSpawnTransform,
 	};
@@ -367,9 +413,9 @@ void EmptyLinkFunctionForGeneratedCodeRunGameMode() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ARunGameMode, ARunGameMode::StaticClass, TEXT("ARunGameMode"), &Z_Registration_Info_UClass_ARunGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunGameMode), 961503992U) },
+		{ Z_Construct_UClass_ARunGameMode, ARunGameMode::StaticClass, TEXT("ARunGameMode"), &Z_Registration_Info_UClass_ARunGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunGameMode), 1272601965U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_3049358139(TEXT("/Script/LichRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_1389742649(TEXT("/Script/LichRunner"),
 		Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LichRunner_Source_LichRunner_Public_GameModes_RunGameMode_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

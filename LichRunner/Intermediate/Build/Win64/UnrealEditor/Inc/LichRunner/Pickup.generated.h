@@ -17,26 +17,26 @@ class ARunCharacter;
 #endif
 #define LICHRUNNER_Pickup_generated_h
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_SPARSE_DATA
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_RPC_WRAPPERS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_SPARSE_DATA
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnOverlapBegin);
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnOverlapBegin);
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_EVENT_PARMS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_EVENT_PARMS \
 	struct Pickup_eventOnGet_Parms \
 	{ \
 		ARunCharacter* runCharacter; \
 	};
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_CALLBACK_WRAPPERS
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_INCLASS_NO_PURE_DECLS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_CALLBACK_WRAPPERS
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPickup(); \
 	friend struct Z_Construct_UClass_APickup_Statics; \
@@ -45,7 +45,7 @@ public: \
 	DECLARE_SERIALIZER(APickup)
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_INCLASS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesAPickup(); \
 	friend struct Z_Construct_UClass_APickup_Statics; \
@@ -54,7 +54,7 @@ public: \
 	DECLARE_SERIALIZER(APickup)
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_STANDARD_CONSTRUCTORS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APickup(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APickup) \
@@ -67,7 +67,7 @@ private: \
 public:
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_ENHANCED_CONSTRUCTORS \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APickup(APickup&&); \
@@ -78,30 +78,30 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APickup)
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_15_PROLOG \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_EVENT_PARMS
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_16_PROLOG \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_EVENT_PARMS
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_GENERATED_BODY_LEGACY \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_SPARSE_DATA \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_RPC_WRAPPERS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_CALLBACK_WRAPPERS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_INCLASS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_STANDARD_CONSTRUCTORS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_SPARSE_DATA \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_RPC_WRAPPERS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_CALLBACK_WRAPPERS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_INCLASS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_GENERATED_BODY \
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_SPARSE_DATA \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_CALLBACK_WRAPPERS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_INCLASS_NO_PURE_DECLS \
-	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_18_ENHANCED_CONSTRUCTORS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_SPARSE_DATA \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_CALLBACK_WRAPPERS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_INCLASS_NO_PURE_DECLS \
+	FID_LichRunner_Source_LichRunner_Public_Actors_Pickups_Pickup_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -113,8 +113,9 @@ template<> LICHRUNNER_API UClass* StaticClass<class APickup>();
 
 
 #define FOREACH_ENUM_ETYPEPICKUP(op) \
-	op(ETypePickup::E_YellowCoin) \
-	op(ETypePickup::E_BlueCoin) 
+	op(ETypePickup::E_ManaCoin) \
+	op(ETypePickup::E_ArchenCoin) \
+	op(ETypePickup::E_HealthCoin) 
 
 enum class ETypePickup : uint8;
 template<> LICHRUNNER_API UEnum* StaticEnum<ETypePickup>();

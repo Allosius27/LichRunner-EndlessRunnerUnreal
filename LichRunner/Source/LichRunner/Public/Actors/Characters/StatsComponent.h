@@ -6,6 +6,8 @@
 #include "Components/ActorComponent.h"
 #include "StatsComponent.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FDamageSignature);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FDeathSignature);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class LICHRUNNER_API UStatsComponent : public UActorComponent
@@ -30,6 +32,26 @@ public:
 
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
 		bool IsAlive;
+
+
+		UPROPERTY(BlueprintAssignable)
+		FDamageSignature DispatcherOnDamage;
+
+		UPROPERTY(BlueprintAssignable)
+		FDeathSignature DispatcherOnDeath;
+
+	#pragma endregion
+
+	#pragma region UFUNCTIONS
+
+		UFUNCTION(BlueprintCallable)
+		void TakeDamages(float amount);
+
+		UFUNCTION(BlueprintCallable)
+		void Heal(float amount);
+
+		UFUNCTION(BlueprintCallable)
+		void Die(bool value);
 
 	#pragma endregion 
 

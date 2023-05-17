@@ -37,6 +37,9 @@ public:
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Global Management")
 		float RestartLevelDelay;
 
+		UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Public | Global Management")
+		bool GameEnded;
+
 	#pragma endregion 
 
 	#pragma region UFUNCTIONS
@@ -71,7 +74,10 @@ public:
 		UFUNCTION(Category = "Game World")
 		void OnTileExited(ATile* tile);
 
-		UFUNCTION(Category = "Global Management")
+		UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "Global Management")
+		void OpenGameOverScreen();
+	
+		UFUNCTION(BlueprintCallable, Category = "Global Management")
 		void RestartLevel();
 
 	#pragma endregion 

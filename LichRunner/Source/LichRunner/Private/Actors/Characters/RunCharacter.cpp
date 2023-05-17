@@ -26,9 +26,15 @@ ARunCharacter::ARunCharacter()
 	Camera->SetRelativeLocation(FVector(4.0f, 0.0f, 47.0f));
 	Camera->SetRelativeRotation(FRotator(-15.0f, 0.0f, 0.0f));
 
+	CastFromComponent = CreateDefaultSubobject<USceneComponent>("CastFromComponent");
+	CastFromComponent->SetupAttachment(GetMesh());
+	CastFromComponent->SetRelativeLocation(FVector(0.0f, 120.0f, 140.0f));
+	CastFromComponent->SetRelativeRotation(FRotator(0.0f, 90.0f, 0.0f));
+
 	StatsComponent = CreateDefaultSubobject<UStatsComponent>("GenericStatsComponent");
 	PlayerStatsComponent = CreateDefaultSubobject<UPlayerStatsComponent>("PlayerUniqueStatsComponent");
 	
+	CastProjectileManaCost = 10.0f;
 	
 	DeathDelay = 1.5f;
 }
@@ -38,7 +44,7 @@ void ARunCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-
+	StatsComponent->DispatcherOnDeath.AddDynamic(this, &ARunCharacter::CharacterDeath);
 	
 }
 
@@ -56,16 +62,49 @@ void ARunCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 }
 
-void ARunCharacter::CharacterDeath()
+void ARunCharacter::Shoot()
+{
+	// if(GEngine)
+	// {
+	// 	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Blue, FString::Printf(TEXT("Shoot")));
+	// }
+
+	if(PlayerStatsComponent->ManaPoints < CastProjectileManaCost)
+	{
+		return;
+	}
+
+	PlayerStatsComponent->RemoveMana(CastProjectileManaCost);
+	
+	int rnd = FMath::RandRange(0, ProjectilesClass.Num()-1);
+		
+	FActorSpawnParameters spawnParams;
+	spawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+	spawnParams.bNoFail = true;
+		
+	FTransform transform;
+	transform.SetLocation(CastFromComponent->GetComponentLocation());
+	transform.SetScale3D(FVector(1.0f));
+		
+	AActor* projectile = GetWorld()->SpawnActor<AActor>(ProjectilesClass[rnd], transform, spawnParams);
+}
+
+void ARunCharacter::CharacterHit(float amount)
 {
 	if(!StatsComponent->IsAlive)
 	{
 		return;
 	}
-	
-	StatsComponent->IsAlive = false;
 
-	DispatcherOnPlayerDeath.Broadcast();
+	StatsComponent->TakeDamages(amount);
+}
+
+void ARunCharacter::CharacterDeath()
+{
+	if(StatsComponent->IsAlive)
+	{
+		return;
+	}
 	
 	APlayerController* playerController = GetWorld()->GetFirstPlayerController();
 	playerController->DisableInput(playerController);
@@ -73,15 +112,37 @@ void ARunCharacter::CharacterDeath()
 	GetWorldTimerManager().SetTimer(DeathTimerHandle, this, &ARunCharacter::DisableVisual, DeathDelay, false);
 }
 
-void ARunCharacter::AddCoins(int count, ETypePickup typePickup)
+void ARunCharacter::AddCoins(int count, int scorePoints, float effectStats, ETypePickup typePickup)
 {
-	if(typePickup == ETypePickup::E_YellowCoin)
+	if(typePickup == ETypePickup::E_ManaCoin)
 	{
-		YellowCoinsStored += count;
+		ManaCoinsStored += count;
+
+		PlayerStatsComponent->AddMana(effectStats);
 	}
-	else if(typePickup == ETypePickup::E_BlueCoin)
+	else if(typePickup == ETypePickup::E_ArchenCoin)
 	{
-		BlueCoinsStored += count;
+		ArchenCoinsStored += count;
+
+		PlayerStatsComponent->AddArchen(effectStats);
 	}
+	else if(typePickup == ETypePickup::E_HealthCoin)
+	{
+		HealthCoinsStored += count;
+
+		StatsComponent->Heal(effectStats);
+	}
+
+	AddScore(scorePoints);
+}
+
+void ARunCharacter::AddKilledEnemies(int enemiesKilled)
+{
+	EnemiesKilledCount += enemiesKilled;
+}
+
+void ARunCharacter::AddScore(int scorePoints)
+{
+	Score += scorePoints;
 }
 

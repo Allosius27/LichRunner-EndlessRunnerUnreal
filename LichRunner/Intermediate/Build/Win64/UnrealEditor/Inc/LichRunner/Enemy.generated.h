@@ -9,18 +9,39 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
+class ARunCharacter;
 #ifdef LICHRUNNER_Enemy_generated_h
 #error "Enemy.generated.h already included, missing '#pragma once' in Enemy.h"
 #endif
 #define LICHRUNNER_Enemy_generated_h
 
 #define FID_LichRunner_Source_LichRunner_Public_Actors_Characters_Enemy_h_12_SPARSE_DATA
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Characters_Enemy_h_12_RPC_WRAPPERS
-#define FID_LichRunner_Source_LichRunner_Public_Actors_Characters_Enemy_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Characters_Enemy_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnDestroyEnemy); \
+	DECLARE_FUNCTION(execGetDamages); \
+	DECLARE_FUNCTION(execEnemyDeath); \
+	DECLARE_FUNCTION(execEnemyHit); \
+	DECLARE_FUNCTION(execSetCanMove);
+
+
+#define FID_LichRunner_Source_LichRunner_Public_Actors_Characters_Enemy_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnDestroyEnemy); \
+	DECLARE_FUNCTION(execGetDamages); \
+	DECLARE_FUNCTION(execEnemyDeath); \
+	DECLARE_FUNCTION(execEnemyHit); \
+	DECLARE_FUNCTION(execSetCanMove);
+
+
 #define FID_LichRunner_Source_LichRunner_Public_Actors_Characters_Enemy_h_12_EVENT_PARMS \
 	struct Enemy_eventFollow_Parms \
 	{ \
 		AActor* followTarget; \
+	}; \
+	struct Enemy_eventHitPlayer_Parms \
+	{ \
+		ARunCharacter* runCharacter; \
 	};
 
 

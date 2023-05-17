@@ -7,7 +7,6 @@
 #include "GameFramework/Character.h"
 #include "RunCharacter.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FPlayerDeathSignature);
 
 UCLASS()
 class LICHRUNNER_API ARunCharacter : public ACharacter
@@ -33,32 +32,55 @@ public:
 
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Inspector | ActorComponents")
 		class UPlayerStatsComponent* PlayerStatsComponent;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Inspector | ActorComponents")
+		class USceneComponent* CastFromComponent;
 	
+
+		UPROPERTY(EditAnywhere, Category = "Inspector | Stats")
+		float CastProjectileManaCost;
+	
+		UPROPERTY(EditAnywhere, Category = "Inspector | Spawnables")
+		TArray<class TSubclassOf<class AActor>> ProjectilesClass;
+	
+
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inspector | Stats")
 		float DeathDelay;
 	
 
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
-		int YellowCoinsStored;
+		int ManaCoinsStored;
 			
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
-		int BlueCoinsStored;
+		int ArchenCoinsStored;
+
+		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
+		int HealthCoinsStored;
 
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
 		int EnemiesKilledCount;
 
-		UPROPERTY(BlueprintAssignable)
-		FPlayerDeathSignature DispatcherOnPlayerDeath;
+		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Public | Stats")
+		int Score;
 
 	#pragma endregion
 
 	#pragma region UFUNCTIONS
+
+		UFUNCTION(BlueprintCallable, Category = "Stats")
+		void CharacterHit(float amount);
 	
 		UFUNCTION(BlueprintCallable, Category = "Stats")
 		void CharacterDeath();
 
 		UFUNCTION(BlueprintCallable, Category = "Stats")
-		void AddCoins(int count, ETypePickup typePickup);
+		void AddCoins(int count, int scorePoints, float effectStats, ETypePickup typePickup);
+
+		UFUNCTION(BlueprintCallable, Category = "Stats")
+		void AddKilledEnemies(int enemiesKilled);
+	
+		UFUNCTION(BlueprintCallable, Category = "Stats")
+		void AddScore(int scorePoints);
 
 	#pragma  endregion
 
@@ -69,6 +91,8 @@ public:
 
 		// Called to bind functionality to input
 		virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+		void Shoot();
 
 	#pragma endregion 
 
